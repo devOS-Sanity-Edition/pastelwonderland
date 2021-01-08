@@ -11,5 +11,6 @@ jobs:
         uses: github/super-linter@v3
         env:
           VALIDATE_ALL_CODEBASE: false
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}} # Set the environment variable to the secret
         with:
           fetch-depth: 0
