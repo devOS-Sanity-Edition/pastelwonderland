@@ -1,14 +1,14 @@
 {
-  "item.devin.red": "Red",
-  "item.devin.orange": "Orange",
-  "item.devin.yellow": "Yellow",
-  "item.devin.green": "Green",
-  "item.devin.blue": "Blue",
-  "item.devin.purple": "Purple",
-  "item.devin.magenta": "Magenta",
-  "item.devin.gray": "Gray",
-  "item.devin.black": "Black",
-  "item.devin.michael_reeves": "Michael Reeves",
+  "block.devin.red": "Red",
+  "block.devin.orange": "Orange",
+  "block.devin.yellow": "Yellow",
+  "block.devin.green": "Green",
+  "block.devin.blue": "Blue",
+  "block.devin.purple": "Purple",
+  "block.devin.magenta": "Magenta",
+  "block.devin.gray": "Gray",
+  "block.devin.black": "Black",
+  "block.devin.michael_reeves": "Michael Reeves",
 
   "itemGroup.devin.group": "Devin's Useless Mod"
 }
