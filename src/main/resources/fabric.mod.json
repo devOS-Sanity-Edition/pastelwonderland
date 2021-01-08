@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "devinsuselessmod",
+  "version": "${version}",
+  "name": "Devins Useless Mod",
+  "description": "Just a useless mod adding things, while trying to learn Fabric",
+  "authors": [
+    "HiItsDevin_"
+  ],
+  "contact": {
+    "website": "https://hiitsdevin.dev",
+    "repo": "https://git.hiitsdevin.dev/HiItsDevin_/DevinsUselessMod"
+  },
+  "license": "MIT",
+  "icon": "assets/devinsuselessmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.hiitsdevin.devinsuselessmod.client.DevinsuselessmodClient"
+    ],
+    "main": [
+      "dev.hiitsdevin.devinsuselessmod.Devinsuselessmod"
+    ]
+  },
+  "mixins": [
+    "devinsuselessmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.8",
+    "fabric": "*",
+    "minecraft": "1.16.4"
+  }
+}
