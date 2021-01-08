@@ -1,3 +1,5 @@
+// 🦀 CRAB IN THE CODE 🦀
+
 package dev.hiitsdevin.devinsuselessmod;
 
 import dev.hiitsdevin.devinsuselessmod.client.DevinsuselessmodClient;
@@ -14,6 +16,8 @@ public class Devinsuselessmod implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        // modularity who
+        // each separate class for organizational reasons, this is great
         Items.init();
         Blocks.init();
     }

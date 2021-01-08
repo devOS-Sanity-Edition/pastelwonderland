@@ -1,3 +1,5 @@
+// 🦀 CRAB IN THE CODE 🦀
+
 package dev.hiitsdevin.devinsuselessmod;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -13,6 +15,7 @@ import static net.minecraft.block.Blocks.*;
 
 public class Blocks {
 
+    // registering blocks into the game as if they actually existed [spoiler alert: they do ✨]
     public static final Block RED = register("red", new Block(FabricBlockSettings.copy(RED_CONCRETE)));
     public static final Block ORANGE = register("orange", new Block(FabricBlockSettings.copy(ORANGE_CONCRETE)));
     public static final Block YELLOW = register("yellow", new Block(FabricBlockSettings.copy(YELLOW_CONCRETE)));
