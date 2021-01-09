@@ -44,7 +44,6 @@ public class Items {
     public static final Item BLACK = new BlockItem(Blocks.BLACK, itemSettings());
     public static final Item GRAY = new BlockItem(Blocks.GRAY, itemSettings());
     public static final Item MICHAEL_REEVES = new BlockItem(Blocks.MICHAEL_REEVES, itemSettings());
-    //public static final Item ELIAS_IS_CURSED = new BlockItem(Blocks.ELIAS_IS_CURSED, itemSettings());
 
     //registered so i guess i can do /give @p devin:colorhere bc fuck you too ig
     private static Item register(String name, Item item) {
@@ -65,7 +64,6 @@ public class Items {
             put("black", BLACK);
             put("gray", GRAY);
             put("michael_reeves", MICHAEL_REEVES);
-            //put("elias_is_cursed", ELIAS_IS_CURSED);
         }};
 
         for (Map.Entry<String, Item> entry : items.entrySet()) register(entry.getKey(), entry.getValue());
