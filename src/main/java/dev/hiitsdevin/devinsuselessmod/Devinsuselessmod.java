@@ -14,6 +14,14 @@ import net.minecraft.util.registry.Registry;
 
 public class Devinsuselessmod implements ModInitializer {
 
+    //TODO:
+    // - Add a custom biome consistent of the prototype texture blocks [will be similar to Notch's original Sky dimension idea and the End.]
+    // - Figure out how to make fence and wall textures
+    // - Figure out custom building generation
+    // - Learn how to make commands
+    // - Learn how to make a GUI
+    // - Make some sort of a new "chest" like thing
+
     @Override
     public void onInitialize() {
         // modularity who
