@@ -26,6 +26,7 @@ public class Blocks {
     public static final Block GRAY = register("gray", new Block(FabricBlockSettings.copy(GRAY_CONCRETE)));
     public static final Block BLACK = register("black", new Block(FabricBlockSettings.copy(BLACK_CONCRETE)));
     public static final Block MICHAEL_REEVES = register("michael_reeves", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
+    //public static final Block ELIAS_IS_CURSED = register("elias_is_cursed", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
 
     private static Block register(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier("devin", name), block);
