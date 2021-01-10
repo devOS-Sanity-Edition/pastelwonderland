@@ -22,6 +22,8 @@ public class Devinsuselessmod implements ModInitializer {
     // - Learn how to make a GUI
     // - Make some sort of a new "chest" like thing
 
+    // FIXME: Fix Cjab's creeper.properties random entities file under C:\Users\[redacted my name because fuck you]\IdeaProjects\devinsuselessmod\src\main\resources\assets\minecraft\optifine because for some ungodly reason it's not fucking loading what the actual fuck and for some fucking reason fucking emissive fucking work and fucking load
+
     @Override
     public void onInitialize() {
         // modularity who
