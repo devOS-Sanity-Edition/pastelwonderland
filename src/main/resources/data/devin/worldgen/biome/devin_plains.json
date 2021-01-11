@@ -1,0 +1,22 @@
+{
+    "surface_builder": "devin:green",
+    "depth": 0.125,
+    "scale": 0.05,
+    "temperature": 0.8,
+    "downfall": 0.4,
+    "precipitation": "snow",
+    "temperature_modifier": "frozen",
+    "category": "plains",
+    "player_spawn_friendly": true,
+    "effects": {
+      "sky_color": 13780550,
+      "fog_color": 14528945,
+      "water_color": 13788517,
+      "water_fog_color": 5046272
+    },
+    "starts": [],
+    "spawners": {},
+    "spawn_costs": {},
+    "carvers": {},
+    "features": []
+  }

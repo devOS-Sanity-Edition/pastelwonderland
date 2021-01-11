@@ -4,9 +4,13 @@ package dev.hiitsdevin.devinsuselessmod;
 
 import dev.hiitsdevin.devinsuselessmod.client.DevinsuselessmodClient;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.kyrptonaught.customportalapi.CustomPortalApiRegistry;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.font.TextRenderer;
+import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -29,7 +33,6 @@ public class Devinsuselessmod implements ModInitializer {
     public void onInitialize() {
         CustomPortalApiRegistry.addPortal(Blocks.BLACK, new Identifier("devin", "devin"), 63, 63, 63);
         CustomPortalApiRegistry.addPortal(Blocks.RED, new Identifier("devin", "devin"), 253,174,187);
-
 
         // modularity who
         // each separate class for organizational reasons, this is great

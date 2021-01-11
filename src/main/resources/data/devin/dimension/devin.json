@@ -1,12 +1,12 @@
 {
-  "type": "minecraft:overworld",
+  "type": "devin:devin",
   "generator": {
     "type": "minecraft:noise",
-    "seed": -2033358636,
+    "seed": -45769067,
     "biome_source": {
       "type": "minecraft:fixed",
-      "seed": -2033358636,
-      "biome": "minecraft:plains"
+      "seed": -45769067,
+      "biome": "devin:devin_plains"
     },
     "settings": {
       "name": "minecraft:floating_islands",
@@ -31,7 +31,7 @@
         "size_vertical": 1,
         "simplex_surface_noise": true,
         "random_density_offset": false,
-        "island_noise_override": true,
+        "island_noise_override": false,
         "sampling": {
           "xz_scale": 2,
           "y_scale": 1,
@@ -50,7 +50,13 @@
         }
       },
       "structures": {
-        "structures": {}
+        "structures": {
+          "minecraft:village": {
+            "spacing": 10,
+            "separation": 5,
+            "salt": 0
+          }
+        }
       }
     }
   }
