@@ -1,4 +1,5 @@
 // 🦀 CRAB IN THE CODE 🦀
+// live laugh taze
 
 package dev.hiitsdevin.devinsuselessmod;
 
@@ -20,33 +21,25 @@ import net.minecraft.util.registry.Registry;
 
 public class Devinsuselessmod implements ModInitializer {
 
-    //TODO:
-    // - Add a custom biome consistent of the prototype texture blocks - Work in Progress ✅
-    // - Figure out how to make fence and wall textures
-    // - Figure out custom building generation
-    // - Learn how to make commands
-    // - Learn how to make a GUI
-    // - Make some sort of a new "chest" like thing
-
-    // FIXME: Fix Cjab's creeper.properties random entities file - Done ✅
-
     String PrototypePastelVersion = "Devin's Useless Mod - Development Build v0.1.0";
     String PrototypePastelDistribution = "If this build isn't public, and you got it from Devin, please do not redistribute!";
-    int yOffset = 5; //to be used soon for text render
 
     @Override
     public void onInitialize() {
 
+        // renders version text [pls try to keep this to dev environment, comment this out if you're using in production/release. thank you ♥
         HudRenderCallback.EVENT.register((matrices, delta) -> {
             MinecraftClient.getInstance().textRenderer
                     .drawWithShadow(matrices, PrototypePastelVersion, 1, 1, 0xFFFFFFFF);
         });
 
+        // renders Distribution text
         HudRenderCallback.EVENT.register((matrices, delta) -> {
             MinecraftClient.getInstance().textRenderer
                     .drawWithShadow(matrices, PrototypePastelDistribution, 1, 11, 0xFFFFFFFF);
         });
 
+        // registers portal ability, probably more blocks soon, idk.
         CustomPortalApiRegistry.addPortal(Blocks.BLACK, new Identifier("devin", "devin"), 63, 63, 63);
         CustomPortalApiRegistry.addPortal(Blocks.RED, new Identifier("devin", "devin"), 253,174,187);
 
