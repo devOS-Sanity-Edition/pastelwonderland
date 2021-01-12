@@ -1,0 +1,47 @@
+{
+    "type": "minecraft:decorated",
+    "config": {
+      "decorator": {
+        "type": "minecraft:count",
+        "config": {
+          "count": 4
+        }
+      },
+      "feature": {
+        "type": "minecraft:tree",
+        "config": {
+          "max_water_depth": 0,
+          "ignore_vines": true,
+          "heightmap": "WORLD_SURFACE_WG",
+          "minimum_size": {
+            "type": "minecraft:two_layers_feature_size"
+          },
+          "trunk_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "devin:orange"
+            }
+          },
+          "leaves_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "devin:yellow"
+            }
+          },
+          "trunk_placer": {
+            "type": "minecraft:fancy_trunk_placer",
+            "base_height": 5,
+            "height_rand_a": 2,
+            "height_rand_b": 0
+          },
+          "foliage_placer": {
+            "type": "minecraft:fancy_foliage_placer",
+            "radius": 2,
+            "offset": 0,
+            "height": 3
+          },
+          "decorators": []
+        }
+      }
+    }
+  }

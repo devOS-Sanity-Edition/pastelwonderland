@@ -18,5 +18,9 @@
     "spawners": {},
     "spawn_costs": {},
     "carvers": {},
-    "features": []
+    "features": [
+      [
+        "devin:devin_trees"
+      ]
+    ]
   }
