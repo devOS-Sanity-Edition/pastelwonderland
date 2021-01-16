@@ -1,5 +1,6 @@
 // 🦀 CRAB IN THE CODE 🦀
 // live laugh taze
+// wait why do i hear a taser coming towards me-
 
 package dev.hiitsdevin.devinsuselessmod;
 
@@ -21,31 +22,17 @@ import net.minecraft.util.registry.Registry;
 
 public class Devinsuselessmod implements ModInitializer {
 
-    String PrototypePastelVersion = "Devin's Useless Mod - Development Build v0.1.0";
-    String PrototypePastelDistribution = "If this build isn't public, and you got it from Devin, please do not redistribute!";
+    // for the text render. be sure to comment out both HudRenderCallsbacks when you're not in a dev env.
+    public static final String PrototypePastelVersion = "Devin's Useless Mod - Development Build v0.0.1";
+    public static final String PrototypePastelDistribution = "If this build isn't public, and you got it from Devin, please do not redistribute!";
 
     @Override
     public void onInitialize() {
-
-        // renders version text [pls try to keep this to dev environment, comment this out if you're using in production/release. thank you ♥
-        HudRenderCallback.EVENT.register((matrices, delta) -> {
-            MinecraftClient.getInstance().textRenderer
-                    .drawWithShadow(matrices, PrototypePastelVersion, 1, 1, 0xFFFFFFFF);
-        });
-
-        // renders Distribution text
-        HudRenderCallback.EVENT.register((matrices, delta) -> {
-            MinecraftClient.getInstance().textRenderer
-                    .drawWithShadow(matrices, PrototypePastelDistribution, 1, 11, 0xFFFFFFFF);
-        });
-
-        // registers portal ability, probably more blocks soon, idk.
-        CustomPortalApiRegistry.addPortal(Blocks.BLACK, new Identifier("devin", "devin"), 63, 63, 63);
-        CustomPortalApiRegistry.addPortal(Blocks.RED, new Identifier("devin", "devin"), 253,174,187);
-
         // modularity who
         // each separate class for organizational reasons, this is great
-        Items.init();
         Blocks.init();
+        DevDisclaimer.init();
+        Items.init();
+        Portals.init();
     }
 }

@@ -14,13 +14,14 @@ repositories {
     maven {
         url "https://dl.bintray.com/kyrptonaught/customportalapi"
     }
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     // Custom Portal API
-    modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta20-1.16'
-    include 'net.kyrptonaught:customportalapi:0.0.1-beta20-1.16'
-
+    modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta18-1.16'
+    include 'net.kyrptonaught:customportalapi:0.0.1-beta18-1.16'
+    modImplementation 'com.github.Chocohead:OptiFabric:llama-SNAPSHOT'
     //to change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
