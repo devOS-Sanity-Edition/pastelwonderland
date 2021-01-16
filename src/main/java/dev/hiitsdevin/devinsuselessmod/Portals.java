@@ -1,6 +1,5 @@
 package dev.hiitsdevin.devinsuselessmod;
 
-import net.fabricmc.api.ModInitializer;
 import net.kyrptonaught.customportalapi.CustomPortalApiRegistry;
 import net.minecraft.util.Identifier;
 
