@@ -4,21 +4,8 @@
 
 package dev.hiitsdevin.devinsuselessmod;
 
-import com.mojang.blaze3d.platform.GlStateManager;
-import dev.hiitsdevin.devinsuselessmod.client.DevinsuselessmodClient;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.kyrptonaught.customportalapi.CustomPortalApiRegistry;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+
 
 public class Devinsuselessmod implements ModInitializer {
 
