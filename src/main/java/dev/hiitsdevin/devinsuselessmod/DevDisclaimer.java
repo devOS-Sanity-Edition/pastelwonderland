@@ -8,7 +8,7 @@ public class DevDisclaimer {
         // renders version text [pls try to keep this to dev environment, comment this out if you're using in production/release. thank you ♥
         HudRenderCallback.EVENT.register((matrices, delta) -> { // i literally have no idea what a matrices and why delta is here but fuck it whatever
             MinecraftClient.getInstance().textRenderer
-                    .drawWithShadow(matrices, Devinsuselessmod.PrototypePastelVersion, 1, 1, 0xFFFFFFFF); //this literally doesnt work if it's not 8 fucking characters, even tho typical hex codes are 6. *screaming*
+                    .drawWithShadow(matrices, Devinsuselessmod.PrototypePastelVersion, 1, 1, 0xFFFFFFFF); // shoot me where it hurts most please.
         });
 
         // renders Distribution text

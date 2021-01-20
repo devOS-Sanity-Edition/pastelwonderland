@@ -5,5 +5,10 @@
     // - Learn how to make commands
     // - Learn how to make a GUI
     // - Make some sort of a new "chest" like thing
+    // - Figure out Custom trees
+    // - Figure out Food items
+    // - Figure out new pastel textures
+    // - Making a wooden variant of blocks
+    // - If a new varient of TNT is made, make it so if it's soved in any type of a Furnace, it explodes and kills your instantly//
 
     // FIXME: Fix Cjab's creeper.properties random entities file - Done ✅
