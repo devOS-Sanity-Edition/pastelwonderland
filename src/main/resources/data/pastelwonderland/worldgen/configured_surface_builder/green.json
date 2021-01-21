@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:default",
+  "config": {
+    "top_material": {
+      "Name": "pastelwonderland:green",
+      "Properties": {
+        "snowy": "true"
+      }
+    },
+    "under_material": {
+      "Name": "pastelwonderland:orange"
+    },
+    "underwater_material": {
+      "Name": "pastelwonderland:gray"
+    }
+  }
+}

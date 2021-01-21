@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "devinsuselessmod",
+  "id": "pastelwonderland",
   "version": "${version}",
-  "name": "Devins Useless Mod",
+  "name": "Pastel Wonderland",
   "description": "Just a useless mod adding things, while trying to learn Fabric",
   "authors": [
     "HiItsDevin_"
@@ -12,18 +12,15 @@
     "repo": "https://git.hiitsdevin.dev/HiItsDevin_/DevinsUselessMod"
   },
   "license": "MIT",
-  "icon": "assets/devinsuselessmod/icon.png",
+  "icon": "assets/pastelwonderland/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "dev.hiitsdevin.devinsuselessmod.client.DevinsuselessmodClient"
-    ],
     "main": [
-      "dev.hiitsdevin.devinsuselessmod.Devinsuselessmod"
+      "dev.hiitsdevin.pastelwonderland.PastelWonderland"
     ]
   },
   "mixins": [
-    "devinsuselessmod.mixins.json"
+    "pastelwonderland.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.10.8",
