@@ -1,0 +1,13 @@
+{
+  "block.pastelwonderland.red": "Red",
+  "block.pastelwonderland.orange": "Orange",
+  "block.pastelwonderland.yellow": "Yellow",
+  "block.pastelwonderland.green": "Green",
+  "block.pastelwonderland.blue": "Blue",
+  "block.pastelwonderland.purple": "Purple",
+  "block.pastelwonderland.magenta": "Magenta",
+  "block.pastelwonderland.gray": "Gray",
+  "block.pastelwonderland.black": "Black",
+
+  "itemGroup.pastelwonderland.group": "Pastel Wonderland"
+}
