@@ -18,9 +18,5 @@ public class Portals {
 
         // just for the hell of it.
         CustomPortalApiRegistry.addPortal(net.minecraft.block.Blocks.CRYING_OBSIDIAN, new Identifier("minecraft", "the_nether"), 83,45,182);
-
-        // tested to see if this worked..
-        // spoiler alert: it did. 🎉
-        CustomPortalApiRegistry.addPortal(Blocks.MICHAEL_REEVES, new Identifier("devin", "devin"), 255,255,255);
     }
 }
