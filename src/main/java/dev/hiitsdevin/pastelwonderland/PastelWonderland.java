@@ -15,7 +15,7 @@ public class PastelWonderland implements ModInitializer {
     public static final String MOD_ID = "pastelwonderland";
 
     @Override
-    public void onInitialize() {
+    public final void onInitialize() {
         // modularity who
         // each separate class for organizational reasons, this is great
         Blocks.init();
