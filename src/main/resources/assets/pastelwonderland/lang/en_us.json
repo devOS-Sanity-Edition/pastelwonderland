@@ -8,6 +8,9 @@
   "block.pastelwonderland.magenta": "Magenta",
   "block.pastelwonderland.gray": "Gray",
   "block.pastelwonderland.black": "Black",
+  "block.pastelwonderland.brown": "Brown",
+  "block.pastelwonderland.dirt": "Dirt",
+  "block.pastelwonderland.grass": "Grass",
 
   "itemGroup.pastelwonderland.group": "Pastel Wonderland"
 }

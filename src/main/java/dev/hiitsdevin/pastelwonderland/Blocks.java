@@ -4,6 +4,7 @@ package dev.hiitsdevin.pastelwonderland;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.GrassBlock;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -22,6 +23,12 @@ public class Blocks {
     public static final Block MAGENTA = register("magenta", new Block(FabricBlockSettings.copy(MAGENTA_CONCRETE)));
     public static final Block GRAY = register("gray", new Block(FabricBlockSettings.copy(GRAY_CONCRETE)));
     public static final Block BLACK = register("black", new Block(FabricBlockSettings.copy(BLACK_CONCRETE)));
+    public static final Block BROWN = register("brown", new Block(FabricBlockSettings.copy(BROWN_CONCRETE)));
+    public static final Block DIRT = register("dirt", new Block(FabricBlockSettings.copy(COARSE_DIRT)));
+    public static final Block GRASS = register("grass", new GrassBlock(FabricBlockSettings.copy(GRASS_BLOCK)));
+    public static final Block STONE = register("stone", new Block(FabricBlockSettings.copy(net.minecraft.block.Blocks.STONE)));
+    public static final Block PASTEL = register("pastel", new Block(FabricBlockSettings.copy(IRON_ORE)));
+
 
     private static Block register(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(MOD_ID, name), block);
