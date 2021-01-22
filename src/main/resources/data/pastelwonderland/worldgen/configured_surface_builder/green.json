@@ -2,16 +2,16 @@
   "type": "minecraft:default",
   "config": {
     "top_material": {
-      "Name": "pastelwonderland:green",
+      "Name": "pastelwonderland:grass",
       "Properties": {
         "snowy": "true"
       }
     },
     "under_material": {
-      "Name": "pastelwonderland:orange"
+      "Name": "pastelwonderland:dirt"
     },
     "underwater_material": {
-      "Name": "pastelwonderland:gray"
+      "Name": "pastelwonderland:stone"
     }
   }
 }

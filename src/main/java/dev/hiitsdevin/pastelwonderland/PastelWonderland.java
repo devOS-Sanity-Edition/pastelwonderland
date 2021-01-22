@@ -22,5 +22,6 @@ public class PastelWonderland implements ModInitializer {
         DevDisclaimer.init();
         Items.init();
         Portals.init();
+        OreGen.init();
     }
 }

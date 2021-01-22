@@ -54,7 +54,7 @@
       "sea_level": 0,
       "disable_mob_generation": false,
       "default_block": {
-        "Name": "pastelwonderland:gray"
+        "Name": "pastelwonderland:stone"
       },
       "default_fluid": {
         "Name": "minecraft:water",

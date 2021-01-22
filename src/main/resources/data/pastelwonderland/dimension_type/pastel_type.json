@@ -7,7 +7,7 @@
     "has_raids": true,
     "has_skylight": true,
     "has_ceiling": false,
-    "coordinate_scale": 4,
+    "coordinate_scale": 2,
     "ambient_light": 1,
     "logical_height": 256,
     "effects": "minecraft:overworld",
