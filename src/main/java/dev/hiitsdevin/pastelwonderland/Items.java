@@ -52,8 +52,6 @@ public class Items {
         return Registry.register(Registry.ITEM, new Identifier(MOD_ID, name), new BlockItem(block, itemSettings()));
     }
 
-    // registered into the ItemGroup
-    // this is  c l e a n  and i thank lizzy so much uwu
     public static void init() {
 
 
