@@ -3,8 +3,6 @@
 // wait why do i hear a taser coming towards me-
 
 package dev.hiitsdevin.pastelwonderland;
-
-import dev.hiitsdevin.pastelwonderland.world.features.PastelConfigFeatures;
 import net.fabricmc.api.ModInitializer;
 
 
@@ -23,6 +21,5 @@ public class PastelWonderland implements ModInitializer {
         DevDisclaimer.init();
         Items.init();
         Portals.init();
-        PastelConfigFeatures.registerFeatures();
     }
 }
