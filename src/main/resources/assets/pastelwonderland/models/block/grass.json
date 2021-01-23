@@ -1,10 +1,10 @@
 {
   "parent": "block/block",
   "textures": {
-    "side": "pastelwonderland:block/grass",
+    "side": "pastelwonderland:block/grass_block_side",
     "particle": "pastelwonderland:block/dirt",
     "bottom": "pastelwonderland:block/dirt",
-    "top": "pastelwonderland:block/green"
+    "top": "pastelwonderland:block/grass_block"
   },
   "elements": [
     {   "from": [ 0, 0, 0 ],

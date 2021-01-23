@@ -31,6 +31,7 @@ public class Blocks {
     public static final Block GRASS = register("grass", new grass(FabricBlockSettings.of(Material.SOLID_ORGANIC).sounds(BlockSoundGroup.GRAVEL).strength(0.2f).ticksRandomly().breakByTool(FabricToolTags.SHOVELS)));
     public static final Block STONE = register("stone", new Block(FabricBlockSettings.copy(net.minecraft.block.Blocks.STONE)));
     public static final Block PASTEL = register("pastel", new Block(FabricBlockSettings.copy(IRON_ORE)));
+    public static final Block SAND = register("sand", new Block(FabricBlockSettings.copy(net.minecraft.block.Blocks.SAND)));
 
 
     private static Block register(String name, Block block) {

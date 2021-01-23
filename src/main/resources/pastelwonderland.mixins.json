@@ -6,7 +6,8 @@
   "mixins": [
     "CapeFeatureRendererMixin",
     "ExperimentalWorldGenScreenDisabler",
-    "PlantBlockMixin"
+    "PlantBlockMixin",
+    "isSoil"
   ],
   "client": [
   ],
