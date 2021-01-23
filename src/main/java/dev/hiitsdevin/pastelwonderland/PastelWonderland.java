@@ -4,6 +4,7 @@
 
 package dev.hiitsdevin.pastelwonderland;
 
+import dev.hiitsdevin.pastelwonderland.world.features.PastelConfigFeatures;
 import net.fabricmc.api.ModInitializer;
 
 
@@ -16,12 +17,12 @@ public class PastelWonderland implements ModInitializer {
 
     @Override
     public final void onInitialize() {
-        // modularity who
+        // modularity who, me bitch
         // each separate class for organizational reasons, this is great
         Blocks.init();
         DevDisclaimer.init();
         Items.init();
         Portals.init();
-        //OreGen.init();
+        PastelConfigFeatures.registerFeatures();
     }
 }

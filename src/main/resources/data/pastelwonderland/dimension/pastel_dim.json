@@ -75,7 +75,7 @@
           "xz_scale": 1,
           "y_scale": 4,
           "xz_factor": 20,
-          "y_factor": 120
+          "y_factor": 80
         },
         "bottom_slide": {
           "target": -30,

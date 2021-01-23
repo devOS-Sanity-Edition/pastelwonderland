@@ -2,9 +2,9 @@
   "type": "minecraft:default",
   "config": {
     "top_material": {
-      "Name": "pastelwonderland:grass",
+      "Name": "minecraft:grass_block",
       "Properties": {
-        "snowy": "true"
+        "snowy": "false"
       }
     },
     "under_material": {

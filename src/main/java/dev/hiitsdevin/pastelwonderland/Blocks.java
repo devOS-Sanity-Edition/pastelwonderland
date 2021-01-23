@@ -2,9 +2,12 @@
 
 package dev.hiitsdevin.pastelwonderland;
 
+import dev.hiitsdevin.pastelwonderland.grassStuff.grass;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
-import net.minecraft.block.GrassBlock;
+import net.minecraft.block.Material;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -24,8 +27,8 @@ public class Blocks {
     public static final Block GRAY = register("gray", new Block(FabricBlockSettings.copy(GRAY_CONCRETE)));
     public static final Block BLACK = register("black", new Block(FabricBlockSettings.copy(BLACK_CONCRETE)));
     public static final Block BROWN = register("brown", new Block(FabricBlockSettings.copy(BROWN_CONCRETE)));
-    public static final Block DIRT = register("dirt", new Block(FabricBlockSettings.copy(COARSE_DIRT)));
-    public static final Block GRASS = register("grass", new GrassBlock(FabricBlockSettings.copy(GRASS_BLOCK)));
+    public static final Block DIRT = register("dirt", new Block(FabricBlockSettings.copy(net.minecraft.block.Blocks.DIRT)));
+    public static final Block GRASS = register("grass", new grass(FabricBlockSettings.of(Material.SOLID_ORGANIC).sounds(BlockSoundGroup.GRAVEL).strength(0.2f).ticksRandomly().breakByTool(FabricToolTags.SHOVELS)));
     public static final Block STONE = register("stone", new Block(FabricBlockSettings.copy(net.minecraft.block.Blocks.STONE)));
     public static final Block PASTEL = register("pastel", new Block(FabricBlockSettings.copy(IRON_ORE)));
 
@@ -35,7 +38,6 @@ public class Blocks {
     }
 
     public static void init() {
-
     }
 
 }

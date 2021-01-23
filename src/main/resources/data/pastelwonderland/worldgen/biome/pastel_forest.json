@@ -117,24 +117,21 @@
       "minecraft:lake_water",
       "minecraft:lake_lava"
     ],
-    [],
+    [
+
+    ],
     [
       "minecraft:monster_room"
     ],
     [],
     [],
-    [
-      "pastelwonderland:pastel_ore"
-    ],
     [],
     [
-      "minecraft:forest_flower_vegetation",
-      "pastelwonderland:pastel_trees",
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
     ],
     [
-      "minecraft:freeze_top_layer"
+    ],
+    [
+      "pastelwonderland:random_trees"
     ]
   ]
 }

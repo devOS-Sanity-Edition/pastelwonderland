@@ -11,6 +11,8 @@
   "block.pastelwonderland.brown": "Brown",
   "block.pastelwonderland.dirt": "Dirt",
   "block.pastelwonderland.grass": "Grass",
+  "block.pastelwonderland.stone": "Stone",
+  "block.pastelwonderland.pastel": "Pastel Ore",
 
   "itemGroup.pastelwonderland.group": "Pastel Wonderland"
 }
