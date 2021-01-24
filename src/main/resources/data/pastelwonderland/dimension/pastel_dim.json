@@ -6,6 +6,18 @@
     "biome_source": {
       "type": "minecraft:multi_noise",
       "seed": -5835445867,
+      "biomes": [
+        {
+          "biome": "pastelwonderland:pastel_forest",
+          "parameters": {
+            "altitude": 0,
+            "temperature": 0,
+            "humidity": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        }
+      ],
       "altitude_noise": {
         "firstOctave": -7,
         "amplitudes": [
@@ -33,19 +45,7 @@
           1,
           1
         ]
-      },
-      "biomes": [
-        {
-          "biome": "pastelwonderland:pastel_forest",
-          "parameters": {
-            "altitude": 0,
-            "temperature": 0,
-            "humidity": 0,
-            "weirdness": 0,
-            "offset": 0
-          }
-        }
-      ]
+      }
     },
     "settings": {
       "name": "minecraft:floating_islands",

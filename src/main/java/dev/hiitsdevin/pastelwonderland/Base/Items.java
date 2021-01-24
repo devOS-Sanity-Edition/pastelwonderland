@@ -42,6 +42,13 @@ public class Items {
     public static final Item GRASS = register("grass", Blocks.GRASS);
     public static final Item STONE = register("stone", Blocks.STONE);
     public static final Item PASTEL = register("pastel", Blocks.PASTEL);
+    public static final Item SAND = register("sand", Blocks.SAND);
+
+    //TreesStuff
+    public static final Item BLUE_LEAF = register("blue_leaves", Blocks.BLUE_LEAF);
+    public static final Item RED_LEAF = register("red_leaves", Blocks.RED_LEAF);
+    public static final Item GREEN_LEAF = register("green_leaves", Blocks.GREEN_LEAF);
+    public static final Item YELLOW_LEAF = register("yellow_leaves", Blocks.YELLOW_LEAF);
 
 
     //registered so i guess i can do /give @p pastelwonderland:colorhere bc fuck you too ig

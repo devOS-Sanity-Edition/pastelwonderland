@@ -6,6 +6,7 @@ import dev.hiitsdevin.pastelwonderland.GrassStuff.Grass;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
+import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.Material;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
@@ -32,6 +33,12 @@ public class Blocks {
     public static final Block STONE = register("stone", new Block(FabricBlockSettings.copy(net.minecraft.block.Blocks.STONE)));
     public static final Block PASTEL = register("pastel", new Block(FabricBlockSettings.copy(IRON_ORE)));
     public static final Block SAND = register("sand", new Block(FabricBlockSettings.copy(net.minecraft.block.Blocks.SAND)));
+
+    //Tree Stuff
+    public static final Block BLUE_LEAF = register("blue_leaves", new LeavesBlock(FabricBlockSettings.copy(OAK_LEAVES)));
+    public static final Block RED_LEAF = register("red_leaves", new LeavesBlock(FabricBlockSettings.copy(OAK_LEAVES)));
+    public static final Block YELLOW_LEAF = register("yellow_leaves", new LeavesBlock(FabricBlockSettings.copy(OAK_LEAVES)));
+    public static final Block GREEN_LEAF = register("green_leaves", new LeavesBlock(FabricBlockSettings.copy(OAK_LEAVES)));
 
 
     private static Block register(String name, Block block) {
