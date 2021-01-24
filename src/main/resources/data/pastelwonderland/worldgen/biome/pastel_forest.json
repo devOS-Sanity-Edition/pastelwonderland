@@ -8,18 +8,12 @@
   "category": "forest",
   "player_spawn_friendly": false,
   "effects": {
-    "sky_color": 572893,
-    "fog_color": 9096682,
-    "water_color": 1209461,
-    "water_fog_color": 537653,
-    "grass_color": 3182336,
-    "foliage_color": 2254336,
-    "mood_sound": {
-      "sound": "minecraft:ambient.cave",
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2
-    }
+    "sky_color": 16760678,
+    "fog_color": 16760678,
+    "water_color": 5222894,
+    "water_fog_color": 2770307,
+    "grass_color": 1692367,
+    "foliage_color": 10704114
   },
   "starts": [],
   "spawners": {
