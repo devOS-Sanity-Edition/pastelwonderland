@@ -15,6 +15,9 @@
   "icon": "assets/pastelwonderland/icon.png",
   "environment": "*",
   "entrypoints": {
+    "client": [
+      "dev.hiitsdevin.pastelwonderland.Client.PastelWonderlandClient"
+    ],
     "main": [
       "dev.hiitsdevin.pastelwonderland.PastelWonderland"
     ]
