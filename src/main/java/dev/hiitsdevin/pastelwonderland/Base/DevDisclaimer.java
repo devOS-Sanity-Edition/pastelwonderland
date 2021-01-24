@@ -1,5 +1,6 @@
-package dev.hiitsdevin.pastelwonderland;
+package dev.hiitsdevin.pastelwonderland.Base;
 
+import dev.hiitsdevin.pastelwonderland.PastelWonderland;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
 

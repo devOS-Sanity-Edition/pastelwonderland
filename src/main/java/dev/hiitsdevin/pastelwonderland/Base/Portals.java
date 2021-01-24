@@ -1,4 +1,4 @@
-package dev.hiitsdevin.pastelwonderland;
+package dev.hiitsdevin.pastelwonderland.Base;
 
 import net.kyrptonaught.customportalapi.CustomPortalApiRegistry;
 import net.minecraft.util.Identifier;

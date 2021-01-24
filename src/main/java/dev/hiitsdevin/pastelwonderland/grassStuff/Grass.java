@@ -14,9 +14,9 @@ import net.minecraft.world.gen.feature.RandomPatchFeatureConfig;
 import java.util.List;
 import java.util.Random;
 
-public class grass extends grass_spreasd implements Fertilizable {
+public class Grass extends GrassSpread implements Fertilizable {
 
-    public grass(Settings settings) {
+    public Grass(Settings settings) {
         super(settings);
     }
 

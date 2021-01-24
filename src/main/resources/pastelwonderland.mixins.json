@@ -7,7 +7,7 @@
     "CapeFeatureRendererMixin",
     "ExperimentalWorldGenScreenDisabler",
     "PlantBlockMixin",
-    "isSoil"
+    "IsSoilMixin"
   ],
   "client": [
   ],

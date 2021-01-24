@@ -13,8 +13,8 @@ import net.minecraft.world.chunk.light.ChunkLightProvider;
 
 import java.util.Random;
 
-public class grass_spreasd extends SnowyBlock {
-    protected grass_spreasd(Settings settings) {
+public class GrassSpread extends SnowyBlock {
+    protected GrassSpread(Settings settings) {
         super(settings);
     }
     private static boolean canSurvive(BlockState state, WorldView worldView, BlockPos pos) {
@@ -37,14 +37,14 @@ public class grass_spreasd extends SnowyBlock {
 
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         if (!canSurvive(state, world, pos)) {
-            world.setBlockState(pos, dev.hiitsdevin.pastelwonderland.Blocks.DIRT.getDefaultState());
+            world.setBlockState(pos, dev.hiitsdevin.pastelwonderland.Base.Blocks.DIRT.getDefaultState());
         } else {
             if (world.getLightLevel(pos.up()) >= 9) {
                 BlockState blockState = this.getDefaultState();
 
                 for (int i = 0; i < 4; ++i) {
                     BlockPos blockPos = pos.add(random.nextInt(3) - 1, random.nextInt(5) - 3, random.nextInt(3) - 1);
-                    if (world.getBlockState(blockPos).isOf(dev.hiitsdevin.pastelwonderland.Blocks.DIRT) && canSpread(blockState, world, blockPos))
+                    if (world.getBlockState(blockPos).isOf(dev.hiitsdevin.pastelwonderland.Base.Blocks.DIRT) && canSpread(blockState, world, blockPos))
                         world.setBlockState(blockPos, blockState.with(SNOWY, world.getBlockState(blockPos.up()).isOf(Blocks.SNOW)));
                 }
             }

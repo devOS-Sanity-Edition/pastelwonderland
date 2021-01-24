@@ -1,6 +1,6 @@
 // 🦀 CRAB IN THE CODE 🦀
 
-package dev.hiitsdevin.pastelwonderland;
+package dev.hiitsdevin.pastelwonderland.Base;
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.block.Block;
