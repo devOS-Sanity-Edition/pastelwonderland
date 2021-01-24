@@ -1,4 +1,4 @@
-package dev.hiitsdevin.pastelwonderland.grassStuff;
+package dev.hiitsdevin.pastelwonderland.GrassStuff;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;

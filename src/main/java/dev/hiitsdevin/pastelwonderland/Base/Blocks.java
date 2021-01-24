@@ -2,7 +2,7 @@
 
 package dev.hiitsdevin.pastelwonderland.Base;
 
-import dev.hiitsdevin.pastelwonderland.grassStuff.Grass;
+import dev.hiitsdevin.pastelwonderland.GrassStuff.Grass;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
