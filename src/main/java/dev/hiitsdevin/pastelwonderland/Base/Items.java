@@ -52,6 +52,7 @@ public class Items {
     public static final Item RED_LEAF = register("red_leaves", Blocks.RED_LEAF);
     public static final Item GREEN_LEAF = register("green_leaves", Blocks.GREEN_LEAF);
     public static final Item YELLOW_LEAF = register("yellow_leaves", Blocks.YELLOW_LEAF);
+    public static final Item LOG = register("log", Blocks.LOG);
 
     //glowy mcfuck
     public static final Item RED_PASTEL_GLOWSTONE = register("red_pastel_glowstone", Blocks.RED_PASTEL_GLOWSTONE);
