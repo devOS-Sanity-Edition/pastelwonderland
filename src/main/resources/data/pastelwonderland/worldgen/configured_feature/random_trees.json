@@ -40,6 +40,10 @@
               {
                 "chance": 0.5,
                 "feature": "pastelwonderland:blue_trees_small"
+              },
+              {
+                "chance": 0.05,
+                "feature": "pastelwonderland:red_pastel_glowstone_tree"
               }
             ],
             "default": "pastelwonderland:yellow_trees"

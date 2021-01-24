@@ -28,18 +28,23 @@ public class Blocks {
     public static final Block GRAY = register("gray", new Block(FabricBlockSettings.copy(GRAY_CONCRETE)));
     public static final Block BLACK = register("black", new Block(FabricBlockSettings.copy(BLACK_CONCRETE)));
     public static final Block BROWN = register("brown", new Block(FabricBlockSettings.copy(BROWN_CONCRETE)));
+    public static final Block WHITE = register("white", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
+
+    //Terrain
     public static final Block DIRT = register("dirt", new Block(FabricBlockSettings.copy(net.minecraft.block.Blocks.DIRT)));
     public static final Block GRASS = register("grass", new Grass(FabricBlockSettings.copy(GRASS_BLOCK)));
     public static final Block STONE = register("stone", new Block(FabricBlockSettings.copy(net.minecraft.block.Blocks.STONE)));
-    public static final Block PASTEL = register("pastel", new Block(FabricBlockSettings.copy(IRON_ORE)));
+    public static final Block PASTEL_ORE = register("pastel_ore", new Block(FabricBlockSettings.copy(IRON_ORE)));
     public static final Block SAND = register("sand", new Block(FabricBlockSettings.copy(net.minecraft.block.Blocks.SAND)));
 
-    //Tree Stuff
+    //Tree
     public static final Block BLUE_LEAF = register("blue_leaves", new LeavesBlock(FabricBlockSettings.copy(OAK_LEAVES)));
     public static final Block RED_LEAF = register("red_leaves", new LeavesBlock(FabricBlockSettings.copy(OAK_LEAVES)));
     public static final Block YELLOW_LEAF = register("yellow_leaves", new LeavesBlock(FabricBlockSettings.copy(OAK_LEAVES)));
     public static final Block GREEN_LEAF = register("green_leaves", new LeavesBlock(FabricBlockSettings.copy(OAK_LEAVES)));
 
+    //glowy mcfuck
+    public static final Block RED_PASTEL_GLOWSTONE = register("red_pastel_glowstone", new Block(FabricBlockSettings.copy(GLOWSTONE).luminance((state) -> { return 15; })));
 
     private static Block register(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(MOD_ID, name), block);
