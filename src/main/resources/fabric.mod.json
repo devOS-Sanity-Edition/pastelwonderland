@@ -3,13 +3,13 @@
   "id": "pastelwonderland",
   "version": "${version}",
   "name": "Pastel Wonderland",
-  "description": "Just a useless mod adding things, while trying to learn Fabric",
+  "description": "A colorful dimensions mod... with more death.",
   "authors": [
     "HiItsDevin_"
   ],
   "contact": {
     "website": "https://hiitsdevin.dev",
-    "repo": "https://git.hiitsdevin.dev/HiItsDevin_/DevinsUselessMod"
+    "repo": "https://github.com/devOS-Sanity-Edition/PastelWonderland"
   },
   "license": "MIT",
   "icon": "assets/pastelwonderland/icon.png",
@@ -28,6 +28,6 @@
   "depends": {
     "fabricloader": ">=0.10.8",
     "fabric": "*",
-    "minecraft": "1.16.4"
+    "minecraft": ">=1.16.4"
   }
 }

@@ -11,6 +11,7 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
+import net.minecraft.entity.ai.brain.Activity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -28,6 +29,8 @@ public class PastelWonderland implements ModInitializer {
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, MallardEntity::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build()
     );
 
+    public static final Activity EXIST = Activity.register("exist");
+
     @Override
     public final void onInitialize() {
         // modularity who, me bitch
@@ -36,7 +39,6 @@ public class PastelWonderland implements ModInitializer {
         DevDisclaimer.init();
         Items.init();
         Portals.init();
-        Mobs.init();
 
         FabricDefaultAttributeRegistry.register(MALLARD, MallardEntity.createMobAttributes());
     }
