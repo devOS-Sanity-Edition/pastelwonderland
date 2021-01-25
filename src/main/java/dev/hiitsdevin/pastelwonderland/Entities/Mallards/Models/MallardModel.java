@@ -83,12 +83,12 @@ public class MallardModel extends EntityModel<MallardEntity> {
 
         left_leg = new ModelPart(this);
         left_leg.setPivot(0.0F, 21.0F, 1.0F);
-        setRotationAngle(left_leg, 1.309F, 0.0F, 0.0F);
+        setRotationAngle(left_leg, -0.0436F, 0.0F, 0.0F);
         left_leg.setTextureOffset(0, 0).addCuboid(0.5F, 0.0F, -1.0F, 1.0F, 3.0F, 1.0F, 0.0F, false);
 
         right_leg = new ModelPart(this);
         right_leg.setPivot(0.0F, 21.0F, 1.0F);
-        setRotationAngle(right_leg, 1.309F, 0.0F, 0.0F);
+        setRotationAngle(right_leg, -0.0436F, 0.0F, 0.0F);
         right_leg.setTextureOffset(0, 0).addCuboid(-1.5F, 0.0F, -1.0F, 1.0F, 3.0F, 1.0F, 0.0F, true);
     }
 
