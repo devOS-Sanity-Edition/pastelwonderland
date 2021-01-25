@@ -11,8 +11,12 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
-    maven { url "https://dl.bintray.com/kyrptonaught/customportalapi" }
+    maven { url 'https://dl.bintray.com/kyrptonaught/customportalapi' }
+
+    maven { url = 'https://raw.githubusercontent.com/Devan-Kerman/Devan-Repo/master/' }
+
     maven { url 'https://jitpack.io' }
+
     jcenter()
 }
 
@@ -38,6 +42,9 @@ dependencies {
     // PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
     // You may need to force-disable transitiveness on them.
     modCompile "me.shedaniel:RoughlyEnoughItems:${rei_version}"
+
+    // ARRP [aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]
+    modImplementation group: 'net.devtech', name: 'arrp', version: '0.3.4'
 }
 
 processResources {
