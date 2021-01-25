@@ -29,7 +29,7 @@ public class PastelWonderland implements ModInitializer {
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, MallardEntity::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build()
     );
 
-    public static final Activity EXIST = Activity.register("exist");
+    //public static final Activity EXIST = Activity.register("exist");
 
     @Override
     public final void onInitialize() {
