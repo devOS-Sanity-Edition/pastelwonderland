@@ -2,6 +2,7 @@ package dev.hiitsdevin.pastelwonderland.Base;
 
 import dev.hiitsdevin.pastelwonderland.PastelWonderland;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.util.Identifier;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -18,12 +19,13 @@ import java.util.Objects;
 public class Capes {
     // is it dumb cape stuff time? it is dumb cape stuff time.
     private static final FileFilter fileFilter = file -> file.getName().endsWith(".png");
+    // This goes to the folder in "/run/"
     public static final Path mainDir = Paths.get(PastelWonderland.MOD_ID);
 
 
     public static File[] grabAllCapeTextures() {
-
-        return Objects.requireNonNull(PastelWonderland.mainDir.toFile().listFiles(fileFilter));
+            final File[] files = Objects.requireNonNull(mainDir.toFile().listFiles(fileFilter));
+            return files;
     }
 
     public static void writeDirectories() {

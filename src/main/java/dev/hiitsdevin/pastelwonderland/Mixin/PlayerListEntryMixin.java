@@ -21,6 +21,8 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Map;
 import java.util.logging.Logger;
 
@@ -45,11 +47,10 @@ public abstract class PlayerListEntryMixin {
     @Environment(EnvType.CLIENT)
     @Inject(method = "getCapeTexture", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/network/PlayerListEntry;loadTextures()V"))
     public void injectIntoTextures(CallbackInfoReturnable<Identifier> cir) throws IOException {
-        if (PastelWonderland.selectedIdentifier != null) {
+            // This path goes to the textures file "resources/assets/pastelwonderland/"
             Identifier cape = new Identifier(PastelWonderland.MOD_ID, "textures/cape/PastelWonderlandCape.png");
             getTextures().put(MinecraftProfileTexture.Type.CAPE, cape);
-        } else {
-            Logger.getLogger("Grabbing cape texture failed.");
+
+            // This is for error: System.out.println("MCMCapes: Grabbing cape texture failed.");
         }
     }
-}
