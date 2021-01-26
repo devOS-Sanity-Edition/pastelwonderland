@@ -21,10 +21,7 @@ import org.apache.logging.log4j.Logger;
 import javax.imageio.ImageIO;
 import javax.imageio.stream.ImageInputStream;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.FileFilter;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.net.URL;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -52,9 +49,10 @@ public class PastelWonderland implements ModInitializer {
     // This means regardless of what user, everyone loads with the cape. This of course will be changed when I re-write the code.
     // If you want, go ahead and delete the code. But I kept it there for reference.
 
-    //File cape = new File(MOD_ID + "/PastelWonderlandCape.png");
-    //File cape = new File("./resources/assets/pastelwonderland/textures/cape/PastelWonderlandCape.png");
-    //BufferedImage capeImage;
+    File capeFile = new File(MOD_ID + "/cape.png");
+
+    Identifier cape2 = new Identifier(PastelWonderland.MOD_ID, "textures/pastelwonderlandcape.png");
+
 
     // java wanted this otherwise it would make me trip over a knife -devin
     public PastelWonderland() throws IOException {
@@ -70,18 +68,21 @@ public class PastelWonderland implements ModInitializer {
         Portals.init();
         Mobs.init();
         Capes.init();
+        Capes.writeDirectories();
 
         FabricDefaultAttributeRegistry.register(MALLARD, MallardEntity.createMobAttributes());
 
         // oh hi, cape here
-        // try {
-        //     for (File file : Capes.grabAllCapeTextures()) {
-        //         if (file.exists()) {
-        //             capeImage = ImageIO.read(cape);
-        //         }
-        //     }
-        // } catch (Exception e) {
-        //     System.out.println("MCMCapes: " + e);
-        // }
+         try {
+             for (File file : Capes.grabAllCapeTextures()) {
+                 if (file.exists()) {
+                     BufferedImage capeImage = ImageIO.read(capeFile);
+                 } else {
+                     return;
+                 }
+             }
+         } catch (Exception e) {
+             System.out.println("MCMCapes: " + e);
+         }
           }
     }

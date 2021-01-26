@@ -15,16 +15,10 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Map;
-import java.util.logging.Logger;
 
 
 @Mixin(PlayerListEntry.class)
@@ -34,7 +28,7 @@ public abstract class PlayerListEntryMixin {
 
     @Shadow @Nullable public abstract Identifier getCapeTexture();
 
-    File cape = new File("assets/pastelwonderland/textures/cape/PastelWonderlandCape.png");
+    File cape = new File("assets/pastelwonderland/textures/pastelwonderlandcape.png");
     BufferedImage capeImage;
 
 
@@ -48,9 +42,12 @@ public abstract class PlayerListEntryMixin {
     @Inject(method = "getCapeTexture", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/network/PlayerListEntry;loadTextures()V"))
     public void injectIntoTextures(CallbackInfoReturnable<Identifier> cir) throws IOException {
             // This path goes to the textures file "resources/assets/pastelwonderland/"
-            Identifier cape = new Identifier(PastelWonderland.MOD_ID, "textures/cape/PastelWonderlandCape.png");
+        File capeCheck = new File(PastelWonderland.MOD_ID + "/cape.png");
+        if (capeCheck.exists()) {
+            Identifier cape = new Identifier(PastelWonderland.MOD_ID, "textures/pastelwonderlandcape.png");
             getTextures().put(MinecraftProfileTexture.Type.CAPE, cape);
-
-            // This is for error: System.out.println("MCMCapes: Grabbing cape texture failed.");
+        } else {
+            return;
         }
     }
+}
