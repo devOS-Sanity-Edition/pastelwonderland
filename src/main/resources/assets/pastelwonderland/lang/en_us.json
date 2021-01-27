@@ -25,6 +25,19 @@
 
   "block.pastelwonderland.red_pastel_glowstone": "Red Pastel Glowstone",
 
+  "item.pastelwonderland.pastel_boots": "Pastel Boots",
+  "item.pastelwonderland.pastel_leggings": "Pastel Leggings",
+  "item.pastelwonderland.pastel_chestplate": "Pastel Chestplate",
+  "item.pastelwonderland.pastel_helmet": "Pastel Helmet",
+  "item.pastelwonderland.pastel_sword": "Pastel Sword",
+  "item.pastelwonderland.pastel_shovel": "Pastel Shovel",
+  "item.pastelwonderland.pastel_pickaxe": "Pastel Pickaxe",
+  "item.pastelwonderland.pastel_axe": "Pastel Axe",
+  "item.pastelwonderland.pastel_hoe": "Pastel Hoe",
+
+  "item.pastelwonderland.pastel_ingot": "Pastel Ingot",
+  "item.pastelwonderland.pastel_powder": "Pastel Powder",
+
   "itemGroup.pastelwonderland.Blocks": "Pastel Wonderland Blocks",
   "itemGroup.pastelwonderland.ArmourAndTools": "Pastel Wonderland Armour & Tools",
   "itemGroup.pastelwonderland.Misc": "Pastel Wonderland Miscellaneous"
