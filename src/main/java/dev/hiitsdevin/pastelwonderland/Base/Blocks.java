@@ -34,7 +34,7 @@ public class Blocks {
     public static final Block GRASS = register("grass", new Grass(FabricBlockSettings.copy(GRASS_BLOCK)));
     public static final Block STONE = register("stone", new Block(FabricBlockSettings.copy(net.minecraft.block.Blocks.STONE)));
     public static final Block PASTEL_ORE = register("pastel_ore", new Block(FabricBlockSettings.copy(IRON_ORE)));
-    public static final Block SAND = register("sand", new SandBlock( 14269048,FabricBlockSettings.copy(net.minecraft.block.Blocks.SAND)));
+    public static final Block SAND = register("sand", new SandBlock(14269048, FabricBlockSettings.copy(net.minecraft.block.Blocks.SAND)));
 
     //Tree
     public static final Block BLUE_LEAF = register("blue_leaves", BlockInfo.LeavesBlock());
