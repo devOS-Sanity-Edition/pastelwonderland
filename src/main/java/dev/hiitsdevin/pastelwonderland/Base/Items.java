@@ -3,6 +3,7 @@
 package dev.hiitsdevin.pastelwonderland.Base;
 
 import dev.hiitsdevin.pastelwonderland.Base.Organization.ItemGroup;
+import dev.hiitsdevin.pastelwonderland.PastelWonderland;
 import dev.hiitsdevin.pastelwonderland.Tools.PastelArmors;
 import dev.hiitsdevin.pastelwonderland.Tools.PastelAxeItem;
 import dev.hiitsdevin.pastelwonderland.Tools.PastelHoeItem;
@@ -10,6 +11,7 @@ import dev.hiitsdevin.pastelwonderland.Tools.PastelPickItem;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.block.Block;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -52,6 +54,7 @@ public class Items {
     //Actual Items
     public static final Item PASTEL_POWDER = register("pastel_powder", new Item(ItemGroup.pwMisc()));
     public static final Item PASTEL_INGOT = register("pastel_ingot", new Item(ItemGroup.pwMisc()));
+    public static final Item MALLARD_SPAWN_EGG = register("mallard_spawn_egg", new SpawnEggItem(PastelWonderland.MALLARD, 0x297c48, 0xb6a99d, ItemGroup.pwMisc()));
 
     //Tools and Armor
     public static final ArmorMaterial pastelArmor = new PastelArmors();

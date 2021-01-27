@@ -8,7 +8,8 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendereregistry.v1.EntityRendererRegistry;
 
-
+//unused. turned out to be useless bc vanilla was able to render the leaves just fine lol
+//do we want to remove this? maybe. -devin
 @Environment(EnvType.CLIENT)
 public class PastelWonderlandClient implements ClientModInitializer {
     @Override
@@ -17,6 +18,6 @@ public class PastelWonderlandClient implements ClientModInitializer {
             return new MallardRenderer(dispatcher);
         });
 
-        Transparency.init();
+        //Transparency.init();
     }
 }

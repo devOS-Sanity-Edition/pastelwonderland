@@ -28,7 +28,7 @@ dependencies {
         transitive = false
     }
 
-    modImplementation 'com.github.Chocohead:OptiFabric:llama-SNAPSHOT'
+    //modImplementation 'com.github.Chocohead:OptiFabric:llama-SNAPSHOT'
     //to change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"

@@ -38,7 +38,7 @@
   "item.pastelwonderland.pastel_ingot": "Pastel Ingot",
   "item.pastelwonderland.pastel_powder": "Pastel Powder",
 
-  "itemGroup.pastelwonderland.Blocks": "Pastel Wonderland Blocks",
-  "itemGroup.pastelwonderland.ArmourAndTools": "Pastel Wonderland Armour & Tools",
-  "itemGroup.pastelwonderland.Misc": "Pastel Wonderland Miscellaneous"
+  "itemGroup.pastelwonderland.blocks": "Pastel Wonderland Blocks",
+  "itemGroup.pastelwonderland.armourandtools": "Pastel Wonderland Armour & Tools",
+  "itemGroup.pastelwonderland.misc": "Pastel Wonderland Miscellaneous"
 }
