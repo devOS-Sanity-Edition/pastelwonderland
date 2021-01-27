@@ -5,6 +5,7 @@
 package dev.hiitsdevin.pastelwonderland;
 
 import dev.hiitsdevin.pastelwonderland.Base.*;
+import dev.hiitsdevin.pastelwonderland.Base.Organization.ItemGroup;
 import dev.hiitsdevin.pastelwonderland.Entities.Mallards.MallardEntity;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;

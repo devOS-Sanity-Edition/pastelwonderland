@@ -2,6 +2,7 @@
 
 package dev.hiitsdevin.pastelwonderland.Base;
 
+import dev.hiitsdevin.pastelwonderland.Base.Organization.ItemGroup;
 import dev.hiitsdevin.pastelwonderland.Tools.PastelArmors;
 import dev.hiitsdevin.pastelwonderland.Tools.PastelAxeItem;
 import dev.hiitsdevin.pastelwonderland.Tools.PastelHoeItem;
@@ -18,18 +19,6 @@ import static dev.hiitsdevin.pastelwonderland.Tools.PastelTools.PASTEL_TOOLS;
 
 
 public class Items {
-    // todo: add an item texture that corresponds to pastelwonderland:icon
-    private static final Item ICON = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "icon"), new Item(new Item.Settings()));
-    // imagine needing a dedicated icon pffffffffft
-    // i am horrible
-
-    // creating that new ✨ item group ✨ and that new tab
-    private static final ItemGroup DEVIN_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "group"), () -> new ItemStack(Blocks.RED));
-
-    private static Item.Settings itemSettings() {
-        return new Item.Settings().group(DEVIN_GROUP);
-    }
-
     // all the blocks that are being added
     public static final Item RED = register("red", Blocks.RED);
     public static final Item ORANGE = register("orange", Blocks.ORANGE);
@@ -61,20 +50,20 @@ public class Items {
     public static final Item RED_PASTEL_GLOWSTONE = register("red_pastel_glowstone", Blocks.RED_PASTEL_GLOWSTONE);
 
     //Actual Items
-    public static final Item PASTEL_POWDER = new Item(itemSettings());
-    public static final Item PASTEL_INGOT = new Item(itemSettings());
+    public static final Item PASTEL_POWDER = new Item(ItemGroup.pwMisc());
+    public static final Item PASTEL_INGOT = new Item(ItemGroup.pwMisc());
 
     //Tools and Armor
     public static final ArmorMaterial pastelArmor = new PastelArmors();
-    public static final Item PASTEL_HEAD = new ArmorItem(pastelArmor, EquipmentSlot.HEAD, itemSettings());
-    public static final Item PASTEL_CHEST = new ArmorItem(pastelArmor, EquipmentSlot.CHEST, itemSettings());
-    public static final Item PASTEL_LEGS = new ArmorItem(pastelArmor, EquipmentSlot.LEGS, itemSettings());
-    public static final Item PASTEL_FEET = new ArmorItem(pastelArmor, EquipmentSlot.FEET, itemSettings());
-    public static final Item PASTEL_SWORD = new SwordItem(PASTEL_TOOLS, 5, -2.4f, itemSettings());
-    public static final Item PASTEL_SHOVEL = new ShovelItem(PASTEL_TOOLS, 1, -3f, itemSettings());
-    public static final Item PASTEL_PICK = new PastelPickItem(PASTEL_TOOLS, 3, -2f, itemSettings());
-    public static final Item PASTEL_AXE = new PastelAxeItem(PASTEL_TOOLS, 6, -1.6f, itemSettings());
-    public static final Item PASTEL_HOE = new PastelHoeItem(PASTEL_TOOLS, 1, -3f, itemSettings());
+    public static final Item PASTEL_HEAD = new ArmorItem(pastelArmor, EquipmentSlot.HEAD, ItemGroup.pwArmourAndTools());
+    public static final Item PASTEL_CHEST = new ArmorItem(pastelArmor, EquipmentSlot.CHEST, ItemGroup.pwArmourAndTools());
+    public static final Item PASTEL_LEGS = new ArmorItem(pastelArmor, EquipmentSlot.LEGS, ItemGroup.pwArmourAndTools());
+    public static final Item PASTEL_FEET = new ArmorItem(pastelArmor, EquipmentSlot.FEET, ItemGroup.pwArmourAndTools());
+    public static final Item PASTEL_SWORD = new SwordItem(PASTEL_TOOLS, 5, -2.4f, ItemGroup.pwArmourAndTools());
+    public static final Item PASTEL_SHOVEL = new ShovelItem(PASTEL_TOOLS, 1, -3f, ItemGroup.pwArmourAndTools());
+    public static final Item PASTEL_PICK = new PastelPickItem(PASTEL_TOOLS, 3, -2f, ItemGroup.pwArmourAndTools());
+    public static final Item PASTEL_AXE = new PastelAxeItem(PASTEL_TOOLS, 6, -1.6f, ItemGroup.pwArmourAndTools());
+    public static final Item PASTEL_HOE = new PastelHoeItem(PASTEL_TOOLS, 1, -3f, ItemGroup.pwArmourAndTools());
 
 
 
@@ -83,7 +72,7 @@ public class Items {
         return Registry.register(Registry.ITEM, new Identifier(MOD_ID, name), item);
     }
     private static Item register(String name, Block block) {
-        return Registry.register(Registry.ITEM, new Identifier(MOD_ID, name), new BlockItem(block, itemSettings()));
+        return Registry.register(Registry.ITEM, new Identifier(MOD_ID, name), new BlockItem(block, ItemGroup.pwBlocks()));
     }
 
     public static void init() {
@@ -98,7 +87,7 @@ public class Items {
         register("pastel_chestplate", PASTEL_CHEST);
         register("pastel_leggings", PASTEL_LEGS);
         register("pastel_boots", PASTEL_FEET);
-
+        // who did this, and may i ask why? and is there a cleaner implementation? this is actually weird -devin
     }
 
 }
