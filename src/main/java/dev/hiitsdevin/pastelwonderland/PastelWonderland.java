@@ -3,6 +3,7 @@
 // wait why do i hear a taser coming towards me-
 
 package dev.hiitsdevin.pastelwonderland;
+
 import dev.hiitsdevin.pastelwonderland.Base.*;
 import dev.hiitsdevin.pastelwonderland.Entities.Mallards.MallardEntity;
 import net.fabricmc.api.ModInitializer;
