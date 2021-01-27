@@ -9,13 +9,23 @@
   "block.pastelwonderland.gray": "Gray",
   "block.pastelwonderland.black": "Black",
   "block.pastelwonderland.brown": "Brown",
+  "block.pastelwonderland.white": "White",
+
   "block.pastelwonderland.dirt": "Dirt",
   "block.pastelwonderland.grass": "Grass",
   "block.pastelwonderland.stone": "Stone",
   "block.pastelwonderland.sand": "Sand",
   "block.pastelwonderland.log": "Log",
   "block.pastelwonderland.pastel_ore": "Pastel Ore",
+
+  "block.pastelwonderland.blue_leaves": "Pastel Blue Leaves",
+  "block.pastelwonderland.green_leaves": "Pastel Green Leaves",
+  "block.pastelwonderland.red_leaves": "Pastel Red Leaves",
+  "block.pastelwonderland.yellow_leaves": "Pastel Yellow Leaves",
+
   "block.pastelwonderland.red_pastel_glowstone": "Red Pastel Glowstone",
 
-  "itemGroup.pastelwonderland.group": "Pastel Wonderland"
+  "itemGroup.pastelwonderland.Blocks": "Pastel Wonderland Blocks",
+  "itemGroup.pastelwonderland.ArmourAndTools": "Pastel Wonderland Armour & Tools",
+  "itemGroup.pastelwonderland.Misc": "Pastel Wonderland Miscellaneous"
 }
