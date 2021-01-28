@@ -26,6 +26,8 @@ public class PastelWonderland implements ModInitializer {
     public static final String VERSION = FabricLoader.getInstance().getModContainer(MOD_ID).get().getMetadata().getVersion().toString();
     public static final String PrototypePastelVersion = "Pastel Wonderland - Dev Build: " + VERSION;
     public static final String PrototypePastelDistribution = "If this build is not public, please do not redistribute it!";
+    public static final String PrototypePastelViewDisclaimer = "What you see here may not be representative of the final build!";
+
 
     public static final EntityType<MallardEntity> MALLARD = Registry.register(
             Registry.ENTITY_TYPE,

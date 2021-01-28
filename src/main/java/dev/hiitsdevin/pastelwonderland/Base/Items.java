@@ -50,6 +50,7 @@ public class Items {
 
     //glowy mcfuck
     public static final Item RED_PASTEL_GLOWSTONE = register("red_pastel_glowstone", Blocks.RED_PASTEL_GLOWSTONE);
+    public static final Item BLUE_PASTEL_GLOWSTONE = register("blue_pastel_glowstone", Blocks.BLUE_PASTEL_GLOWSTONE);
 
     //Actual Items
     public static final Item PASTEL_POWDER = register("pastel_powder", new Item(ItemGroup.pwMisc()));

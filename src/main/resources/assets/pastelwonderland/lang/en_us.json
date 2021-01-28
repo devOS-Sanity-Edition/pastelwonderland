@@ -1,15 +1,15 @@
 {
-  "block.pastelwonderland.red": "Red",
-  "block.pastelwonderland.orange": "Orange",
-  "block.pastelwonderland.yellow": "Yellow",
-  "block.pastelwonderland.green": "Green",
-  "block.pastelwonderland.blue": "Blue",
-  "block.pastelwonderland.purple": "Purple",
-  "block.pastelwonderland.magenta": "Magenta",
-  "block.pastelwonderland.gray": "Gray",
-  "block.pastelwonderland.black": "Black",
-  "block.pastelwonderland.brown": "Brown",
-  "block.pastelwonderland.white": "White",
+  "block.pastelwonderland.red": "Pastel Red",
+  "block.pastelwonderland.orange": "Pastel Orange",
+  "block.pastelwonderland.yellow": "Pastel Yellow",
+  "block.pastelwonderland.green": "Pastel Green",
+  "block.pastelwonderland.blue": "Pastel Blue",
+  "block.pastelwonderland.purple": "Pastel Purple",
+  "block.pastelwonderland.magenta": "Pastel Magenta",
+  "block.pastelwonderland.gray": "Pastel Gray",
+  "block.pastelwonderland.black": "Pastel Black",
+  "block.pastelwonderland.brown": "Pastel Brown",
+  "block.pastelwonderland.white": "Pastel White",
 
   "block.pastelwonderland.dirt": "Dirt",
   "block.pastelwonderland.grass": "Grass",
@@ -24,6 +24,7 @@
   "block.pastelwonderland.yellow_leaves": "Pastel Yellow Leaves",
 
   "block.pastelwonderland.red_pastel_glowstone": "Red Pastel Glowstone",
+  "block.pastelwonderland.blue_pastel_glowstone": "Blue Pastel Glowstone",
 
   "item.pastelwonderland.pastel_boots": "Pastel Boots",
   "item.pastelwonderland.pastel_leggings": "Pastel Leggings",
@@ -37,8 +38,11 @@
 
   "item.pastelwonderland.pastel_ingot": "Pastel Ingot",
   "item.pastelwonderland.pastel_powder": "Pastel Powder",
+  "item.pastelwonderland.mallard_spawn_egg": "Mallard Spawn Egg",
 
   "itemGroup.pastelwonderland.blocks": "Pastel Wonderland Blocks",
   "itemGroup.pastelwonderland.armourandtools": "Pastel Wonderland Armour & Tools",
-  "itemGroup.pastelwonderland.misc": "Pastel Wonderland Miscellaneous"
+  "itemGroup.pastelwonderland.misc": "Pastel Wonderland Miscellaneous",
+
+  "entity.pastelwonderland.mallard": "Mallard"
 }
