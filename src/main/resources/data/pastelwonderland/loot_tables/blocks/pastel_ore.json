@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pastelwonderland:pastel_powder"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pastelwonderland:pastel_ingot"
+        }
+      ]
+    }
+  ]
+}

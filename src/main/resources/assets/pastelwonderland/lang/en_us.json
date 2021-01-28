@@ -44,5 +44,8 @@
   "itemGroup.pastelwonderland.armourandtools": "Pastel Wonderland Armour & Tools",
   "itemGroup.pastelwonderland.misc": "Pastel Wonderland Miscellaneous",
 
-  "entity.pastelwonderland.mallard": "Mallard"
+  "entity.pastelwonderland.mallard": "Mallard",
+
+  "key.category.pastelwonderland": "Pastel Wonderland [development only]",
+  "key.pastelwonderland.development": "Toggle Development Text"
 }

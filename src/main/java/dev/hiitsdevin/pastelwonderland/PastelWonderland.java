@@ -11,6 +11,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -24,9 +25,10 @@ public class PastelWonderland implements ModInitializer {
     // for the text render. be sure to comment out both HudRenderCallsbacks when you're not in a dev env.
     public static final String MOD_ID = "pastelwonderland";
     public static final String VERSION = FabricLoader.getInstance().getModContainer(MOD_ID).get().getMetadata().getVersion().toString();
-    public static final String PrototypePastelVersion = "Pastel Wonderland - Dev Build: " + VERSION;
-    public static final String PrototypePastelDistribution = "If this build is not public, please do not redistribute it!";
-    public static final String PrototypePastelViewDisclaimer = "What you see here may not be representative of the final build!";
+    public static String PastelWonderlandVersion = "Pastel Wonderland - Dev Build: " + VERSION;
+    public static String PastelWonderlandDistribution = "If this build is not public, please do not redistribute it!";
+    public static String PastelWonderlandViewDisclaimer = "What you see here may not be representative of the final build!";
+    public static String PastelWonderlandFPSDevelopment = "Game FPS: " + MinecraftClient.getInstance().fpsDebugString;
 
 
     public static final EntityType<MallardEntity> MALLARD = Registry.register(

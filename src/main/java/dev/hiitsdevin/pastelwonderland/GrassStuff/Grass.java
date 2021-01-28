@@ -30,6 +30,7 @@ public class Grass extends GrassSpread implements Fertilizable {
         return true;
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
         BlockPos blockPos = pos.up();
