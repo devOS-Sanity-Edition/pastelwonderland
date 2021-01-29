@@ -6,11 +6,52 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pastelwonderland:pastel_powder"
-        },
+          "name": "pastelwonderland:pastel_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:limit_count",
+          "limit": {
+            "min": 2,
+            "max": 4
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
         {
           "type": "minecraft:item",
-          "name": "pastelwonderland:pastel_ingot"
+          "name": "pastelwonderland:pastel_powder",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:limit_count",
+          "limit": {
+            "min": 3,
+            "max": 5
+          }
         }
       ]
     }

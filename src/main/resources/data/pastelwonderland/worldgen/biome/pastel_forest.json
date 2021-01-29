@@ -91,6 +91,12 @@
         "weight": 8,
         "minCount": 4,
         "maxCount": 4
+      },
+      {
+        "type": "pastelwonderland:mallard",
+        "weight": 14,
+        "minCount": 5,
+        "maxCount": 5
       }
     ],
     "ambient": [],
