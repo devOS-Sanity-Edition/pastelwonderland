@@ -25,3 +25,6 @@ As of v0.0.2:
 - Mallards 
 - Custom sky and water color 
 - Currently only 1 biome: Pastel Forest Biome
+
+## What's to come?
+If it is in our [Project Board](https://github.com/orgs/devOS-Sanity-Edition/projects/3), it's most likely to be added!
