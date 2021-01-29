@@ -3,14 +3,14 @@
     "pattern": [
         " CC",
         " AC",
-        "A  "
+        " A "
     ],
     "key": {
-      "C": {"item": "pastelwonderland:pastel_ingot"},
-      "A": {"item": "minecraft:stick"}
+        "C": {"item": "pastelwonderland:pastel_ingot"},
+        "A": {"item": "minecraft:stick"}
     },
     "result": {
-      "item": "pastelwonderland:pastel_axe",
-      "count": 1
+        "item": "pastelwonderland:pastel_axe",
+        "count": 1
     }
-  }
+}

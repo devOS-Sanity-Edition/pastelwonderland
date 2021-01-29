@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "CCC",
+        "C C",
+        "   "
+    ],
+    "key": {
+        "C": {"item": "pastelwonderland:pastel_ingot"}
+    },
+    "result": {
+        "item": "pastelwonderland:pastel_helmet",
+        "count": 1
+    }
+}

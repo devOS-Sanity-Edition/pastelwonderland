@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " CC",
+        " A ",
+        " A "
+    ],
+    "key": {
+        "C": {"item": "pastelwonderland:pastel_ingot"},
+        "A": {"item": "minecraft:stick"}
+    },
+    "result": {
+        "item": "pastelwonderland:pastel_hoe",
+        "count": 1
+    }
+}

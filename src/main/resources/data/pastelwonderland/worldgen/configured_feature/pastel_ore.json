@@ -29,7 +29,7 @@
               "type": "minecraft:ore",
               "config": {
                 "state": {
-                  "Name": "pastelwonderland:pastel"
+                  "Name": "pastelwonderland:pastel_ore"
                 },
                 "size": 9,
                 "target": {
