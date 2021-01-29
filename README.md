@@ -27,4 +27,4 @@ As of v0.0.2:
 - Currently only 1 biome: Pastel Forest Biome
 
 ## What's to come?
-If it is in our [Project Board](https://github.com/orgs/devOS-Sanity-Edition/projects/3), it's most likely going to be added!
+If it is in our [Project Board](https://github.com/orgs/devOS-Sanity-Edition/projects/3), it will most likely be added!
