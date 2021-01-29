@@ -8,7 +8,7 @@
 
 
 ## What is Pastel Wonderland?
-Pastel Wonderland is a Minecraft mod that focuses on surviving in a chaotic sky dimension. Wander around the pretty, yet rather deadly island generation, while you get to see pretty pastel trees, mallards, and more [soon].
+Pastel Wonderland is a Minecraft mod that focuses on surviving in a chaotic sky dimension. Wander around the beautiful, yet deadly island generation, while you get to see pretty pastel trees, mallards, and more [soon].
 
 Try to not fall into the void, **or it's game over**.
 
