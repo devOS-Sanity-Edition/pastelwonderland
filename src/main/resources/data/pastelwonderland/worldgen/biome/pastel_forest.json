@@ -97,12 +97,6 @@
         "weight": 14,
         "minCount": 5,
         "maxCount": 5
-      },
-      {
-        "type": "pastelwonderland:tater",
-        "weight": 18,
-        "minCount": 5,
-        "maxCount": 10
       }
     ],
     "ambient": [],
