@@ -16,7 +16,7 @@ import static net.minecraft.block.Blocks.*;
 
 public class Blocks {
 
-    // registering blocks into the game as if they actually existed [spoiler alert: they do ✨]
+    //Block Registration
     public static final Block RED = register("red", BlockInfo.ConcreteBlock());
     public static final Block ORANGE = register("orange", BlockInfo.ConcreteBlock());
     public static final Block YELLOW = register("yellow", BlockInfo.ConcreteBlock());

@@ -19,8 +19,6 @@ import net.minecraft.util.registry.Registry;
 
 
 public class PastelWonderland implements ModInitializer {
-
-    // for the text render. be sure to comment out both HudRenderCallsbacks when you're not in a dev env.
     public static final String MOD_ID = "pastelwonderland";
     public static final String VERSION = FabricLoader.getInstance().getModContainer(MOD_ID).get().getMetadata().getVersion().toString();
     public static String PastelWonderlandVersion = "Pastel Wonderland - Dev Build: " + VERSION;
@@ -34,12 +32,10 @@ public class PastelWonderland implements ModInitializer {
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, MallardEntity::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build()
     );
 
-    //public static final Activity EXIST = Activity.register("exist");
+    // maybe one day, tater will be a thing here again, no promises.
 
     @Override
     public final void onInitialize() {
-        // modularity who, me bitch
-        // each separate class for organizational reasons, this is great
         Blocks.init();
         DevDisclaimer.init();
         Items.init();
