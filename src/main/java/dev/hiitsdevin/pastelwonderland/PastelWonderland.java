@@ -7,6 +7,7 @@ package dev.hiitsdevin.pastelwonderland;
 import dev.hiitsdevin.pastelwonderland.Base.*;
 import dev.hiitsdevin.pastelwonderland.Base.Organization.ItemGroup;
 import dev.hiitsdevin.pastelwonderland.Entities.Mallards.MallardEntity;
+import dev.hiitsdevin.pastelwonderland.Entities.Tater.TaterEntity;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
@@ -37,6 +38,12 @@ public class PastelWonderland implements ModInitializer {
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, MallardEntity::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build()
     );
 
+    public static final EntityType<TaterEntity> TATER = Registry.register(
+            Registry.ENTITY_TYPE,
+            new Identifier("pastelwonderland", "tater"),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, TaterEntity::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build()
+    );
+
     //public static final Activity EXIST = Activity.register("exist");
 
     @Override
@@ -49,5 +56,6 @@ public class PastelWonderland implements ModInitializer {
         Portals.init();
 
         FabricDefaultAttributeRegistry.register(MALLARD, MallardEntity.createMobAttributes());
+        FabricDefaultAttributeRegistry.register(TATER, TaterEntity.createMobAttributes());
     }
 }

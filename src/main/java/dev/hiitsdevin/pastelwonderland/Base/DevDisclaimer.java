@@ -14,23 +14,17 @@ public class DevDisclaimer {
                         .drawWithShadow(matrices, PastelWonderland.PastelWonderlandVersion, 1, 1, 0xFFFFFF); // shoot me where it hurts most please.
             });
 
-            // renders Distribution text
-            HudRenderCallback.EVENT.register((matrices, delta) -> {
-                MinecraftClient.getInstance().textRenderer
-                        .drawWithShadow(matrices, PastelWonderland.PastelWonderlandDistribution, 1, 10, 0xFFFFFF);
-            });
-
             // Game FPS
             HudRenderCallback.EVENT.register((matrices, delta) -> {
                 MinecraftClient.getInstance().textRenderer
-                        .drawWithShadow(matrices, PastelWonderland.PastelWonderlandFPSDevelopment, 1, 20, 0xFFFFFF);
+                        .drawWithShadow(matrices, PastelWonderland.PastelWonderlandFPSDevelopment, 1, 10, 0xFFFFFF);
             });
 
 
             // renders Distribution text
             HudRenderCallback.EVENT.register((matrices, delta) -> {
                 MinecraftClient.getInstance().textRenderer
-                        .drawWithShadow(matrices, PastelWonderland.PastelWonderlandViewDisclaimer, 1, 30, 0xFF4040);
+                        .drawWithShadow(matrices, PastelWonderland.PastelWonderlandViewDisclaimer, 1, 20, 0xFF4040);
             });
         }
     }

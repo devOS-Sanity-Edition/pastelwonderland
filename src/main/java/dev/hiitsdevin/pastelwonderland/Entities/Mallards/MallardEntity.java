@@ -1,26 +1,17 @@
 package dev.hiitsdevin.pastelwonderland.Entities.Mallards;
 
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.mob.Angerable;
 import net.minecraft.entity.passive.ChickenEntity;
 import net.minecraft.entity.passive.PassiveEntity;
-import net.minecraft.entity.passive.WolfEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.Objects;
-import java.util.UUID;
 
 public class MallardEntity extends ChickenEntity {
     private static final Ingredient BREEDING_INGREDIENT;
@@ -31,12 +22,6 @@ public class MallardEntity extends ChickenEntity {
         Objects.requireNonNull(this.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH)).setBaseValue(2.0D);
         Objects.requireNonNull(this.getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED)).setBaseValue(0.25D);
     }
-
-    // saved for when we actually find clean mallard sounds
-    //@Override
-    //public SoundEvent getAmbientSound() {
-        //return SoundEvents.ENTITY_ENDERMAN_SCREAM;
-    //}
 
     @Override
     public void initGoals() {

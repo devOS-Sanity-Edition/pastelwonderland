@@ -2,6 +2,7 @@ package dev.hiitsdevin.pastelwonderland.Client;
 
 import dev.hiitsdevin.pastelwonderland.Base.DevDisclaimer;
 import dev.hiitsdevin.pastelwonderland.Entities.Mallards.MallardRenderer;
+import dev.hiitsdevin.pastelwonderland.Entities.Tater.TaterRenderer;
 import dev.hiitsdevin.pastelwonderland.PastelWonderland;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
@@ -23,6 +24,11 @@ public class PastelWonderlandClient implements ClientModInitializer {
         EntityRendererRegistry.INSTANCE.register(PastelWonderland.MALLARD, (dispatcher, context) ->
                 new MallardRenderer(dispatcher)
         );
+
+        EntityRendererRegistry.INSTANCE.register(PastelWonderland.TATER, (dispatcher, context) ->
+                new TaterRenderer(dispatcher)
+        );
+
         MinecraftClient.getInstance().execute(this::updateTitle);
         KeyBinding DevelopmentKeybind = KeyBindingHelper.registerKeyBinding(new StickyKeyBinding("key.pastelwonderland.development", GLFW.GLFW_KEY_F3, "key.category.pastelwonderland", () -> true));
         ClientTickCallback.EVENT.register(client -> {
