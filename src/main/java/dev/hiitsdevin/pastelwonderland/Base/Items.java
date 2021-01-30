@@ -63,10 +63,10 @@ public class Items {
     public static final Item PASTEL_CHEST = register("pastel_chestplate", new ArmorItem(pastelArmor, EquipmentSlot.CHEST, ItemGroup.pwArmourAndTools()));
     public static final Item PASTEL_LEGS = register("pastel_leggings", new ArmorItem(pastelArmor, EquipmentSlot.LEGS, ItemGroup.pwArmourAndTools()));
     public static final Item PASTEL_FEET = register("pastel_boots", new ArmorItem(pastelArmor, EquipmentSlot.FEET, ItemGroup.pwArmourAndTools()));
-    public static final Item PASTEL_SWORD = register("pastel_sword", new SwordItem(PASTEL_TOOLS, 5, -2.4f, ItemGroup.pwArmourAndTools()));
+    public static final Item PASTEL_SWORD = register("pastel_sword", new SwordItem(PASTEL_TOOLS, 4, -2.4f, ItemGroup.pwArmourAndTools()));
     public static final Item PASTEL_SHOVEL = register("pastel_shovel", new ShovelItem(PASTEL_TOOLS, 1, -3f, ItemGroup.pwArmourAndTools()));
     public static final Item PASTEL_PICK = register("pastel_pickaxe", new PastelPickItem(PASTEL_TOOLS, 3, -2f, ItemGroup.pwArmourAndTools()));
-    public static final Item PASTEL_AXE = register("pastel_axe", new PastelAxeItem(PASTEL_TOOLS, 6, -1.6f, ItemGroup.pwArmourAndTools()));
+    public static final Item PASTEL_AXE = register("pastel_axe", new PastelAxeItem(PASTEL_TOOLS, 7, -2f, ItemGroup.pwArmourAndTools()));
     public static final Item PASTEL_HOE = register("pastel_hoe", new PastelHoeItem(PASTEL_TOOLS, 1, -3f, ItemGroup.pwArmourAndTools()));
 
     //registered so i guess i can do /give @p pastelwonderland:colorhere bc fuck you too ig
