@@ -26,7 +26,6 @@ public class PastelWonderland implements ModInitializer {
     public static final String MOD_ID = "pastelwonderland";
     public static final String VERSION = FabricLoader.getInstance().getModContainer(MOD_ID).get().getMetadata().getVersion().toString();
     public static String PastelWonderlandVersion = "Pastel Wonderland - Dev Build: " + VERSION;
-    public static String PastelWonderlandDistribution = "If this build is not public, please do not redistribute it!";
     public static String PastelWonderlandViewDisclaimer = "What you see here may not be representative of the final build!";
     public static String PastelWonderlandFPSDevelopment = "Game FPS: " + MinecraftClient.getInstance().fpsDebugString;
 

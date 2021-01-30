@@ -24,29 +24,17 @@ public class PastelWonderlandClient implements ClientModInitializer {
                 new MallardRenderer(dispatcher)
         );
 
-        MinecraftClient.getInstance().execute(this::updateTitle);
         KeyBinding DevelopmentKeybind = KeyBindingHelper.registerKeyBinding(new StickyKeyBinding("key.pastelwonderland.development", GLFW.GLFW_KEY_F3, "key.category.pastelwonderland", () -> true));
         ClientTickCallback.EVENT.register(client -> {
             if (DevelopmentKeybind.isPressed()) {
                 PastelWonderland.PastelWonderlandVersion = "";
-                PastelWonderland.PastelWonderlandDistribution = "";
                 PastelWonderland.PastelWonderlandViewDisclaimer = "";
                 PastelWonderland.PastelWonderlandFPSDevelopment = "";
             } else {
                 PastelWonderland.PastelWonderlandVersion = "Pastel Wonderland - Dev Build: " + PastelWonderland.VERSION;
-                PastelWonderland.PastelWonderlandDistribution = "If this build is not public, please do not redistribute it!";
                 PastelWonderland.PastelWonderlandViewDisclaimer = "What you see here may not be representative of the final build!";
                 PastelWonderland.PastelWonderlandFPSDevelopment = "Game FPS: " + MinecraftClient.getInstance().fpsDebugString;
             }
         });
     }
-
-    private void updateTitle() {
-        if (FabricLoader.INSTANCE.isDevelopmentEnvironment()) {
-            final Window window = MinecraftClient.getInstance().getWindow();
-            window.setTitle("Pastel Wonderland " + PastelWonderland.VERSION + " Development Environment");
-        }
-    }
-
-    ;
 }
