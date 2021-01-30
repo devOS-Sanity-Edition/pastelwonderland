@@ -16,7 +16,7 @@ public class BlockInfo {
         return new Block(FabricBlockSettings.copy(WHITE_CONCRETE));
     }
 
-    public static Block GlowyMcFuck() {
+    public static Block PastelGlowstone() {
         return new Block(FabricBlockSettings.copy(GLOWSTONE).luminance((state) -> { return 15; }));
     }
 }

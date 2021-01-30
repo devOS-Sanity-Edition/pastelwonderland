@@ -5,7 +5,6 @@
 package dev.hiitsdevin.pastelwonderland;
 
 import dev.hiitsdevin.pastelwonderland.Base.*;
-import dev.hiitsdevin.pastelwonderland.Base.Organization.ItemGroup;
 import dev.hiitsdevin.pastelwonderland.Entities.Mallards.MallardEntity;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -15,7 +14,6 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
-import net.minecraft.entity.ai.brain.Activity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 

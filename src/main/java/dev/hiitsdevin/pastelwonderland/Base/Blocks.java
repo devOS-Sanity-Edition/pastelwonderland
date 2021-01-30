@@ -43,8 +43,8 @@ public class Blocks {
     public static final Block GREEN_LEAF = register("green_leaves", BlockInfo.LeavesBlock());
     public static final Block LOG = register("log", new PillarBlock(FabricBlockSettings.copy(OAK_LOG)));
 
-    public static final Block RED_PASTEL_GLOWSTONE = register("red_pastel_glowstone", BlockInfo.GlowyMcFuck());
-    public static final Block BLUE_PASTEL_GLOWSTONE = register("blue_pastel_glowstone", BlockInfo.GlowyMcFuck());
+    public static final Block RED_PASTEL_GLOWSTONE = register("red_pastel_glowstone", BlockInfo.PastelGlowstone());
+    public static final Block BLUE_PASTEL_GLOWSTONE = register("blue_pastel_glowstone", BlockInfo.PastelGlowstone());
 
     private static Block register(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(MOD_ID, name), block);
