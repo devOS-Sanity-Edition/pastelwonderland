@@ -11,7 +11,7 @@
       "type": "minecraft:huge_fungus",
       "config": {
         "hat_state": {
-          "Name": "pastelwonderland:yellow_leaves"
+          "Name": "pastelwonderland:red_leaves"
         },
         "decor_state": {
           "Name": "pastelwonderland:red_pastel_glowstone"
