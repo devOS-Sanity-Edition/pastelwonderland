@@ -9,7 +9,7 @@ import static dev.hiitsdevin.pastelwonderland.PastelWonderland.MOD_ID;
 // the amount of shit i have to make for a fucking mob is  a n n o y i n g  m e  -Devin
 public class MallardRenderer extends MobEntityRenderer<MallardEntity, MallardModel> {
     public MallardRenderer(EntityRenderDispatcher entityRenderDispatcher) {
-        super(entityRenderDispatcher, new MallardModel(), 0.5f);
+        super(entityRenderDispatcher, new MallardModel(), 0.25f);
     }
 
     @Override

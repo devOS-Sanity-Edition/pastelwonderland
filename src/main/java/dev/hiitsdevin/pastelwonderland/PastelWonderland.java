@@ -29,7 +29,7 @@ public class PastelWonderland implements ModInitializer {
     public static final EntityType<MallardEntity> MALLARD = Registry.register(
             Registry.ENTITY_TYPE,
             new Identifier("pastelwonderland", "mallard"),
-            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, MallardEntity::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build()
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, MallardEntity::new).dimensions(EntityDimensions.fixed(0.5f, 0.5f)).build()
     );
 
     // maybe one day, tater will be a thing here again, no promises.
