@@ -24,9 +24,8 @@ public class PastelWonderlandClient implements ClientModInitializer {
                 new MallardRenderer(dispatcher)
         );
 
-        KeyBinding DevelopmentKeybind = KeyBindingHelper.registerKeyBinding(new StickyKeyBinding("key.pastelwonderland.development", GLFW.GLFW_KEY_F3, "key.category.pastelwonderland", () -> true));
         ClientTickCallback.EVENT.register(client -> {
-            if (DevelopmentKeybind.isPressed()) {
+            if (MinecraftClient.getInstance().options.debugEnabled) {
                 PastelWonderland.PastelWonderlandVersion = "";
                 PastelWonderland.PastelWonderlandViewDisclaimer = "";
                 PastelWonderland.PastelWonderlandFPSDevelopment = "";

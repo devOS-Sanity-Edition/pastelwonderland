@@ -1,13 +1,12 @@
 package dev.hiitsdevin.pastelwonderland.Entities.Mallards.Models;
 
+import com.google.common.collect.ImmutableList;
 import dev.hiitsdevin.pastelwonderland.Entities.Mallards.MallardEntity;
 import net.minecraft.client.model.ModelPart;
-import net.minecraft.client.render.VertexConsumer;
-import net.minecraft.client.render.entity.model.EntityModel;
-import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.entity.Entity;
+import net.minecraft.client.render.entity.model.AnimalModel;
+import net.minecraft.util.math.MathHelper;
 
-public class MallardModel extends EntityModel<MallardEntity> {
+public class MallardModel extends AnimalModel<MallardEntity> {
     private final ModelPart head;
     private final ModelPart bone8;
     private final ModelPart bone9;
@@ -21,28 +20,30 @@ public class MallardModel extends EntityModel<MallardEntity> {
     private final ModelPart right_wing;
     private final ModelPart left_leg;
     private final ModelPart right_leg;
+
     public MallardModel() {
+        super(true, 5F, 2F);
         textureWidth = 32;
         textureHeight = 32;
+
         head = new ModelPart(this);
-        head.setPivot(0.0F, 16.0F, -2.5F);
+        head.setPivot(0.0F, 16.0F, -3.5F);
         setRotationAngle(head, 0.2618F, 0.0F, 0.0F);
 
-
         bone8 = new ModelPart(this);
-        bone8.setPivot(-0.5F, -1.2358F, -3.1076F);
+        bone8.setPivot(-0.5F, -0.977F, -2.1417F);
         head.addChild(bone8);
         setRotationAngle(bone8, -0.0873F, 0.0F, 0.0F);
         bone8.setTextureOffset(12, 0).addCuboid(-0.5F, -0.2358F, -1.9484F, 2.0F, 1.0F, 3.0F, 0.0F, false);
 
         bone9 = new ModelPart(this);
-        bone9.setPivot(0.0F, 3.1752F, -3.3695F);
+        bone9.setPivot(0.0F, 3.434F, -2.4036F);
         head.addChild(bone9);
         setRotationAngle(bone9, -1.0472F, 0.0F, 0.0F);
         bone9.setTextureOffset(11, 14).addCuboid(-1.5F, -5.6099F, -3.8527F, 3.0F, 3.0F, 3.0F, 0.0F, false);
 
         bone2 = new ModelPart(this);
-        bone2.setPivot(0.0F, 0.0F, 0.0F);
+        bone2.setPivot(0.0F, 0.2588F, 0.9659F);
         head.addChild(bone2);
 
 
@@ -83,47 +84,50 @@ public class MallardModel extends EntityModel<MallardEntity> {
 
         left_leg = new ModelPart(this);
         left_leg.setPivot(0.0F, 21.0F, 1.0F);
-        setRotationAngle(left_leg, -0.0436F, 0.0F, 0.0F);
+        setRotationAngle(left_leg, 1.309F, 0.0F, 0.0F);
         left_leg.setTextureOffset(0, 0).addCuboid(0.5F, 0.0F, -1.0F, 1.0F, 3.0F, 1.0F, 0.0F, false);
 
         right_leg = new ModelPart(this);
         right_leg.setPivot(0.0F, 21.0F, 1.0F);
-        setRotationAngle(right_leg, -0.0436F, 0.0F, 0.0F);
+        setRotationAngle(right_leg, 1.309F, 0.0F, 0.0F);
         right_leg.setTextureOffset(0, 0).addCuboid(-1.5F, 0.0F, -1.0F, 1.0F, 3.0F, 1.0F, 0.0F, true);
     }
 
-    public MallardModel(ModelPart head, ModelPart bone8, ModelPart bone9, ModelPart bone2, ModelPart body, ModelPart bone, ModelPart bone4, ModelPart bone5, ModelPart tail, ModelPart left_wing, ModelPart right_wing, ModelPart left_leg, ModelPart right_leg) {
-        this.head = head;
-        this.bone8 = bone8;
-        this.bone9 = bone9;
-        this.bone2 = bone2;
-        this.body = body;
-        this.bone = bone;
-        this.bone4 = bone4;
-        this.bone5 = bone5;
-        this.tail = tail;
-        this.left_wing = left_wing;
-        this.right_wing = right_wing;
-        this.left_leg = left_leg;
-        this.right_leg = right_leg;
+
+    @Override
+    protected Iterable<ModelPart> getHeadParts() {
+        return ImmutableList.of();
+    }
+
+    @Override
+    protected Iterable<ModelPart> getBodyParts() {
+        return ImmutableList.of(this.head, this.body, this.right_leg, this.left_leg, this.right_wing, this.left_wing, this.tail);
     }
 
     @Override
     public void setAngles(MallardEntity entity, float limbAngle, float limbDistance, float animationProgress, float headYaw, float headPitch) {
+        this.head.pitch = headPitch * 0.017453292F;
+        this.head.yaw = headYaw * 0.017453292F;
+        this.body.pitch = 0F;
+        if (!entity.isTouchingWater()) {
+            this.right_leg.pitch = MathHelper.cos(limbAngle * 0.6662F) * 1.4F * limbDistance;
+            this.left_leg.pitch = MathHelper.cos(limbAngle * 0.6662F + 3.1415927F) * 1.4F * limbDistance;
+            this.right_wing.roll = animationProgress;
+            this.left_wing.roll = -animationProgress;
+        } else {
+            this.right_leg.pitch = 1.309F;
+            this.left_leg.pitch = 1.309F;
+            if (entity.hurtTime > 0) {
+                this.right_wing.roll = (float) (animationProgress * entity.hurtTime / 7.5);
+                this.left_wing.roll = (float) (-animationProgress * entity.hurtTime / 7.5);
+            } else {
+                this.right_wing.roll = 0F;
+                this.left_wing.roll = 0F;
+            }
+        }
 
     }
 
-    @Override
-    public void render(MatrixStack matrixStack, VertexConsumer buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
-
-        head.render(matrixStack, buffer, packedLight, packedOverlay);
-        body.render(matrixStack, buffer, packedLight, packedOverlay);
-        tail.render(matrixStack, buffer, packedLight, packedOverlay);
-        left_wing.render(matrixStack, buffer, packedLight, packedOverlay);
-        right_wing.render(matrixStack, buffer, packedLight, packedOverlay);
-        left_leg.render(matrixStack, buffer, packedLight, packedOverlay);
-        right_leg.render(matrixStack, buffer, packedLight, packedOverlay);
-    }
     public void setRotationAngle(ModelPart bone, float x, float y, float z) {
         bone.pitch = x;
         bone.yaw = y;
