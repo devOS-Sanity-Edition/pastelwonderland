@@ -109,12 +109,7 @@ public class MallardModel extends AnimalModel<MallardEntity> {
         this.head.pitch = headPitch * 0.017453292F;
         this.head.yaw = headYaw * 0.017453292F;
         this.body.pitch = 0F;
-        if (!entity.isTouchingWater()) {
-            this.right_leg.pitch = MathHelper.cos(limbAngle * 0.6662F) * 1.4F * limbDistance;
-            this.left_leg.pitch = MathHelper.cos(limbAngle * 0.6662F + 3.1415927F) * 1.4F * limbDistance;
-            this.right_wing.roll = animationProgress;
-            this.left_wing.roll = -animationProgress;
-        } else {
+        if (entity.isTouchingWater()) {
             this.right_leg.pitch = 1.309F;
             this.left_leg.pitch = 1.309F;
             if (entity.hurtTime > 0) {
@@ -124,6 +119,11 @@ public class MallardModel extends AnimalModel<MallardEntity> {
                 this.right_wing.roll = 0F;
                 this.left_wing.roll = 0F;
             }
+        } else {
+            this.right_leg.pitch = MathHelper.cos(limbAngle * 0.6662F) * 1.4F * limbDistance;
+            this.left_leg.pitch = MathHelper.cos(limbAngle * 0.6662F + 3.1415927F) * 1.4F * limbDistance;
+            this.right_wing.roll = animationProgress;
+            this.left_wing.roll = -animationProgress;
         }
 
     }

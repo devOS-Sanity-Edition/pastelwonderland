@@ -17,8 +17,7 @@ public class MallardRenderer extends MobEntityRenderer<MallardEntity, MallardMod
 
     @Override
     public Identifier getTexture(MallardEntity entity) {
-
-        if (1 == 2) { //TODO replace with dimension checking
+        if (!entity.getEntityWorld().getRegistryKey().getValue().getPath().equals("pastel_dim")) {
             if (!entity.isBaby()) {
                 if (entity.getVariant() == 1) {
                     return new Identifier(MOD_ID, "textures/entity/mallard/mallard.png");
