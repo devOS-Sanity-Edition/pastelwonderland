@@ -21,7 +21,7 @@ import static dev.hiitsdevin.pastelwonderland.Tools.PastelTools.PASTEL_TOOLS;
 
 
 public class Items {
-    // all the blocks that are being added
+    //Pastel Blocks
     public static final Item RED = register("red", Blocks.RED);
     public static final Item ORANGE = register("orange", Blocks.ORANGE);
     public static final Item YELLOW = register("yellow", Blocks.YELLOW);
@@ -33,6 +33,12 @@ public class Items {
     public static final Item GRAY = register("gray", Blocks.GRAY);
     public static final Item BROWN = register("brown", Blocks.BROWN);
     public static final Item WHITE = register("white", Blocks.WHITE);
+
+    //Pastel Glass
+    public static final Item WHITE_GLASS = register("white_glass", Blocks.WHITE_GLASS);
+
+    //Pastel Glass Pane
+    public static final Item WHITE_GLASS_PANE = register("white_glass_pane", Blocks.WHITE_GLASS_PANE);
 
     //Terrain
     public static final Item DIRT = register("dirt", Blocks.DIRT);

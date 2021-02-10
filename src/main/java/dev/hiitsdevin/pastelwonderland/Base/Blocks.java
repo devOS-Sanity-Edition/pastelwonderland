@@ -16,7 +16,7 @@ import static net.minecraft.block.Blocks.*;
 
 public class Blocks {
 
-    //Block Registration
+    //Pastel Blocks
     public static final Block RED = register("red", BlockInfo.ConcreteBlock());
     public static final Block ORANGE = register("orange", BlockInfo.ConcreteBlock());
     public static final Block YELLOW = register("yellow", BlockInfo.ConcreteBlock());
@@ -28,6 +28,13 @@ public class Blocks {
     public static final Block BLACK = register("black", BlockInfo.ConcreteBlock());
     public static final Block BROWN = register("brown", BlockInfo.ConcreteBlock());
     public static final Block WHITE = register("white", BlockInfo.ConcreteBlock());
+
+    //Pastel Glass
+    public static final Block WHITE_GLASS = register("white_glass", BlockInfo.GlassBlock());
+
+    //Pastel Glass Pane
+    public static final Block WHITE_GLASS_PANE = register("white_glass_pane", BlockInfo.GlassPaneBlock());
+
 
     //Terrain
     public static final Block DIRT = register("dirt", new Block(FabricBlockSettings.copy(net.minecraft.block.Blocks.DIRT)));

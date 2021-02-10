@@ -16,6 +16,14 @@ public class BlockInfo {
         return new Block(FabricBlockSettings.copy(WHITE_CONCRETE));
     }
 
+    public static Block GlassBlock() {
+        return new Block(FabricBlockSettings.copy(WHITE_STAINED_GLASS));
+    }
+
+    public static Block GlassPaneBlock() {
+        return new Block(FabricBlockSettings.copy(WHITE_STAINED_GLASS_PANE).nonOpaque().blockVision(Blocks::never).suffocates(Blocks::never));
+    }
+
     public static Block PastelGlowstone() {
         return new Block(FabricBlockSettings.copy(GLOWSTONE).luminance((state) -> { return 15; }));
     }
