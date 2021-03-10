@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ppp",
+        "prp",
+        "ppp"
+    ],
+    "key": {
+        "r": {"item": "minecraft:red_dye"},
+        "p": {"item": "pastelwonderland:pastel_powder"}
+    },
+    "result": {
+        "item": "pastelwonderland:red_powder",
+        "count": 8
+    }
+}

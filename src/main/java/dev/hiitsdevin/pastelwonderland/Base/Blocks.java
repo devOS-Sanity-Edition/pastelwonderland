@@ -29,6 +29,19 @@ public class Blocks {
     public static final Block BROWN = register("brown", BlockInfo.ConcreteBlock());
     public static final Block WHITE = register("white", BlockInfo.ConcreteBlock());
 
+    //Pastel Powder
+    public static final Block RED_POWDER = register("red_powder", new ConcretePowderBlock(RED, FabricBlockSettings.copy(WHITE_CONCRETE_POWDER)));
+    public static final Block ORANGE_POWDER = register("orange_powder", new ConcretePowderBlock(ORANGE, FabricBlockSettings.copy(WHITE_CONCRETE_POWDER)));
+    public static final Block YELLOW_POWDER = register("yellow_powder", new ConcretePowderBlock(YELLOW, FabricBlockSettings.copy(WHITE_CONCRETE_POWDER)));
+    public static final Block GREEN_POWDER = register("green_powder", new ConcretePowderBlock(GREEN, FabricBlockSettings.copy(WHITE_CONCRETE_POWDER)));
+    public static final Block BLUE_POWDER = register("blue_powder", new ConcretePowderBlock(BLUE, FabricBlockSettings.copy(WHITE_CONCRETE_POWDER)));
+    public static final Block PURPLE_POWDER = register("purple_powder", new ConcretePowderBlock(PURPLE, FabricBlockSettings.copy(WHITE_CONCRETE_POWDER)));
+    public static final Block MAGENTA_POWDER = register("magenta_powder", new ConcretePowderBlock(MAGENTA, FabricBlockSettings.copy(WHITE_CONCRETE_POWDER)));
+    public static final Block GRAY_POWDER = register("gray_powder", new ConcretePowderBlock(GRAY, FabricBlockSettings.copy(WHITE_CONCRETE_POWDER)));
+    public static final Block BLACK_POWDER = register("black_powder", new ConcretePowderBlock(BLACK, FabricBlockSettings.copy(WHITE_CONCRETE_POWDER)));
+    public static final Block BROWN_POWDER = register("brown_powder", new ConcretePowderBlock(BROWN, FabricBlockSettings.copy(WHITE_CONCRETE_POWDER)));
+    public static final Block WHITE_POWDER = register("white_powder", new ConcretePowderBlock(WHITE, FabricBlockSettings.copy(WHITE_CONCRETE_POWDER)));
+
     //Pastel Glass
     public static final Block WHITE_GLASS = register("white_glass", BlockInfo.GlassBlock());
 

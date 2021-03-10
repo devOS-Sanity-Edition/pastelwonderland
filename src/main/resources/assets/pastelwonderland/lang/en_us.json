@@ -11,6 +11,18 @@
   "block.pastelwonderland.brown": "Pastel Brown",
   "block.pastelwonderland.white": "Pastel White",
 
+  "block.pastelwonderland.red_powder": "Pastel Red Powder",
+  "block.pastelwonderland.orange_powder": "Pastel Orange Powder",
+  "block.pastelwonderland.yellow_powder": "Pastel Yellow Powder",
+  "block.pastelwonderland.green_powder": "Pastel Green Powder",
+  "block.pastelwonderland.blue_powder": "Pastel Blue Powder",
+  "block.pastelwonderland.purple_powder": "Pastel Purple Powder",
+  "block.pastelwonderland.magenta_powder": "Pastel Magenta Powder",
+  "block.pastelwonderland.gray_powder": "Pastel Gray Powder",
+  "block.pastelwonderland.black_powder": "Pastel Black Powder",
+  "block.pastelwonderland.brown_powder": "Pastel Brown Powder",
+  "block.pastelwonderland.white_powder": "Pastel White Powder",
+
   "block.pastelwonderland.dirt": "Dirt",
   "block.pastelwonderland.grass": "Grass",
   "block.pastelwonderland.stone": "Stone",

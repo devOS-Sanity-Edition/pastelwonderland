@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ppp",
+        "pbp",
+        "ppp"
+    ],
+    "key": {
+        "b": {"item": "minecraft:black_dye"},
+        "p": {"item": "pastelwonderland:pastel_powder"}
+    },
+    "result": {
+        "item": "pastelwonderland:black_powder",
+        "count": 8
+    }
+}

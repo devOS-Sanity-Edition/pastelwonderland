@@ -34,6 +34,19 @@ public class Items {
     public static final Item BROWN = register("brown", Blocks.BROWN);
     public static final Item WHITE = register("white", Blocks.WHITE);
 
+    //Pastel Powders
+    public static final Item RED_POWDER = register("red_powder", Blocks.RED_POWDER);
+    public static final Item ORANGE_POWDER = register("orange_powder", Blocks.ORANGE_POWDER);
+    public static final Item YELLOW_POWDER = register("yellow_powder", Blocks.YELLOW_POWDER);
+    public static final Item GREEN_POWDER = register("green_powder", Blocks.GREEN_POWDER);
+    public static final Item BLUE_POWDER = register("blue_powder", Blocks.BLUE_POWDER);
+    public static final Item PURPLE_POWDER = register("purple_powder", Blocks.PURPLE_POWDER);
+    public static final Item MAGENTA_POWDER = register("magenta_powder", Blocks.MAGENTA_POWDER);
+    public static final Item BLACK_POWDER = register("black_powder", Blocks.BLACK_POWDER);
+    public static final Item GRAY_POWDER = register("gray_powder", Blocks.GRAY_POWDER);
+    public static final Item BROWN_POWDER = register("brown_powder", Blocks.BROWN_POWDER);
+    public static final Item WHITE_POWDER = register("white_powder", Blocks.WHITE_POWDER);
+
     //Pastel Glass
     public static final Item WHITE_GLASS = register("white_glass", Blocks.WHITE_GLASS);
 

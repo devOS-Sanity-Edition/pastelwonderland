@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '0.5-SNAPSHOT'
+    id 'fabric-loom' version '0.7-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -20,7 +20,7 @@ repositories {
 
 dependencies {
     // Custom Portal API
-    include('net.kyrptonaught:customportalapi:0.0.1-beta20-1.16') {
+    include('net.kyrptonaught:customportalapi:0.0.1-beta26-1.16') {
         transitive = false
     }
 

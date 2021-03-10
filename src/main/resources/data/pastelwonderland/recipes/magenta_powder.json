@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ppp",
+        "pmp",
+        "ppp"
+    ],
+    "key": {
+        "m": {"item": "minecraft:magenta_dye"},
+        "p": {"item": "pastelwonderland:pastel_powder"}
+    },
+    "result": {
+        "item": "pastelwonderland:magenta_powder",
+        "count": 8
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ppp",
+        "pop",
+        "ppp"
+    ],
+    "key": {
+        "o": {"item": "minecraft:orange_dye"},
+        "p": {"item": "pastelwonderland:pastel_powder"}
+    },
+    "result": {
+        "item": "pastelwonderland:orange_powder",
+        "count": 8
+    }
+}

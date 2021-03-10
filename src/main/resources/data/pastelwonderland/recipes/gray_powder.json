@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ppp",
+        "pgp",
+        "ppp"
+    ],
+    "key": {
+        "g": {"item": "minecraft:gray_dye"},
+        "p": {"item": "pastelwonderland:pastel_powder"}
+    },
+    "result": {
+        "item": "pastelwonderland:gray_powder",
+        "count": 8
+    }
+}
