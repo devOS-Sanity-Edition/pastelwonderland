@@ -1,5 +1,6 @@
 package dev.hiitsdevin.pastelwonderland.Client;
 
+import dev.hiitsdevin.pastelwonderland.Base.Client.Transparency;
 import dev.hiitsdevin.pastelwonderland.Base.DevDisclaimer;
 import dev.hiitsdevin.pastelwonderland.Entities.Mallards.MallardRenderer;
 import dev.hiitsdevin.pastelwonderland.PastelWonderland;
@@ -35,5 +36,7 @@ public class PastelWonderlandClient implements ClientModInitializer {
                 PastelWonderland.PastelWonderlandFPSDevelopment = "Game FPS: " + MinecraftClient.getInstance().fpsDebugString;
             }
         });
+
+        Transparency.init();
     }
 }

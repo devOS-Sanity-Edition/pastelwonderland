@@ -4,12 +4,9 @@ import dev.hiitsdevin.pastelwonderland.Base.Blocks;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;
 
-//unused code.
 public class Transparency {
     public static void init() {
-        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.RED_LEAF, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.BLUE_LEAF, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.YELLOW_LEAF, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GREEN_LEAF, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.WHITE_GLASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.WHITE_GLASS_PANE, RenderLayer.getCutout());
     }
 }

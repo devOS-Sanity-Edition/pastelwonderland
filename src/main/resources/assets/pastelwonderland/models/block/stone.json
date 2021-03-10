@@ -1,6 +1,7 @@
 {
-    "parent": "block/cube_all",
-    "textures": {
-      "all": "pastelwonderland:block/stone"
-    }
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "pastelwonderland:block/stone_top",
+    "side": "pastelwonderland:block/stone"
   }
+}
