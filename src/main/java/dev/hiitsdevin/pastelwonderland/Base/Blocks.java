@@ -6,6 +6,7 @@ import dev.hiitsdevin.pastelwonderland.Base.Organization.BlockInfo;
 import dev.hiitsdevin.pastelwonderland.GrassStuff.Grass;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
@@ -43,10 +44,10 @@ public class Blocks {
     public static final Block WHITE_POWDER = register("white_powder", new ConcretePowderBlock(WHITE, FabricBlockSettings.copy(WHITE_CONCRETE_POWDER)));
 
     //Pastel Glass
-    public static final Block WHITE_GLASS = register("white_glass", BlockInfo.GlassBlock());
+    public static final Block WHITE_GLASS = register("white_glass", new GlassBlock(FabricBlockSettings.copy(WHITE_STAINED_GLASS)));
 
     //Pastel Glass Pane
-    public static final Block WHITE_GLASS_PANE = register("white_glass_pane", BlockInfo.GlassPaneBlock());
+    public static final Block WHITE_GLASS_PANE = register("white_glass_pane", new StainedGlassPaneBlock(DyeColor.WHITE, FabricBlockSettings.copy(WHITE_STAINED_GLASS_PANE)));
 
 
     //Terrain
