@@ -44,10 +44,10 @@ public class Blocks {
     public static final Block WHITE_POWDER = register("white_powder", new ConcretePowderBlock(WHITE, FabricBlockSettings.copy(WHITE_CONCRETE_POWDER)));
 
     //Pastel Glass
-    public static final Block WHITE_GLASS = register("white_glass", new GlassBlock(FabricBlockSettings.copy(WHITE_STAINED_GLASS)));
+    public static final Block WHITE_GLASS = register("white_glass", BlockInfo.GlassBlock());
 
     //Pastel Glass Pane
-    public static final Block WHITE_GLASS_PANE = register("white_glass_pane", new StainedGlassPaneBlock(DyeColor.WHITE, FabricBlockSettings.copy(WHITE_STAINED_GLASS_PANE)));
+    public static final Block WHITE_GLASS_PANE = register("white_glass_pane", BlockInfo.GlassPaneBlock(DyeColor.WHITE));
 
 
     //Terrain
