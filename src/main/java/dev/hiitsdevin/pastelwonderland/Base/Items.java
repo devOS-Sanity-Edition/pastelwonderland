@@ -89,8 +89,12 @@ public class Items {
     public static final Item PASTEL_HOE = register("pastel_hoe", new PastelHoeItem(PASTEL_TOOLS, 1, -3f, ItemGroup.pwArmourAndTools()));
 
     //Food
-    public static final Item MALLARD_RAW = register("raw_mallard", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(2).saturationModifier(5f).build())));
-    public static final Item MALLARD_COOKED = register("cooked_mallard", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(4).saturationModifier(5f).build())));
+    public static final Item MALLARD_RAW = register("raw_mallard", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(2).saturationModifier(1.5f).build())));
+    public static final Item MALLARD_COOKED = register("cooked_mallard", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(4).saturationModifier(3f).build())));
+    public static final Item VANILLA_MOCHI = register("vanilla_mochi", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(3).saturationModifier(1.5f).build())));
+    public static final Item CHOCO_MOCHI = register("chocolate_mochi", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(3).saturationModifier(1.5f).build())));
+    public static final Item STRAWBERRY_MOCHI = register("strawberry_mochi", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(3).saturationModifier(1.5f).build())));
+    public static final Item GAY_CANDY = register("rainbow_cotton_candy", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.5f).build())));
 
 
     //registered so i guess i can do /give @p pastelwonderland:colorhere bc fuck you too ig
