@@ -92,10 +92,14 @@ public class Items {
     public static final Item MALLARD_RAW = register("raw_mallard", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(2).saturationModifier(1.5f).build())));
     public static final Item MALLARD_COOKED = register("cooked_mallard", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(4).saturationModifier(3f).build())));
     public static final Item VANILLA_MOCHI = register("vanilla_mochi", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(3).saturationModifier(1.5f).build())));
-    public static final Item CHOCO_MOCHI = register("chocolate_mochi", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(3).saturationModifier(1.5f).build())));
+    public static final Item CHOCOLATE_MOCHI = register("chocolate_mochi", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(3).saturationModifier(1.5f).build())));
+    public static final Item COTTON_CANDY_MOCHI = register("cotton_candy_mochi", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(3).saturationModifier(1.5f).build())));
     public static final Item STRAWBERRY_MOCHI = register("strawberry_mochi", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(3).saturationModifier(1.5f).build())));
-    public static final Item GAY_CANDY = register("rainbow_cotton_candy", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.5f).build())));
-
+    public static final Item COTTON_CANDY = register("rainbow_cotton_candy", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.5f).build())));
+    public static final Item COTTON_CANDY_ICE_CREAM = register("cotton_candy_ice_cream", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.5f).build())));
+    public static final Item CHOCOLATE_ICE_CREAM = register("chocolate_ice_cream", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.5f).build())));
+    public static final Item VANILLA_ICE_CREAM = register("vanilla_ice_cream", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.5f).build())));
+    public static final Item STRAWBERRY_ICE_CREAM = register("strawberry_ice_cream", new Item(ItemGroup.pwMisc().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.5f).build())));
 
     //registered so i guess i can do /give @p pastelwonderland:colorhere bc fuck you too ig
     private static Item register(String name, Item item) {
