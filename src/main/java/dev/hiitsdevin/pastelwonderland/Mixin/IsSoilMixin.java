@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class IsSoilMixin {
     @Inject(method="isSoil", at=@At("HEAD"), cancellable = true)
     private static void isSoil(Block block, CallbackInfoReturnable<Boolean> cir) {
-        if (block == Blocks.DIRT || block == Blocks.GRASS) {
+        if (block == Blocks.RED) {
             cir.setReturnValue(true);
         }
     }

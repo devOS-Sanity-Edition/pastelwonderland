@@ -4,9 +4,7 @@
   "package": "dev.hiitsdevin.pastelwonderland.Mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "CapeFeatureRendererMixin",
     "ExperimentalWorldGenScreenDisabler",
-    "PlantBlockMixin",
     "IsSoilMixin"
   ],
   "client": [

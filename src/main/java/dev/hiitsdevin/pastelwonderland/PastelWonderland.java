@@ -21,9 +21,6 @@ import net.minecraft.util.registry.Registry;
 public class PastelWonderland implements ModInitializer {
     public static final String MOD_ID = "pastelwonderland";
     public static final String VERSION = FabricLoader.getInstance().getModContainer(MOD_ID).get().getMetadata().getVersion().toString();
-    public static String PastelWonderlandVersion = "Pastel Wonderland - Dev Build: " + VERSION;
-    public static String PastelWonderlandViewDisclaimer = "What you see here may not be representative of the final build!";
-    public static String PastelWonderlandFPSDevelopment = "Game FPS: " + MinecraftClient.getInstance().fpsDebugString;
 
 
     public static final EntityType<MallardEntity> MALLARD = Registry.register(
@@ -37,9 +34,6 @@ public class PastelWonderland implements ModInitializer {
     @Override
     public final void onInitialize() {
         Blocks.init();
-        DevDisclaimer.init();
-        Items.init();
-        Portals.init();
 
         FabricDefaultAttributeRegistry.register(MALLARD, MallardEntity.createMobAttributes());
     }
