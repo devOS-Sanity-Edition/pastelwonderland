@@ -11,8 +11,6 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
-    maven { url 'https://dl.bintray.com/kyrptonaught/customportalapi' }
-
     maven { url 'https://jitpack.io' }
 
     maven { url "https://maven.shedaniel.me/" }
@@ -22,11 +20,11 @@ repositories {
 
 dependencies {
     // Custom Portal API
-    include('net.kyrptonaught:customportalapi:0.0.1-beta26-1.16') {
+    include('com.github.kyrptonaught:customportalapi:8db933af27') {
         transitive = false
     }
 
-    modImplementation('net.kyrptonaught:customportalapi:0.0.1-beta20-1.16') {
+    modImplementation('com.github.kyrptonaught:customportalapi:8db933af27') {
         transitive = false
     }
 
