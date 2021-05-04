@@ -13,17 +13,17 @@ import static net.minecraft.block.Blocks.WHITE_CONCRETE;
 
 public class Blocks {
 
-    public static final Block RED = register("red", new GrassBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
-    public static final Block BLUE = register("blue", new GrassBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
-    public static final Block GREEN = register("green", new GrassBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
-    public static final Block BLACK = register("black", new GrassBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
-    public static final Block WHITE = register("white", new GrassBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
-    public static final Block GRAY = register("gray", new GrassBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
-    public static final Block MAGENTA = register("magenta", new GrassBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
-    public static final Block PURPLE = register("purple", new GrassBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
-    public static final Block ORANGE = register("orange", new GrassBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
-    public static final Block YELLOW = register("yellow", new GrassBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
-    public static final Block BROWN = register("brown", new GrassBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
+    public static final Block RED = register("red", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
+    public static final Block BLUE = register("blue", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
+    public static final Block GREEN = register("green", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
+    public static final Block BLACK = register("black", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
+    public static final Block WHITE = register("white", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
+    public static final Block GRAY = register("gray", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
+    public static final Block MAGENTA = register("magenta", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
+    public static final Block PURPLE = register("purple", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
+    public static final Block ORANGE = register("orange", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
+    public static final Block YELLOW = register("yellow", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
+    public static final Block BROWN = register("brown", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
 
     private static Block register(String name, Block block) {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, name), new BlockItem(block, ItemGroup.pwBlocks()));
