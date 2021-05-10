@@ -58,19 +58,18 @@ public class Blocks {
     public static final Block PASTEL_STONE = register("stone", new Block(FabricBlockSettings.copy(STONE)));
     public static final Block PASTEL_SAND = register("sand", new SandBlock(14269048, FabricBlockSettings.copy(SAND)));
     public static final Block PASTEL_LOG = register("log", new PillarBlock(FabricBlockSettings.copy(OAK_LOG)));
-    public static final Block BLUE_LEAVES = leavesRegister("blue_leaves");
-    public static final Block RED_LEAVES = leavesRegister("red_leaves");
-    public static final Block YELLOW_LEAVES = leavesRegister("yellow_leaves");
-    public static final Block GREEN_LEAVES = leavesRegister("green_leaves");
+    public static final Block BLUE_LEAVES = register("blue_leaves", Leaves());
+    public static final Block RED_LEAVES = register("red_leaves", Leaves());
+    public static final Block YELLOW_LEAVES = register("yellow_leaves", Leaves());
+    public static final Block GREEN_LEAVES = register("green_leaves", Leaves());
 
     //Functions
     private static Block register(String name, Block block) {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, name), new BlockItem(block, new Item.Settings().group(BLOCKS)));
         return Registry.register(Registry.BLOCK, new Identifier(MOD_ID, name), block);
     }
-    private static Block leavesRegister(String name) {
-        Registry.register(Registry.ITEM, new Identifier(MOD_ID, name), new BlockItem(new LeavesBlock(FabricBlockSettings.copy(OAK_LEAVES).nonOpaque()), new Item.Settings().group(BLOCKS)));
-        return Registry.register(Registry.BLOCK, new Identifier(MOD_ID, name), new LeavesBlock(FabricBlockSettings.copy(OAK_LEAVES).nonOpaque().blockVision(Blocks::never).suffocates(Blocks::never)));
+    public static LeavesBlock Leaves() {
+        return new LeavesBlock(FabricBlockSettings.copy(OAK_LEAVES).nonOpaque().blockVision(Blocks::never).suffocates(Blocks::never));
     }
     public static boolean never(BlockState blockState, BlockView blockView, BlockPos blockPos) {
         return false;
