@@ -2,15 +2,17 @@
   "schemaVersion": 1,
   "id": "pastelwonderland",
   "version": "${version}",
+
   "name": "Pastel Wonderland",
-  "description": "A colorful dimensions mod... with more death.",
+  "description": "A colorful dimensions mod... with more death..",
   "authors": [
-    "HiItsDevin_"
+    "devOS: Sanity Edition"
   ],
   "contact": {
-    "website": "https://hiitsdevin.dev",
-    "repo": "https://github.com/devOS-Sanity-Edition/PastelWonderland"
+    "homepage": "https://github.com/devOS-Sanity-Edition/PastelWonderland",
+    "sources": "https://github.com/devOS-Sanity-Edition/PastelWonderland"
   },
+
   "license": "MIT",
   "icon": "assets/pastelwonderland/icon.png",
   "environment": "*",
@@ -28,6 +30,7 @@
   "depends": {
     "fabricloader": ">=0.10.8",
     "fabric": "*",
-    "minecraft": ">=1.16.4"
+    "fabric-language-kotlin": "*",
+    "minecraft": "1.16.x"
   }
 }
