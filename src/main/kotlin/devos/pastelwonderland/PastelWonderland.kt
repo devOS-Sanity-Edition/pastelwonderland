@@ -2,32 +2,40 @@
 // if you get a lot of red lines like shown here: https://cdn.discordapp.com/attachments/839722904676991056/843428635217100840/idea64_trv44LotCK.png
 // then yeah that seems about right, again, im so so so sorry :C
 
+// 🦀 CRAB IN THE CODE 🦀
+// live laugh taze
+// wait why do i hear a taser coming towards me-
+
 package devos.pastelwonderland
 
 import devos.pastelwonderland.Base.Blocks
+import devos.pastelwonderland.Base.Items
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
 import net.fabricmc.loader.api.FabricLoader
-import net.minecraft.block.Block
 import net.minecraft.item.ItemStack
 import net.minecraft.util.Identifier
 
-public class PastelWonderland : ModInitializer {
-    public val PW_MOD_ID = "pastelwonderland"
-    public val VERSION = FabricLoader.getInstance().getModContainer(PW_MOD_ID).get().metadata.version.toString();
-
-    val BLOCKS = FabricItemGroupBuilder.create(Identifier(PW_MOD_ID, "blocks")).icon {
-        ItemStack(
-            // HOW DO I CALL THE RED BLOCK IN THE BLOCKS CLASS
-            Blocks.RED
-        )
-    }.build()
-
-
+class PastelWonderland : ModInitializer {
+    // maybe one day, tater will be a thing here again, no promises.
+    // it's been months since this but i dont think im adding back tater. i still feel heavily discouraged after the first time. i'm sorry.
     override fun onInitialize() {
-    // please is there any way at all to call Blocks.init(); in kotlin????? same would go for an Item class?????????
+        Blocks.init()
+        Items.init()
+    }
+
+    companion object {
+        const val PW_MOD_ID = "pastelwonderland"
+        val VERSION = FabricLoader.getInstance().getModContainer(PW_MOD_ID).get().metadata.version.toString()
+        val BLOCKS = FabricItemGroupBuilder.create(Identifier(PW_MOD_ID, "blocks")).icon {
+            ItemStack(Blocks.RED)
+        }.build()
+        val FOODS = FabricItemGroupBuilder.create(Identifier(PW_MOD_ID, "foods")).icon {
+            ItemStack(Items.MALLARD_COOKED)
+        }.build()
     }
 }
+
 
 //@Suppress("unused")
 //fun init() {

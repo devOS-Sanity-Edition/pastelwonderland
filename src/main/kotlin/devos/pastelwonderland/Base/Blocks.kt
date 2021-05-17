@@ -1,22 +1,21 @@
-// this is in every kt file but this rewrite is severely broken, if you can assist, please pull request and compare with main or rewrite branch. i'm so fucking sorry. -devin
-// if you get a lot of red lines like shown here: https://cdn.discordapp.com/attachments/839722904676991056/843428635217100840/idea64_trv44LotCK.png
-// then yeah that seems about right, again, im so so so sorry :C
-
 package devos.pastelwonderland.Base
 
 import devos.pastelwonderland.PastelWonderland
+import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.minecraft.block.*
-import net.minecraft.block.AbstractBlock.ContextPredicate
 import net.minecraft.block.Blocks
 import net.minecraft.item.BlockItem
 import net.minecraft.item.Item
+import net.minecraft.item.ItemGroup
 import net.minecraft.util.Identifier
 import net.minecraft.util.math.BlockPos
 import net.minecraft.util.registry.Registry
 import net.minecraft.world.BlockView
 
-class Blocks {
+//Copy these block settings
+object Blocks {
+    //Full blocks
     val RED = register("red", Block(FabricBlockSettings.copy(Blocks.WHITE_CONCRETE)))
     val DARK_RED = register("dark_red", Block(FabricBlockSettings.copy(Blocks.WHITE_CONCRETE)))
     val BLUE = register("blue", Block(FabricBlockSettings.copy(Blocks.WHITE_CONCRETE)))
@@ -62,46 +61,35 @@ class Blocks {
     val PASTEL_STONE = register("stone", Block(FabricBlockSettings.copy(Blocks.STONE)))
     val PASTEL_SAND = register("sand", SandBlock(14269048, FabricBlockSettings.copy(Blocks.SAND)))
     val PASTEL_LOG = register("log", PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)))
-
-    //broken, refer to line 69 [lmao xd]
-//    val BLUE_LEAVES = register("blue_leaves", Leaves())
-//    val RED_LEAVES = register("red_leaves", Leaves())
-//    val YELLOW_LEAVES = Leaves()?.let { register("yellow_leaves", it) }
-//    val GREEN_LEAVES = Leaves()?.let { register("green_leaves", it) }
+    val BLUE_LEAVES = register("blue_leaves", Leaves())
+    val RED_LEAVES = register("red_leaves", Leaves())
+    val YELLOW_LEAVES = register("yellow_leaves", Leaves())
+    val GREEN_LEAVES = register("green_leaves", Leaves())
 
     //Functions
-    // broken, will need help
-//    open fun Leaves(): LeavesBlock? {
-//        return LeavesBlock(
-//            FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque().blockVision(
-//                ContextPredicate { blockState: BlockState?, blockView: BlockView?, blockPos: BlockPos? ->
-//                    devos.pastelwonderland.Base.Blocks.(
-//                        blockState,
-//                        blockView,
-//                        blockPos
-//                    )
-//                }).suffocates(
-//                ContextPredicate { blockState: BlockState?, blockView: BlockView?, blockPos: BlockPos? ->
-//                    devos.pastelwonderland.Base.Blocks.never(
-//                        blockState,
-//                        blockView,
-//                        blockPos
-//                    )
-//                })
-//        )
-//    }
-//
-//    private fun ContextPredicate(function: (BlockState?, BlockView?, BlockPos?) -> Unit): AbstractBlock.ContextPredicate {
-//        return false
-//    }
-//
-//    fun never(blockState: BlockState?, blockView: BlockView?, blockPos: BlockPos?): Boolean {
-//        return false
-//    }
-
     private fun register(name: String, block: Block): Block {
-        Registry.register(Registry.ITEM, Identifier("pastelwonderland", name), BlockItem(block, Item.Settings().group(BLOCKS)))
-        return Registry.register(Registry.BLOCK, Identifier("pastelwonderland", name), block)
+        Registry.register(Registry.ITEM, Identifier(PW_MOD_ID, name), BlockItem(block, Item.Settings().group(PastelWonderland.BLOCKS)))
+        return Registry.register(Registry.BLOCK, Identifier(PW_MOD_ID, name), block)
+    }
+
+    fun Leaves(): LeavesBlock {
+        return LeavesBlock(
+            FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()
+                .blockVision { obj: BlockState?, blockState: BlockView?, blockView: BlockPos? ->
+                    never(
+                        blockState,
+                        blockView
+                    )
+                }.suffocates { obj: BlockState?, blockState: BlockView?, blockView: BlockPos? ->
+                    never(
+                        blockState,
+                        blockView
+                    )
+                })
+    }
+
+    private fun never(blockState: BlockView?, blockView: BlockPos?): Boolean {
+        return false;
     }
 
     fun init() {
