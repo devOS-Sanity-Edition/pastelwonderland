@@ -1,11 +1,11 @@
 {
   "required": true,
-  "package": "net.fabricmc.example.mixin",
+  "package": "devos.pastelwonderland.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "isSoilMixin"
   ],
   "client": [
-    "ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1

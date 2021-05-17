@@ -9,12 +9,15 @@
 package devos.pastelwonderland
 
 import devos.pastelwonderland.Base.Blocks
+import devos.pastelwonderland.Base.DevDisclaimer
 import devos.pastelwonderland.Base.Items
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
 import net.fabricmc.loader.api.FabricLoader
+import net.minecraft.client.MinecraftClient
 import net.minecraft.item.ItemStack
 import net.minecraft.util.Identifier
+
 
 class PastelWonderland : ModInitializer {
     // maybe one day, tater will be a thing here again, no promises.
@@ -22,11 +25,19 @@ class PastelWonderland : ModInitializer {
     override fun onInitialize() {
         Blocks.init()
         Items.init()
+
+        // comment this thing below out lol
+        if (net.fabricmc.loader.FabricLoader.INSTANCE.isDevelopmentEnvironment()) { DevDisclaimer.init() }
     }
 
     companion object {
         const val PW_MOD_ID = "pastelwonderland"
         val VERSION = FabricLoader.getInstance().getModContainer(PW_MOD_ID).get().metadata.version.toString()
+
+        var PastelWonderlandVersion = "Pastel Wonderland: Kotlin Rewrite - Dev Build: $VERSION"
+        var PastelWonderlandViewDisclaimer = "What you see here may not be representative of the final build!"
+        var PastelWonderlandFPSDevelopment = "Game FPS: " + MinecraftClient.getInstance().fpsDebugString
+
         val BLOCKS = FabricItemGroupBuilder.create(Identifier(PW_MOD_ID, "blocks")).icon {
             ItemStack(Blocks.RED)
         }.build()
