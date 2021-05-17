@@ -34,10 +34,6 @@ class PastelWonderland : ModInitializer {
         const val PW_MOD_ID = "pastelwonderland"
         val VERSION = FabricLoader.getInstance().getModContainer(PW_MOD_ID).get().metadata.version.toString()
 
-        var PastelWonderlandVersion = "Pastel Wonderland: Kotlin Rewrite - Dev Build: $VERSION"
-        var PastelWonderlandViewDisclaimer = "What you see here may not be representative of the final build!"
-        var PastelWonderlandFPSDevelopment = "Game FPS: " + MinecraftClient.getInstance().fpsDebugString
-
         val BLOCKS = FabricItemGroupBuilder.create(Identifier(PW_MOD_ID, "blocks")).icon {
             ItemStack(Blocks.RED)
         }.build()
