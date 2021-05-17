@@ -33,7 +33,7 @@ object Blocks {
     val RED_POWDER =
         register("red_powder", ConcretePowderBlock(RED, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
     val DARK_RED_POWDER =
-        register("dark_red_powder", ConcretePowderBlock(RED, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
+        register("dark_red_powder", ConcretePowderBlock(DARK_RED, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
     val ORANGE_POWDER =
         register("orange_powder", ConcretePowderBlock(ORANGE, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
     val YELLOW_POWDER =
