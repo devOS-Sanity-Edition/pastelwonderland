@@ -1,6 +1,7 @@
 package devos.pastelwonderland.Base.Gameplay
 
 import devos.pastelwonderland.Base.Organization.BlockInfo.ConcreteBlock
+import devos.pastelwonderland.Base.Organization.BlockInfo.Leaves
 import devos.pastelwonderland.Base.Organization.ItemGroup
 import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
@@ -64,26 +65,6 @@ object Blocks {
     private fun register(name: String, block: Block): Block {
         Registry.register(Registry.ITEM, Identifier(PW_MOD_ID, name), BlockItem(block, ItemGroup.pwBlocks()))
         return Registry.register(Registry.BLOCK, Identifier(PW_MOD_ID, name), block)
-    }
-
-    fun Leaves(): LeavesBlock {
-        return LeavesBlock(
-            FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()
-                .blockVision { obj: BlockState?, blockState: BlockView?, blockView: BlockPos? ->
-                    never(
-                        blockState,
-                        blockView
-                    )
-                }.suffocates { obj: BlockState?, blockState: BlockView?, blockView: BlockPos? ->
-                    never(
-                        blockState,
-                        blockView
-                    )
-                })
-    }
-
-    private fun never(blockState: BlockView?, blockView: BlockPos?): Boolean {
-        return false;
     }
 
     fun init() {
