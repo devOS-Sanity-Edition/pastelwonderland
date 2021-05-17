@@ -3,7 +3,8 @@
   "package": "devos.pastelwonderland.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "isSoilMixin"
+    "isSoilMixin",
+    "ExperimentalWorldGenScreenDisabler"
   ],
   "client": [
   ],

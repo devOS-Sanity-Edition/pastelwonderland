@@ -1,5 +1,6 @@
 package devos.pastelwonderland.Base
 
+import devos.pastelwonderland.Base.Organization.ItemGroup.pwMisc
 import devos.pastelwonderland.PastelWonderland
 import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
 import net.minecraft.item.FoodComponent
@@ -20,7 +21,16 @@ object Items {
     val VANILLA_ICE_CREAM = foodRegister("vanilla_ice_cream", 2, 0.5f)
     val STRAWBERRY_ICE_CREAM = foodRegister("strawberry_ice_cream", 2, 0.5f)
 
+    val PASTEL_POWDER = itemRegister("pastel_powder", Item(pwMisc()))
+    val PASTEL_INGOT = itemRegister("pastel_ingot", Item(pwMisc()))
+    //val MALLARD_SPAWN_EGG = itemRegister("mallard_spawn_egg", SpawnEggItem(PastelWonderland.MALLARD, 0xb6a99d, 0x297c48, pwMisc()))
+
+
     //Functions
+    private fun itemRegister(name: String, item: Item): Item? {
+        return Registry.register(Registry.ITEM, Identifier(PW_MOD_ID, name), item)
+    }
+
     private fun foodRegister(name: String, hunger: Int, saturation: Float): Item {
         return Registry.register(
             Registry.ITEM, Identifier(PW_MOD_ID, name), Item(

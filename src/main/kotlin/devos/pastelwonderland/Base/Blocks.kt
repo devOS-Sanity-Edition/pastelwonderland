@@ -1,5 +1,6 @@
 package devos.pastelwonderland.Base
 
+import devos.pastelwonderland.Base.Organization.BlockInfo.ConcreteBlock
 import devos.pastelwonderland.PastelWonderland
 import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
@@ -7,7 +8,6 @@ import net.minecraft.block.*
 import net.minecraft.block.Blocks
 import net.minecraft.item.BlockItem
 import net.minecraft.item.Item
-import net.minecraft.item.ItemGroup
 import net.minecraft.util.Identifier
 import net.minecraft.util.math.BlockPos
 import net.minecraft.util.registry.Registry
@@ -15,8 +15,9 @@ import net.minecraft.world.BlockView
 
 //Copy these block settings
 object Blocks {
+    @kotlin.jvm.JvmField
     //Full blocks
-    val RED = register("red", Block(FabricBlockSettings.copy(Blocks.WHITE_CONCRETE)))
+    val RED = register("red", ConcreteBlock())
     val DARK_RED = register("dark_red", Block(FabricBlockSettings.copy(Blocks.WHITE_CONCRETE)))
     val BLUE = register("blue", Block(FabricBlockSettings.copy(Blocks.WHITE_CONCRETE)))
     val GREEN = register("green", Block(FabricBlockSettings.copy(Blocks.WHITE_CONCRETE)))

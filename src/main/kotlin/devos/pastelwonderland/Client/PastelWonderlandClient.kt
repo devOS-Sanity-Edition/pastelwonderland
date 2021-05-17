@@ -4,12 +4,9 @@
 
 package devos.pastelwonderland.Client
 
-import devos.pastelwonderland.PastelWonderland
 import net.fabricmc.api.ClientModInitializer
 import net.fabricmc.api.EnvType
 import net.fabricmc.api.Environment
-import net.fabricmc.fabric.api.event.client.ClientTickCallback
-import net.minecraft.client.MinecraftClient
 
 
 @Environment(EnvType.CLIENT)
