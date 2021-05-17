@@ -15,11 +15,6 @@ import net.minecraft.client.MinecraftClient
 @Environment(EnvType.CLIENT)
 class PastelWonderlandClient : ClientModInitializer {
     override fun onInitializeClient() {
-        // bye bye fucko boingo
-        // TODO("Not yet implemented")
 
-        repeat(10) {
-            print("uwu wats dis owo \n")
-        }
     }
 }
