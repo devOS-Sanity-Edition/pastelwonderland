@@ -2,6 +2,7 @@ package devos.pastelwonderland.Base.Gameplay
 
 import devos.pastelwonderland.Base.Organization.BlockInfo.ConcreteBlock
 import devos.pastelwonderland.Base.Organization.BlockInfo.Leaves
+import devos.pastelwonderland.Base.Organization.BlockInfo.PastelFence
 import devos.pastelwonderland.Base.Organization.ItemGroup
 import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
@@ -60,6 +61,9 @@ object Blocks {
     val RED_LEAVES = register("red_leaves", Leaves())
     val YELLOW_LEAVES = register("yellow_leaves", Leaves())
     val GREEN_LEAVES = register("green_leaves", Leaves())
+
+    //Fences
+    val RED_FENCE = register("red_fence", PastelFence())
 
     //Functions
     private fun register(name: String, block: Block): Block {
