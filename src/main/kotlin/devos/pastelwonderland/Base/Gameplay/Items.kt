@@ -1,8 +1,7 @@
-package devos.pastelwonderland.Base
+package devos.pastelwonderland.Base.Gameplay
 
 import devos.pastelwonderland.Base.Organization.ItemGroup.pwFood
 import devos.pastelwonderland.Base.Organization.ItemGroup.pwMisc
-import devos.pastelwonderland.PastelWonderland
 import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
 import net.minecraft.item.FoodComponent
 import net.minecraft.item.Item

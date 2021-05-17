@@ -1,7 +1,7 @@
 package devos.pastelwonderland.Base.Organization
 
-import devos.pastelwonderland.Base.Blocks
-import devos.pastelwonderland.Base.Items
+import devos.pastelwonderland.Base.Gameplay.Blocks
+import devos.pastelwonderland.Base.Gameplay.Items
 import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
 import net.minecraft.item.Item

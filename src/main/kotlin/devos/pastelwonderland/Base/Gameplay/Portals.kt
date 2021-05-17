@@ -1,4 +1,4 @@
-package devos.pastelwonderland.Base
+package devos.pastelwonderland.Base.Gameplay
 
 import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
 import net.kyrptonaught.customportalapi.CustomPortalApiRegistry

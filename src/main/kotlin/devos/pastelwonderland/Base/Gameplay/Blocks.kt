@@ -1,14 +1,12 @@
-package devos.pastelwonderland.Base
+package devos.pastelwonderland.Base.Gameplay
 
 import devos.pastelwonderland.Base.Organization.BlockInfo.ConcreteBlock
 import devos.pastelwonderland.Base.Organization.ItemGroup
-import devos.pastelwonderland.PastelWonderland
 import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.minecraft.block.*
 import net.minecraft.block.Blocks
 import net.minecraft.item.BlockItem
-import net.minecraft.item.Item
 import net.minecraft.util.Identifier
 import net.minecraft.util.math.BlockPos
 import net.minecraft.util.registry.Registry

@@ -1,4 +1,4 @@
-package devos.pastelwonderland.Tools
+package devos.pastelwonderland.Base.Gameplay.Tools
 
 import net.minecraft.item.AxeItem
 import net.minecraft.item.ToolMaterial

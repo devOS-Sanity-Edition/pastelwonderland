@@ -9,11 +9,12 @@
 package devos.pastelwonderland
 
 import devos.pastelwonderland.Base.*
+import devos.pastelwonderland.Base.Gameplay.Blocks
+import devos.pastelwonderland.Base.Gameplay.Items
+import devos.pastelwonderland.Base.Gameplay.Portals
+import devos.pastelwonderland.Base.Gameplay.ToolsAndArmor
 import net.fabricmc.api.ModInitializer
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
 import net.fabricmc.loader.api.FabricLoader
-import net.minecraft.item.ItemStack
-import net.minecraft.util.Identifier
 
 
 class PastelWonderland : ModInitializer {

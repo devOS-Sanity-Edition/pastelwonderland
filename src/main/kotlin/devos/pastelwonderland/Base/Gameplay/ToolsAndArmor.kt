@@ -1,12 +1,12 @@
-package devos.pastelwonderland.Base
+package devos.pastelwonderland.Base.Gameplay
 
-import devos.pastelwonderland.Base.Items.register
+import devos.pastelwonderland.Base.Gameplay.Items.register
 import devos.pastelwonderland.Base.Organization.ItemGroup.pwArmourAndTools
-import devos.pastelwonderland.Tools.PastelArmors
-import devos.pastelwonderland.Tools.PastelAxe
-import devos.pastelwonderland.Tools.PastelHoe
-import devos.pastelwonderland.Tools.PastelPick
-import devos.pastelwonderland.Tools.PastelTools.Companion.PASTEL_TOOLS
+import devos.pastelwonderland.Base.Gameplay.Tools.PastelArmors
+import devos.pastelwonderland.Base.Gameplay.Tools.PastelAxe
+import devos.pastelwonderland.Base.Gameplay.Tools.PastelHoe
+import devos.pastelwonderland.Base.Gameplay.Tools.PastelPick
+import devos.pastelwonderland.Base.Gameplay.Tools.PastelTools.Companion.PASTEL_TOOLS
 import net.minecraft.entity.EquipmentSlot
 import net.minecraft.item.*
 

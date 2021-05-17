@@ -1,6 +1,6 @@
-package devos.pastelwonderland.Tools
+package devos.pastelwonderland.Base.Gameplay.Tools
 
-import devos.pastelwonderland.Base.Items
+import devos.pastelwonderland.Base.Gameplay.Items
 import net.minecraft.item.ToolMaterial
 import net.minecraft.recipe.Ingredient
 
