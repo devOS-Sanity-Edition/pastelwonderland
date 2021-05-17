@@ -8,9 +8,7 @@
 
 package devos.pastelwonderland
 
-import devos.pastelwonderland.Base.Blocks
-import devos.pastelwonderland.Base.DevDisclaimer
-import devos.pastelwonderland.Base.Items
+import devos.pastelwonderland.Base.*
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
 import net.fabricmc.loader.api.FabricLoader
@@ -21,9 +19,12 @@ import net.minecraft.util.Identifier
 class PastelWonderland : ModInitializer {
     // maybe one day, tater will be a thing here again, no promises.
     // it's been months since this but i dont think im adding back tater. i still feel heavily discouraged after the first time. i'm sorry.
+    // while doing this kotlin rewrite... im thinking about it, albeit, still rly sad ngl.
     override fun onInitialize() {
         Blocks.init()
         Items.init()
+        Portals.init()
+        ToolsAndArmor.init()
 
         // comment this thing below out lol
         if (net.fabricmc.loader.FabricLoader.INSTANCE.isDevelopmentEnvironment()) { DevDisclaimer.init() }
@@ -32,13 +33,6 @@ class PastelWonderland : ModInitializer {
     companion object {
         const val PW_MOD_ID = "pastelwonderland"
         val VERSION = FabricLoader.getInstance().getModContainer(PW_MOD_ID).get().metadata.version.toString()
-
-        val BLOCKS = FabricItemGroupBuilder.create(Identifier(PW_MOD_ID, "blocks")).icon {
-            ItemStack(Blocks.RED)
-        }.build()
-        val FOODS = FabricItemGroupBuilder.create(Identifier(PW_MOD_ID, "foods")).icon {
-            ItemStack(Items.MALLARD_COOKED)
-        }.build()
     }
 }
 

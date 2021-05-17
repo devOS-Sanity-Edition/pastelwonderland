@@ -1,6 +1,7 @@
 package devos.pastelwonderland.Base
 
 import devos.pastelwonderland.Base.Organization.BlockInfo.ConcreteBlock
+import devos.pastelwonderland.Base.Organization.ItemGroup
 import devos.pastelwonderland.PastelWonderland
 import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
@@ -31,30 +32,18 @@ object Blocks {
     val BROWN = register("brown", Block(FabricBlockSettings.copy(Blocks.WHITE_CONCRETE)))
 
     //Powder Blocks
-    val RED_POWDER =
-        register("red_powder", ConcretePowderBlock(RED, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
-    val DARK_RED_POWDER =
-        register("dark_red_powder", ConcretePowderBlock(DARK_RED, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
-    val ORANGE_POWDER =
-        register("orange_powder", ConcretePowderBlock(ORANGE, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
-    val YELLOW_POWDER =
-        register("yellow_powder", ConcretePowderBlock(YELLOW, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
-    val GREEN_POWDER =
-        register("green_powder", ConcretePowderBlock(GREEN, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
-    val BLUE_POWDER =
-        register("blue_powder", ConcretePowderBlock(BLUE, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
-    val PURPLE_POWDER =
-        register("purple_powder", ConcretePowderBlock(PURPLE, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
-    val MAGENTA_POWDER =
-        register("magenta_powder", ConcretePowderBlock(MAGENTA, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
-    val GRAY_POWDER =
-        register("gray_powder", ConcretePowderBlock(GRAY, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
-    val BLACK_POWDER =
-        register("black_powder", ConcretePowderBlock(BLACK, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
-    val BROWN_POWDER =
-        register("brown_powder", ConcretePowderBlock(BROWN, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
-    val WHITE_POWDER =
-        register("white_powder", ConcretePowderBlock(WHITE, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
+    val RED_POWDER = register("red_powder", ConcretePowderBlock(RED, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
+    val DARK_RED_POWDER = register("dark_red_powder", ConcretePowderBlock(DARK_RED, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
+    val ORANGE_POWDER = register("orange_powder", ConcretePowderBlock(ORANGE, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
+    val YELLOW_POWDER = register("yellow_powder", ConcretePowderBlock(YELLOW, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
+    val GREEN_POWDER = register("green_powder", ConcretePowderBlock(GREEN, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
+    val BLUE_POWDER = register("blue_powder", ConcretePowderBlock(BLUE, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
+    val PURPLE_POWDER = register("purple_powder", ConcretePowderBlock(PURPLE, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
+    val MAGENTA_POWDER = register("magenta_powder", ConcretePowderBlock(MAGENTA, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
+    val GRAY_POWDER = register("gray_powder", ConcretePowderBlock(GRAY, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
+    val BLACK_POWDER = register("black_powder", ConcretePowderBlock(BLACK, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
+    val BROWN_POWDER = register("brown_powder", ConcretePowderBlock(BROWN, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
+    val WHITE_POWDER = register("white_powder", ConcretePowderBlock(WHITE, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
 
     //Nature Blocks
     val PASTEL_DIRT = register("dirt", Block(FabricBlockSettings.copy(Blocks.DIRT)))
@@ -69,7 +58,7 @@ object Blocks {
 
     //Functions
     private fun register(name: String, block: Block): Block {
-        Registry.register(Registry.ITEM, Identifier(PW_MOD_ID, name), BlockItem(block, Item.Settings().group(PastelWonderland.BLOCKS)))
+        Registry.register(Registry.ITEM, Identifier(PW_MOD_ID, name), BlockItem(block, ItemGroup.pwBlocks()))
         return Registry.register(Registry.BLOCK, Identifier(PW_MOD_ID, name), block)
     }
 

@@ -1,5 +1,6 @@
 package devos.pastelwonderland.Base
 
+import devos.pastelwonderland.Base.Organization.ItemGroup.pwFood
 import devos.pastelwonderland.Base.Organization.ItemGroup.pwMisc
 import devos.pastelwonderland.PastelWonderland
 import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
@@ -33,15 +34,11 @@ object Items {
 
     private fun foodRegister(name: String, hunger: Int, saturation: Float): Item {
         return Registry.register(
-            Registry.ITEM, Identifier(PW_MOD_ID, name), Item(
-                Item.Settings().group(
-                    PastelWonderland.FOODS
-                ).food(FoodComponent.Builder().hunger(hunger).saturationModifier(saturation).build())
-            )
+            Registry.ITEM, Identifier(PW_MOD_ID, name), Item(pwFood().food(FoodComponent.Builder().hunger(hunger).saturationModifier(saturation).build()))
         )
     }
 
-    private fun register(name: String, item: Item): Item {
+    fun register(name: String, item: Item): Item {
         return Registry.register(Registry.ITEM, Identifier(PW_MOD_ID, name), item)
     }
 
