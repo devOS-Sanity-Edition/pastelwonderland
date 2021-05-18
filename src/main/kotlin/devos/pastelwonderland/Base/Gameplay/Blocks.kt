@@ -4,6 +4,7 @@ import devos.pastelwonderland.Base.Organization.BlockInfo.PastelConcreteBlock
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelLeaves
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelFence
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelFenceGates
+import devos.pastelwonderland.Base.Organization.BlockInfo.PastelGlowstone
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelSlabs
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelStairs
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelWalls
@@ -59,10 +60,14 @@ object Blocks {
     val PASTEL_STONE = register("stone", Block(FabricBlockSettings.copy(Blocks.STONE)))
     val PASTEL_SAND = register("sand", SandBlock(14269048, FabricBlockSettings.copy(Blocks.SAND)))
     val PASTEL_LOG = register("log", PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)))
+    val PASTEL_ORE = register("pastel_ore", OreBlock(FabricBlockSettings.copy(Blocks.IRON_ORE)))
     val BLUE_LEAVES = register("blue_leaves", PastelLeaves())
     val RED_LEAVES = register("red_leaves", PastelLeaves())
     val YELLOW_LEAVES = register("yellow_leaves", PastelLeaves())
     val GREEN_LEAVES = register("green_leaves", PastelLeaves())
+
+    //Glowstone
+    val RED_GLOWSTONE = register("red_glowstone", PastelGlowstone())
 
     //Fences
     val RED_FENCE = register("red_fence", PastelFence())
