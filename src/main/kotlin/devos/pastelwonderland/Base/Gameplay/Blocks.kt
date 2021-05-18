@@ -1,8 +1,10 @@
 package devos.pastelwonderland.Base.Gameplay
 
-import devos.pastelwonderland.Base.Organization.BlockInfo.ConcreteBlock
-import devos.pastelwonderland.Base.Organization.BlockInfo.Leaves
+import devos.pastelwonderland.Base.Organization.BlockInfo.PastelConcreteBlock
+import devos.pastelwonderland.Base.Organization.BlockInfo.PastelLeaves
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelFence
+import devos.pastelwonderland.Base.Organization.BlockInfo.PastelFenceGates
+import devos.pastelwonderland.Base.Organization.BlockInfo.PastelSlabs
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelWalls
 import devos.pastelwonderland.Base.Organization.ItemGroup
 import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
@@ -11,29 +13,27 @@ import net.minecraft.block.*
 import net.minecraft.block.Blocks
 import net.minecraft.item.BlockItem
 import net.minecraft.util.Identifier
-import net.minecraft.util.math.BlockPos
 import net.minecraft.util.registry.Registry
-import net.minecraft.world.BlockView
 
 //Copy these block settings
 object Blocks {
     @kotlin.jvm.JvmField
     //Full blocks
-    val RED = register("red", ConcreteBlock())
-    val DARK_RED = register("dark_red", ConcreteBlock())
-    val ORANGE = register("orange", ConcreteBlock())
-    val YELLOW = register("yellow", ConcreteBlock())
-    val GREEN = register("green", ConcreteBlock())
-    val DARK_GREEN = register("dark_green", ConcreteBlock())
-    val BLUE = register("blue", ConcreteBlock())
-    val DARK_BLUE = register("dark_blue", ConcreteBlock())
-    val PURPLE = register("purple", ConcreteBlock())
-    val MAGENTA = register("magenta", ConcreteBlock())
-    val BLACK = register("black", ConcreteBlock())
-    val GRAY = register("gray", ConcreteBlock())
-    val DARK_GRAY = register("dark_gray", ConcreteBlock())
-    val WHITE = register("white", ConcreteBlock())
-    val BROWN = register("brown", ConcreteBlock())
+    val RED = register("red", PastelConcreteBlock())
+    val DARK_RED = register("dark_red", PastelConcreteBlock())
+    val ORANGE = register("orange", PastelConcreteBlock())
+    val YELLOW = register("yellow", PastelConcreteBlock())
+    val GREEN = register("green", PastelConcreteBlock())
+    val DARK_GREEN = register("dark_green", PastelConcreteBlock())
+    val BLUE = register("blue", PastelConcreteBlock())
+    val DARK_BLUE = register("dark_blue", PastelConcreteBlock())
+    val PURPLE = register("purple", PastelConcreteBlock())
+    val MAGENTA = register("magenta", PastelConcreteBlock())
+    val BLACK = register("black", PastelConcreteBlock())
+    val GRAY = register("gray", PastelConcreteBlock())
+    val DARK_GRAY = register("dark_gray", PastelConcreteBlock())
+    val WHITE = register("white", PastelConcreteBlock())
+    val BROWN = register("brown", PastelConcreteBlock())
 
     //Powder Blocks
     val RED_POWDER = register("red_powder", ConcretePowderBlock(RED, FabricBlockSettings.copy(Blocks.WHITE_CONCRETE_POWDER)))
@@ -58,10 +58,10 @@ object Blocks {
     val PASTEL_STONE = register("stone", Block(FabricBlockSettings.copy(Blocks.STONE)))
     val PASTEL_SAND = register("sand", SandBlock(14269048, FabricBlockSettings.copy(Blocks.SAND)))
     val PASTEL_LOG = register("log", PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)))
-    val BLUE_LEAVES = register("blue_leaves", Leaves())
-    val RED_LEAVES = register("red_leaves", Leaves())
-    val YELLOW_LEAVES = register("yellow_leaves", Leaves())
-    val GREEN_LEAVES = register("green_leaves", Leaves())
+    val BLUE_LEAVES = register("blue_leaves", PastelLeaves())
+    val RED_LEAVES = register("red_leaves", PastelLeaves())
+    val YELLOW_LEAVES = register("yellow_leaves", PastelLeaves())
+    val GREEN_LEAVES = register("green_leaves", PastelLeaves())
 
     //Fences
     val RED_FENCE = register("red_fence", PastelFence())
@@ -79,6 +79,38 @@ object Blocks {
     val DARK_GRAY_FENCE = register("dark_gray_fence", PastelFence())
     val WHITE_FENCE = register("white_fence", PastelFence())
     val BROWN_FENCE = register("brown_fence", PastelFence())
+
+    val RED_FENCE_GATE = register("red_fence_gate", PastelFenceGates())
+    val DARK_RED_FENCE_GATE = register("dark_red_fence_gate", PastelFenceGates())
+    val ORANGE_FENCE_GATE = register("orange_fence_gate", PastelFenceGates())
+    val YELLOW_FENCE_GATE = register("yellow_fence_gate", PastelFenceGates())
+    val GREEN_FENCE_GATE = register("green_fence_gate", PastelFenceGates())
+    val DARK_GREEN_FENCE_GATE = register("dark_green_fence_gate", PastelFenceGates())
+    val BLUE_FENCE_GATE = register("blue_fence_gate", PastelFenceGates())
+    val DARK_BLUE_FENCE_GATE = register("dark_blue_fence_gate", PastelFenceGates())
+    val PURPLE_FENCE_GATE = register("purple_fence_gate", PastelFenceGates())
+    val MAGENTA_FENCE_GATE = register("magenta_fence_gate", PastelFenceGates())
+    val BLACK_FENCE_GATE = register("black_fence_gate", PastelFenceGates())
+    val GRAY_FENCE_GATE = register("gray_fence_gate", PastelFenceGates())
+    val DARK_GRAY_FENCE_GATE = register("dark_gray_fence_gate", PastelFenceGates())
+    val WHITE_FENCE_GATE = register("white_fence_gate", PastelFenceGates())
+    val BROWN_FENCE_GATE = register("brown_fence_gate", PastelFenceGates())
+
+    val RED_SLAB = register("red_slab", PastelSlabs())
+    val DARK_RED_SLAB = register("dark_red_slab", PastelSlabs())
+    val ORANGE_SLAB = register("orange_slab", PastelSlabs())
+    val YELLOW_SLAB = register("yellow_slab", PastelSlabs())
+    val GREEN_SLAB = register("green_slab", PastelSlabs())
+    val DARK_GREEN_SLAB = register("dark_green_slab", PastelSlabs())
+    val BLUE_SLAB = register("blue_slab", PastelSlabs())
+    val DARK_BLUE_SLAB = register("dark_blue_slab", PastelSlabs())
+    val PURPLE_SLAB = register("purple_slab", PastelSlabs())
+    val MAGENTA_SLAB = register("magenta_slab", PastelSlabs())
+    val BLACK_SLAB = register("black_slab", PastelSlabs())
+    val GRAY_SLAB = register("gray_slab", PastelSlabs())
+    val DARK_GRAY_SLAB = register("dark_gray_slab", PastelSlabs())
+    val WHITE_SLAB = register("white_slab", PastelSlabs())
+    val BROWN_SLAB = register("brown_slab", PastelSlabs())
 
     //Walls
     val RED_WALL = register("red_wall", PastelWalls())

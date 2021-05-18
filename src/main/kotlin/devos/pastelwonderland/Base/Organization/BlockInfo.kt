@@ -8,7 +8,7 @@ import net.minecraft.world.BlockView
 import java.util.function.Predicate
 
 object BlockInfo {
-    fun Leaves(): LeavesBlock {
+    fun PastelLeaves(): LeavesBlock {
         return LeavesBlock(
             FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()
                 .blockVision { obj: BlockState?, blockState: BlockView?, blockView: BlockPos? ->
@@ -28,8 +28,8 @@ object BlockInfo {
         return false;
     }
 
-    fun ConcreteBlock(): Block {
-        return Block(FabricBlockSettings.copy(Blocks.WHITE_CONCRETE))
+    fun PastelConcreteBlock(): Block {
+        return Block(FabricBlockSettings.of(Material.STONE))
     }
 
     fun PastelFence(): FenceBlock {
@@ -40,18 +40,13 @@ object BlockInfo {
         return FenceGateBlock(FabricBlockSettings.of(Material.STONE))
     }
 
-    fun PastelWalls(): WallBlock {
-        return WallBlock(FabricBlockSettings.of(Material.STONE))
-    }
-
-    fun GlassBlock(): Block {
+    fun PastelGlassBlock(): Block {
         return GlassBlock(
-            FabricBlockSettings.copy(Blocks.WHITE_STAINED_GLASS).nonOpaque()//.blockVision(Blocks::never)
-            //.suffocates(Blocks::never)
+            FabricBlockSettings.copy(Blocks.WHITE_STAINED_GLASS).nonOpaque()
         )
     }
 
-    fun GlassPaneBlock(GlassColor: DyeColor?): Block {
+    fun PastelGlassPaneBlock(GlassColor: DyeColor?): Block {
         return StainedGlassPaneBlock(
             GlassColor,
             FabricBlockSettings.copy(Blocks.WHITE_STAINED_GLASS_PANE).nonOpaque()//.blockVision(Blocks::never)
@@ -61,5 +56,17 @@ object BlockInfo {
 
     fun PastelGlowstone(): Block {
         return Block(FabricBlockSettings.copy(Blocks.GLOWSTONE).luminance { state: BlockState? -> 15 })
+    }
+
+    fun PastelSlabs(): SlabBlock {
+        return SlabBlock(FabricBlockSettings.of(Material.STONE))
+    }
+
+//    fun PastelStairs(): StairsBlock {
+//        return StairsBlock(Blocks.STONE.defaultState, FabricBlockSettings.of(Material.STONE))
+//    } uh yeah i dont know how to do this what
+
+    fun PastelWalls(): WallBlock {
+        return WallBlock(FabricBlockSettings.of(Material.STONE))
     }
 }

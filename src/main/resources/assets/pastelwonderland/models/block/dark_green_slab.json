@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab",
+    "textures": {
+        "top": "pastelwonderland:block/dark_green",
+        "bottom": "pastelwonderland:block/dark_green",
+        "side": "pastelwonderland:block/dark_green"
+    }
+}
