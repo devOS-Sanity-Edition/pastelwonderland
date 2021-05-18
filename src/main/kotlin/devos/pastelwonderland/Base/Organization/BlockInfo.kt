@@ -1,7 +1,11 @@
 package devos.pastelwonderland.Base.Organization
 
+import devos.pastelwonderland.Base.Gameplay.Blocks.WHITE_GLASS
+import devos.pastelwonderland.Base.Gameplay.Items
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap
 import net.minecraft.block.*
+import net.minecraft.client.render.RenderLayer
 import net.minecraft.tag.BlockTags
 import net.minecraft.tag.Tag
 import net.minecraft.util.DyeColor

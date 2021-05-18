@@ -12,8 +12,10 @@ import devos.pastelwonderland.Base.Organization.BlockInfo.PastelWalls
 import devos.pastelwonderland.Base.Organization.ItemGroup
 import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap
 import net.minecraft.block.*
 import net.minecraft.block.Blocks
+import net.minecraft.client.render.RenderLayer
 import net.minecraft.item.BlockItem
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
@@ -166,6 +168,11 @@ object Blocks {
     }
 
     fun init() {
-
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), WHITE_GLASS); // make sure to add glass pane after that WHITE_GLASS after you get it added
+        BlockRenderLayerMap.INSTANCE.putItems(RenderLayer.getTranslucent(), WHITE_GLASS);
     }
+}
+
+private fun BlockRenderLayerMap.putItems(translucent: RenderLayer?, whiteGlass: Block) {
+
 }
