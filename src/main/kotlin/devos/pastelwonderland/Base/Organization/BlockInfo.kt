@@ -44,15 +44,34 @@ object BlockInfo {
 
     fun PastelGlassBlock(): Block {
         return GlassBlock(
-            FabricBlockSettings.copy(Blocks.WHITE_STAINED_GLASS).nonOpaque()
+            FabricBlockSettings.copy(Blocks.WHITE_STAINED_GLASS).nonOpaque().blockVision { obj: BlockState?, blockState: BlockView?, blockView: BlockPos? ->
+                never(
+                    blockState,
+                    blockView
+                )
+            }.suffocates { obj: BlockState?, blockState: BlockView?, blockView: BlockPos? ->
+                never(
+                    blockState,
+                    blockView
+                )
+            }
         )
     }
 
     fun PastelGlassPaneBlock(GlassColor: DyeColor?): Block {
         return StainedGlassPaneBlock(
             GlassColor,
-            FabricBlockSettings.copy(Blocks.WHITE_STAINED_GLASS_PANE).nonOpaque()//.blockVision(Blocks::never)
-            //.suffocates(Blocks::never)
+            FabricBlockSettings.copy(Blocks.WHITE_STAINED_GLASS_PANE).nonOpaque().blockVision { obj: BlockState?, blockState: BlockView?, blockView: BlockPos? ->
+                never(
+                    blockState,
+                    blockView
+                )
+            }.suffocates { obj: BlockState?, blockState: BlockView?, blockView: BlockPos? ->
+                never(
+                    blockState,
+                    blockView
+                )
+            }
         )
     }
 

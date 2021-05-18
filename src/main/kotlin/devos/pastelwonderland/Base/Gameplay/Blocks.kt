@@ -4,6 +4,7 @@ import devos.pastelwonderland.Base.Organization.BlockInfo.PastelConcreteBlock
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelLeaves
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelFence
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelFenceGates
+import devos.pastelwonderland.Base.Organization.BlockInfo.PastelGlassBlock
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelGlowstone
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelSlabs
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelStairs
@@ -66,11 +67,9 @@ object Blocks {
     val YELLOW_LEAVES = register("yellow_leaves", PastelLeaves())
     val GREEN_LEAVES = register("green_leaves", PastelLeaves())
 
-    //Glowstone
-    val RED_GLOWSTONE = register("red_glowstone", PastelGlowstone())
-
     //Fences
     val RED_FENCE = register("red_fence", PastelFence())
+
     val DARK_RED_FENCE = register("dark_red_fence", PastelFence())
     val ORANGE_FENCE = register("orange_fence", PastelFence())
     val YELLOW_FENCE = register("yellow_fence", PastelFence())
@@ -85,8 +84,9 @@ object Blocks {
     val DARK_GRAY_FENCE = register("dark_gray_fence", PastelFence())
     val WHITE_FENCE = register("white_fence", PastelFence())
     val BROWN_FENCE = register("brown_fence", PastelFence())
-
+    //Fence Gates
     val RED_FENCE_GATE = register("red_fence_gate", PastelFenceGates())
+
     val DARK_RED_FENCE_GATE = register("dark_red_fence_gate", PastelFenceGates())
     val ORANGE_FENCE_GATE = register("orange_fence_gate", PastelFenceGates())
     val YELLOW_FENCE_GATE = register("yellow_fence_gate", PastelFenceGates())
@@ -102,6 +102,13 @@ object Blocks {
     val WHITE_FENCE_GATE = register("white_fence_gate", PastelFenceGates())
     val BROWN_FENCE_GATE = register("brown_fence_gate", PastelFenceGates())
 
+    //Glass
+    val WHITE_GLASS = register("white_glass", PastelGlassBlock())
+
+    //Glowstone
+    val RED_GLOWSTONE = register("red_glowstone", PastelGlowstone())
+
+    //Slabs
     val RED_SLAB = register("red_slab", PastelSlabs())
     val DARK_RED_SLAB = register("dark_red_slab", PastelSlabs())
     val ORANGE_SLAB = register("orange_slab", PastelSlabs())
