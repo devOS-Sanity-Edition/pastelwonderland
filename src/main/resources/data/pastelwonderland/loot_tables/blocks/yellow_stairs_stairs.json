@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "pastelwonderland:yellow_stairs_stairs"
+                }
+            ]
+        }
+    ]
+}
