@@ -9,5 +9,6 @@ object FabricTags {
     val DIRT = blockTagRegister("dirt")
     fun blockTagRegister(id: String?): Tag<Block> {
         return TagRegistry.block(Identifier("c", id))
+            // Bruh?
     }
 }
