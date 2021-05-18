@@ -1,0 +1,20 @@
+{
+  "replace": "false",
+  "values": [
+    "pastelwonderland:red_wall",
+    "pastelwonderland:dark_red_wall",
+    "pastelwonderland:orange_wall",
+    "pastelwonderland:yellow_wall",
+    "pastelwonderland:green_wall",
+    "pastelwonderland:dark_green_wall",
+    "pastelwonderland:blue_wall",
+    "pastelwonderland:dark_blue_wall",
+    "pastelwonderland:purple_wall",
+    "pastelwonderland:magenta_wall",
+    "pastelwonderland:black_wall",
+    "pastelwonderland:gray_wall",
+    "pastelwonderland:dark_gray_wall",
+    "pastelwonderland:white_wall",
+    "pastelwonderland:brown_wall"
+  ]
+}

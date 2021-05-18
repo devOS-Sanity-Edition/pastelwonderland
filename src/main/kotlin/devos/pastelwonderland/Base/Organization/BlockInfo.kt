@@ -36,6 +36,14 @@ object BlockInfo {
         return FenceBlock(FabricBlockSettings.of(Material.STONE))
     }
 
+    fun PastelFenceGates(): FenceGateBlock {
+        return FenceGateBlock(FabricBlockSettings.of(Material.STONE))
+    }
+
+    fun PastelWalls(): WallBlock {
+        return WallBlock(FabricBlockSettings.of(Material.STONE))
+    }
+
     fun GlassBlock(): Block {
         return GlassBlock(
             FabricBlockSettings.copy(Blocks.WHITE_STAINED_GLASS).nonOpaque()//.blockVision(Blocks::never)

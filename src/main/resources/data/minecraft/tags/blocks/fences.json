@@ -1,5 +1,20 @@
 {
+  "replace": "false",
   "values": [
-    "pastelwonderland:red_fence"
+    "pastelwonderland:red_fence",
+    "pastelwonderland:dark_red_fence",
+    "pastelwonderland:orange_fence",
+    "pastelwonderland:yellow_fence",
+    "pastelwonderland:green_fence",
+    "pastelwonderland:dark_green_fence",
+    "pastelwonderland:blue_fence",
+    "pastelwonderland:dark_blue_fence",
+    "pastelwonderland:purple_fence",
+    "pastelwonderland:magenta_fence",
+    "pastelwonderland:black_fence",
+    "pastelwonderland:gray_fence",
+    "pastelwonderland:dark_gray_fence",
+    "pastelwonderland:white_fence",
+    "pastelwonderland:brown_fence"
   ]
 }
