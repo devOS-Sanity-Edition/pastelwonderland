@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/stairs",
+    "textures": {
+        "bottom": "pastelwonderland:block/dark_red",
+        "top": "pastelwonderland:block/dark_red",
+        "side": "pastelwonderland:block/dark_red"
+    }
+}

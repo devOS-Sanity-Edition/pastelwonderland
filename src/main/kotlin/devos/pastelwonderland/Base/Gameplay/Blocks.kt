@@ -5,6 +5,7 @@ import devos.pastelwonderland.Base.Organization.BlockInfo.PastelLeaves
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelFence
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelFenceGates
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelSlabs
+import devos.pastelwonderland.Base.Organization.BlockInfo.PastelStairs
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelWalls
 import devos.pastelwonderland.Base.Organization.ItemGroup
 import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
@@ -111,6 +112,23 @@ object Blocks {
     val DARK_GRAY_SLAB = register("dark_gray_slab", PastelSlabs())
     val WHITE_SLAB = register("white_slab", PastelSlabs())
     val BROWN_SLAB = register("brown_slab", PastelSlabs())
+
+    //Stairs
+    val RED_STAIRS = register("red_stairs", PastelStairs())
+    val DARK_RED_STAIRS = register("dark_red_stairs", PastelStairs())
+    val ORANGE_STAIRS = register("orange_stairs", PastelStairs())
+    val YELLOW_STAIRS = register("yellow_stairs", PastelStairs())
+    val GREEN_STAIRS = register("green_stairs", PastelStairs())
+    val DARK_GREEN_STAIRS = register("dark_green_stairs", PastelStairs())
+    val BLUE_STAIRS = register("blue_stairs", PastelStairs())
+    val DARK_BLUE_STAIRS = register("dark_blue_stairs", PastelStairs())
+    val PURPLE_STAIRS = register("purple_stairs", PastelStairs())
+    val MAGENTA_STAIRS = register("magenta_stairs", PastelStairs())
+    val BLACK_STAIRS = register("black_stairs", PastelStairs())
+    val GRAY_STAIRS = register("gray_stairs", PastelStairs())
+    val DARK_GRAY_STAIRS = register("dark_gray_stairs", PastelStairs())
+    val WHITE_STAIRS = register("white_stairs", PastelStairs())
+    val BROWN_STAIRS = register("brown_stairs", PastelStairs())
 
     //Walls
     val RED_WALL = register("red_wall", PastelWalls())

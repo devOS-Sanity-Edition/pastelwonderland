@@ -2,10 +2,12 @@ package devos.pastelwonderland.Base.Organization
 
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.minecraft.block.*
+import net.minecraft.tag.BlockTags
+import net.minecraft.tag.Tag
 import net.minecraft.util.DyeColor
 import net.minecraft.util.math.BlockPos
 import net.minecraft.world.BlockView
-import java.util.function.Predicate
+
 
 object BlockInfo {
     fun PastelLeaves(): LeavesBlock {
@@ -62,9 +64,12 @@ object BlockInfo {
         return SlabBlock(FabricBlockSettings.of(Material.STONE))
     }
 
-//    fun PastelStairs(): StairsBlock {
-//        return StairsBlock(Blocks.STONE.defaultState, FabricBlockSettings.of(Material.STONE))
-//    } uh yeah i dont know how to do this what
+    class PastelStairsInfo(baseBlockState: BlockState?, settings: Settings?) :
+        StairsBlock(baseBlockState, settings)
+
+    fun PastelStairs(): StairsBlock {
+        return PastelStairsInfo(Blocks.STONE.defaultState, FabricBlockSettings.of(Material.STONE))
+    }
 
     fun PastelWalls(): WallBlock {
         return WallBlock(FabricBlockSettings.of(Material.STONE))
