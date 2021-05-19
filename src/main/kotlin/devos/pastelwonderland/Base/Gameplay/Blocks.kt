@@ -1,11 +1,11 @@
 package devos.pastelwonderland.Base.Gameplay
 
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelConcreteBlock
-import devos.pastelwonderland.Base.Organization.BlockInfo.PastelLeaves
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelFence
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelFenceGates
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelGlassBlock
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelGlowstone
+import devos.pastelwonderland.Base.Organization.BlockInfo.PastelLeaves
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelSlabs
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelStairs
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelWalls
@@ -17,6 +17,7 @@ import net.minecraft.block.*
 import net.minecraft.block.Blocks
 import net.minecraft.client.render.RenderLayer
 import net.minecraft.item.BlockItem
+import net.minecraft.item.Item
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
 
@@ -105,8 +106,10 @@ object Blocks {
     val BROWN_FENCE_GATE = register("brown_fence_gate", PastelFenceGates())
 
     //Glass
-    val WHITE_GLASS = register("white_glass", PastelGlassBlock())
-    val BLACK_GLASS = register("black_glass", PastelGlassBlock())
+    val WHITE_GLASS = registerGlassBlock("white_glass", PastelGlassBlock())
+    val BLACK_GLASS = registerGlassBlock("black_glass", PastelGlassBlock())
+    val WHITE_GLASS_ITEM = registerGlassItem("white_glass", WHITE_GLASS)
+    val BLACK_GLASS_ITEM = registerGlassItem("black_glass", BLACK_GLASS)
 
     //Glowstone
     val RED_GLOWSTONE = register("red_glowstone", PastelGlowstone())
@@ -167,10 +170,16 @@ object Blocks {
         Registry.register(Registry.ITEM, Identifier(PW_MOD_ID, name), BlockItem(block, ItemGroup.pwBlocks()))
         return Registry.register(Registry.BLOCK, Identifier(PW_MOD_ID, name), block)
     }
+    private fun registerGlassBlock(name: String, block: Block): Block {
+        return Registry.register(Registry.BLOCK, Identifier(PW_MOD_ID, name), block)
+    }
+    private fun registerGlassItem(name: String, block: Block): Item {
+        return Registry.register(Registry.ITEM, Identifier(PW_MOD_ID, name), BlockItem(block, ItemGroup.pwBlocks()))
+    }
 
     fun init() {
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), WHITE_GLASS, BLACK_GLASS); // make sure to add glass pane after that WHITE_GLASS after you get it added
-        BlockRenderLayerMap.INSTANCE.putItems(RenderLayer.getTranslucent(), WHITE_GLASS, BLACK_GLASS);
+        BlockRenderLayerMap.INSTANCE.putItems(RenderLayer.getTranslucent(), WHITE_GLASS_ITEM, BLACK_GLASS_ITEM);
     }
 }
 
