@@ -9,10 +9,11 @@ import devos.pastelwonderland.Base.Organization.BlockInfo.PastelLeaves
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelSlabs
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelStairs
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelWalls
-import devos.pastelwonderland.Base.Organization.ItemGroup
+import devos.pastelwonderland.PastelWonderland
 import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.block.*
 import net.minecraft.block.Blocks
 import net.minecraft.client.render.RenderLayer
@@ -20,6 +21,7 @@ import net.minecraft.item.BlockItem
 import net.minecraft.item.Item
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
+
 
 //Copy these block settings
 object Blocks {
@@ -167,14 +169,14 @@ object Blocks {
 
     //Functions
     private fun register(name: String, block: Block): Block {
-        Registry.register(Registry.ITEM, Identifier(PW_MOD_ID, name), BlockItem(block, ItemGroup.pwBlocks()))
+        Registry.register(Registry.ITEM, Identifier(PW_MOD_ID, name), BlockItem(block, FabricItemSettings().group(PastelWonderland.BLOCKS)))
         return Registry.register(Registry.BLOCK, Identifier(PW_MOD_ID, name), block)
     }
     private fun registerGlassBlock(name: String, block: Block): Block {
         return Registry.register(Registry.BLOCK, Identifier(PW_MOD_ID, name), block)
     }
     private fun registerGlassItem(name: String, block: Block): Item {
-        return Registry.register(Registry.ITEM, Identifier(PW_MOD_ID, name), BlockItem(block, ItemGroup.pwBlocks()))
+        return Registry.register(Registry.ITEM, Identifier(PW_MOD_ID, name), BlockItem(block, FabricItemSettings().group(PastelWonderland.BLOCKS)))
     }
 
     fun init() {
