@@ -184,7 +184,3 @@ object Blocks {
         BlockRenderLayerMap.INSTANCE.putItems(RenderLayer.getTranslucent(), WHITE_GLASS_ITEM, BLACK_GLASS_ITEM);
     }
 }
-
-private fun BlockRenderLayerMap.putItems(translucent: RenderLayer?, whiteGlass: Block) {
-
-}
