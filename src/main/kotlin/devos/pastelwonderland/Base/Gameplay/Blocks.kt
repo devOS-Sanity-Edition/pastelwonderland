@@ -106,6 +106,7 @@ object Blocks {
 
     //Glass
     val WHITE_GLASS = register("white_glass", PastelGlassBlock())
+    val BLACK_GLASS = register("black_glass", PastelGlassBlock())
 
     //Glowstone
     val RED_GLOWSTONE = register("red_glowstone", PastelGlowstone())
@@ -168,8 +169,8 @@ object Blocks {
     }
 
     fun init() {
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), WHITE_GLASS); // make sure to add glass pane after that WHITE_GLASS after you get it added
-        BlockRenderLayerMap.INSTANCE.putItems(RenderLayer.getTranslucent(), WHITE_GLASS);
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), WHITE_GLASS, BLACK_GLASS); // make sure to add glass pane after that WHITE_GLASS after you get it added
+        BlockRenderLayerMap.INSTANCE.putItems(RenderLayer.getTranslucent(), WHITE_GLASS, BLACK_GLASS);
     }
 }
 
