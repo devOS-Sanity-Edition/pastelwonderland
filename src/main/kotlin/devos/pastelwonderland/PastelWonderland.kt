@@ -4,7 +4,7 @@
 
 package devos.pastelwonderland
 
-import devos.pastelwonderland.Base.*
+import devos.pastelwonderland.Base.DevDisclaimer
 import devos.pastelwonderland.Base.Gameplay.Blocks
 import devos.pastelwonderland.Base.Gameplay.Items
 import devos.pastelwonderland.Base.Gameplay.Portals
