@@ -108,10 +108,37 @@ object Blocks {
     val BROWN_FENCE_GATE = register("brown_fence_gate", PastelFenceGates())
 
     //Glass
-    val WHITE_GLASS = registerGlassBlock("white_glass", PastelGlassBlock())
+    val RED_GLASS = registerGlassBlock("red_glass", PastelGlassBlock())
+    val DARK_RED_GLASS = registerGlassBlock("dark_red_glass", PastelGlassBlock())
+    val ORANGE_GLASS = registerGlassBlock("orange_glass", PastelGlassBlock())
+    val YELLOW_GLASS = registerGlassBlock("yellow_glass", PastelGlassBlock())
+    val GREEN_GLASS = registerGlassBlock("green_glass", PastelGlassBlock())
+    val DARK_GREEN_GLASS = registerGlassBlock("dark_green_glass", PastelGlassBlock())
+    val BLUE_GLASS = registerGlassBlock("blue_glass", PastelGlassBlock())
+    val DARK_BLUE_GLASS = registerGlassBlock("dark_blue_glass", PastelGlassBlock())
+    val PURPLE_GLASS = registerGlassBlock("purple_glass", PastelGlassBlock())
+    val MAGENTA_GLASS = registerGlassBlock("magenta_glass", PastelGlassBlock())
     val BLACK_GLASS = registerGlassBlock("black_glass", PastelGlassBlock())
-    val WHITE_GLASS_ITEM = registerGlassItem("white_glass", WHITE_GLASS)
+    val GRAY_GLASS = registerGlassBlock("gray_glass", PastelGlassBlock())
+    val DARK_GRAY_GLASS = registerGlassBlock("dark_gray_glass", PastelGlassBlock())
+    val WHITE_GLASS = registerGlassBlock("white_glass", PastelGlassBlock())
+    val BROWN_GLASS = registerGlassBlock("brown_glass", PastelGlassBlock())
+
+    val RED_GLASS_ITEM = registerGlassItem("red_glass", RED_GLASS)
+    val DARK_RED_GLASS_ITEM = registerGlassItem("dark_red_glass", DARK_RED_GLASS)
+    val ORANGE_GLASS_ITEM = registerGlassItem("orange_glass", ORANGE_GLASS)
+    val YELLOW_GLASS_ITEM = registerGlassItem("yellow_glass", YELLOW_GLASS)
+    val GREEN_GLASS_ITEM = registerGlassItem("green_glass", GREEN_GLASS)
+    val DARK_GREEN_GLASS_ITEM = registerGlassItem("dark_green_glass", DARK_GREEN_GLASS)
+    val BLUE_GLASS_ITEM = registerGlassItem("blue_glass", BLUE_GLASS)
+    val DARK_BLUE_GLASS_ITEM = registerGlassItem("dark_blue_glass", DARK_BLUE_GLASS)
+    val PURPLE_GLASS_ITEM = registerGlassItem("purple_glass", PURPLE_GLASS)
+    val MAGENTA_GLASS_ITEM = registerGlassItem("magenta_glass", MAGENTA_GLASS)
     val BLACK_GLASS_ITEM = registerGlassItem("black_glass", BLACK_GLASS)
+    val GRAY_GLASS_ITEM = registerGlassItem("gray_glass", GRAY_GLASS)
+    val DARK_GRAY_GLASS_ITEM = registerGlassItem("dark_gray_glass", DARK_GRAY_GLASS)
+    val WHITE_GLASS_ITEM = registerGlassItem("white_glass", WHITE_GLASS)
+    val BROWN_GLASS_ITEM = registerGlassItem("brown_glass", BROWN_GLASS)
 
     //Glowstone
     val RED_GLOWSTONE = register("red_glowstone", PastelGlowstone())
@@ -180,7 +207,7 @@ object Blocks {
     }
 
     fun init() {
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), WHITE_GLASS, BLACK_GLASS); // make sure to add glass pane after that WHITE_GLASS after you get it added
-        BlockRenderLayerMap.INSTANCE.putItems(RenderLayer.getTranslucent(), WHITE_GLASS_ITEM, BLACK_GLASS_ITEM);
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), RED_GLASS, DARK_RED_GLASS, ORANGE_GLASS, YELLOW_GLASS, GREEN_GLASS, DARK_GREEN_GLASS, BLUE_GLASS, DARK_BLUE_GLASS, PURPLE_GLASS, MAGENTA_GLASS, BLACK_GLASS, GRAY_GLASS, DARK_GRAY_GLASS, WHITE_GLASS, BROWN_GLASS)
+        BlockRenderLayerMap.INSTANCE.putItems(RenderLayer.getTranslucent(), RED_GLASS_ITEM, DARK_RED_GLASS_ITEM, ORANGE_GLASS_ITEM, YELLOW_GLASS_ITEM, GREEN_GLASS_ITEM, DARK_GREEN_GLASS_ITEM, BLUE_GLASS_ITEM, DARK_BLUE_GLASS_ITEM, PURPLE_GLASS_ITEM, MAGENTA_GLASS_ITEM, BLACK_GLASS_ITEM, GRAY_GLASS_ITEM, DARK_GRAY_GLASS_ITEM, WHITE_GLASS_ITEM, BROWN_GLASS_ITEM);
     }
 }
