@@ -9,6 +9,8 @@ import devos.pastelwonderland.Base.Organization.BlockInfo.PastelLeaves
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelSlabs
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelStairs
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelWalls
+import devos.pastelwonderland.Base.Organization.BlockInfo.PastelWoodLogs
+import devos.pastelwonderland.Base.Organization.BlockInfo.PastelWoodPlanks
 import devos.pastelwonderland.Base.Organization.BlockInfo.PastelWool
 import devos.pastelwonderland.PastelWonderland
 import devos.pastelwonderland.PastelWonderland.Companion.PW_MOD_ID
@@ -66,7 +68,6 @@ object Blocks {
     val PASTEL_GRASS = register("grass", GrassBlock(FabricBlockSettings.copy(Blocks.GRASS_BLOCK)))
     val PASTEL_STONE = register("stone", Block(FabricBlockSettings.copy(Blocks.STONE)))
     val PASTEL_SAND = register("sand", SandBlock(14269048, FabricBlockSettings.copy(Blocks.SAND)))
-    val PASTEL_LOG = register("log", PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)))
     val PASTEL_ORE = register("pastel_ore", OreBlock(FabricBlockSettings.copy(Blocks.IRON_ORE)))
     val LIGHT_BLUE_LEAVES = register("light_blue_leaves", PastelLeaves())
     val LIGHT_RED_LEAVES = register("light_red_leaves", PastelLeaves())
@@ -209,6 +210,20 @@ object Blocks {
     val GRAY_WOOL = register("gray_wool", PastelWool())
     val PASTEL_BASE_WOOL = register("pastel_base_wool", PastelWool())
     val BROWN_WOOL = register("brown_wool", PastelWool())
+
+    // Start of Wood Varients
+
+    //Logs
+    val LIGHT_RED_LOG = register("light_red_log", PastelWoodLogs())
+    val LIGHT_GREEN_LOG = register("light_green_log", PastelWoodLogs())
+    val LIGHT_BLUE_LOG = register("light_blue_log", PastelWoodLogs())
+    val YELLOW_LOG = register("yellow_log", PastelWoodLogs())
+
+    //Planks
+    val LIGHT_RED_PLANK = register("light_red_plank", PastelWoodPlanks())
+    val LIGHT_GREEN_PLANK = register("light_green_plank", PastelWoodPlanks())
+    val LIGHT_BLUE_PLANK = register("light_blue_plank", PastelWoodPlanks())
+    val YELLOW_PLANK = register("yellow_plank", PastelWoodPlanks())
 
     //Functions
     private fun register(name: String, block: Block): Block {

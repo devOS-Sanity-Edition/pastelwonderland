@@ -95,4 +95,14 @@ object BlockInfo {
     fun PastelWool(): Block {
         return Block(FabricBlockSettings.copy(Blocks.WHITE_WOOL))
     }
+
+    // Wood Varients below
+
+    fun PastelWoodPlanks(): Block {
+        return Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS))
+    }
+
+    fun PastelWoodLogs(): Block {
+        return PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG))
+    }
 }
