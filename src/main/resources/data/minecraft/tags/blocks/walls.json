@@ -1,20 +1,20 @@
 {
   "replace": "false",
   "values": [
+    "pastelwonderland:light_red_wall",
     "pastelwonderland:red_wall",
-    "pastelwonderland:dark_red_wall",
     "pastelwonderland:orange_wall",
     "pastelwonderland:yellow_wall",
+    "pastelwonderland:light_green_wall",
     "pastelwonderland:green_wall",
-    "pastelwonderland:dark_green_wall",
+    "pastelwonderland:light_blue_wall",
     "pastelwonderland:blue_wall",
-    "pastelwonderland:dark_blue_wall",
     "pastelwonderland:purple_wall",
     "pastelwonderland:magenta_wall",
     "pastelwonderland:black_wall",
+    "pastelwonderland:light_gray_wall",
     "pastelwonderland:gray_wall",
-    "pastelwonderland:dark_gray_wall",
-    "pastelwonderland:white_wall",
+    "pastelwonderland:pastel_base_wall",
     "pastelwonderland:brown_wall"
   ]
 }

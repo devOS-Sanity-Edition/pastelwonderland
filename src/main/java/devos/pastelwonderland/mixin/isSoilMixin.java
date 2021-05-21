@@ -13,7 +13,7 @@ public class isSoilMixin {
     @Inject(method = "isSoil(Lnet/minecraft/block/Block;)Z", at = @At(value = "HEAD"), cancellable = true)
     private static void isSoil(Block block, CallbackInfoReturnable<Boolean> cir)
     {
-        if (block == Blocks.RED) {
+        if (block == Blocks.LIGHT_RED) {
             cir.setReturnValue(true);
         }
     }

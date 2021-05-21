@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/template_glass_pane_post",
-  "textures": {
-    "pane": "pastelwonderland:block/white_glass",
-    "edge": "pastelwonderland:block/white_glass_pane_top"
-  }
-}

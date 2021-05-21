@@ -91,4 +91,8 @@ object BlockInfo {
     fun PastelWalls(): WallBlock {
         return WallBlock(FabricBlockSettings.of(Material.STONE))
     }
+
+    fun PastelWool(): Block {
+        return Block(FabricBlockSettings.copy(Blocks.WHITE_WOOL))
+    }
 }
