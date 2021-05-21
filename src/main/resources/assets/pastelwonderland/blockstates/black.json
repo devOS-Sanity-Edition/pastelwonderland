@@ -1,7 +1,5 @@
 {
     "variants": {
-        "": {
-            "model": "pastelwonderland:block/black"
-        }
+      "": { "model": "pastelwonderland:block/black" }
     }
-}
+  }

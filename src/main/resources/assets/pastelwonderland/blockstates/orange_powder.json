@@ -1,7 +1,5 @@
 {
     "variants": {
-        "": {
-            "model": "pastelwonderland:block/orange_powder"
-        }
+      "": { "model": "pastelwonderland:block/orange_powder" }
     }
-}
+  }

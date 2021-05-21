@@ -1,3 +1,6 @@
 {
-    "parent": "pastelwonderland:block/blue_powder"
-}
+    "parent": "block/cube_all",
+    "textures": {
+      "all": "pastelwonderland:block/blue_powder"
+    }
+  }
