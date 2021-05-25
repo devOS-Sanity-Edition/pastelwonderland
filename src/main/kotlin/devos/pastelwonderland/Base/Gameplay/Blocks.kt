@@ -225,6 +225,24 @@ object Blocks {
     val LIGHT_BLUE_PLANK = register("light_blue_plank", PastelWoodPlanks())
     val YELLOW_PLANK = register("yellow_plank", PastelWoodPlanks())
 
+    //Plank Stairs
+    val LIGHT_RED_PLANK_STAIRS = register("light_red_plank_stairs", PastelStairs())
+    val LIGHT_GREEN_PLANK_STAIRS = register("light_green_plank_stairs", PastelStairs())
+    val LIGHT_BLUE_PLANK_STAIRS = register("light_blue_plank_stairs", PastelStairs())
+    val YELLOW_PLANK_STAIRS = register("yellow_plank_stairs", PastelStairs())
+
+    //Plank Slabs
+    val LIGHT_RED_PLANK_SLAB = register("light_red_plank_slab", PastelSlabs())
+    val LIGHT_GREEN_PLANK_SLAB = register("light_green_plank_slab", PastelSlabs())
+    val LIGHT_BLUE_PLANK_SLAB = register("light_blue_plank_slab", PastelSlabs())
+    val YELLOW_PLANK_SLAB = register("yellow_plank_slab", PastelSlabs())
+
+    //Plank Fence Gates
+    val LIGHT_RED_PLANK_FENCE_GATE = register("light_red_plank_fence_gate", PastelFenceGates())
+    val LIGHT_GREEN_PLANK_FENCE_GATE = register("light_green_plank_fence_gate", PastelFenceGates())
+    val LIGHT_BLUE_PLANK_FENCE_GATE = register("light_blue_plank_fence_gate", PastelFenceGates())
+    val YELLOW_PLANK_FENCE_GATE = register("yellow_plank_fence_gate", PastelFenceGates())
+
     //Functions
     private fun register(name: String, block: Block): Block {
         Registry.register(Registry.ITEM, Identifier(PW_MOD_ID, name), BlockItem(block, FabricItemSettings().group(PastelWonderland.BLOCKS)))
