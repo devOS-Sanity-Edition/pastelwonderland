@@ -12,8 +12,6 @@ import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.fabric.api.event.client.ClientTickCallback;
 import net.fabricmc.loader.FabricLoader;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.options.KeyBinding;
-import net.minecraft.client.options.StickyKeyBinding;
 import net.minecraft.client.util.Window;
 import org.lwjgl.glfw.GLFW;
 

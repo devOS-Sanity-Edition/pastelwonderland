@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Feature.class)
-class isSoilMixin {
+class IsSoilMixin {
     @Inject(method = "isSoil(Lnet/minecraft/block/Block;)Z", at = @At(value = "HEAD"), cancellable = true)
     private static void isSoil(Block block, CallbackInfoReturnable<Boolean> cir)
     {

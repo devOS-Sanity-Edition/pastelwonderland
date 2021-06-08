@@ -14,7 +14,7 @@ import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.MathHelper;
@@ -47,7 +47,7 @@ public class MallardEntity extends AnimalEntity {
 //        this.goalSelector.add(1, new EscapeDangerGoal(this, 1.4D));
         this.targetSelector.add(1, new RevengeGoal(this, new Class[0]));
         this.goalSelector.add(2, new AnimalMateGoal(this, 1.0D));
-        this.goalSelector.add(3, new TemptGoal(this, 1.0D, false, BREEDING_INGREDIENT));
+        this.goalSelector.add(3, new TemptGoal(this, 1.0D, BREEDING_INGREDIENT, true));
         this.goalSelector.add(4, new FollowParentGoal(this, 1.1D));
         this.goalSelector.add(4, new MallardEntity.AttackGoal(this));
         this.goalSelector.add(5, new WanderAroundFarGoal(this, 1.0D));
@@ -132,13 +132,13 @@ public class MallardEntity extends AnimalEntity {
         this.dataTracker.startTracking(VARIANT, Math.random() <= 0.5 ? 1 : 2);
     }
 
-    public void writeCustomDataToTag(CompoundTag tag) {
-        super.writeCustomDataToTag(tag);
+    public void writeCustomDataToNbt(NbtCompound tag) {
+        super.writeCustomDataToNbt(tag);
         tag.putInt("Variant", this.getVariant());
     }
 
-    public void readCustomDataFromTag(CompoundTag tag) {
-        super.readCustomDataFromTag(tag);
+    public void readCustomDataFromNbt(NbtCompound tag) {
+        super.readCustomDataFromNbt(tag);
         this.setVariant(tag.getInt("Variant"));
     }
 
@@ -148,7 +148,7 @@ public class MallardEntity extends AnimalEntity {
         float g = MathHelper.cos(this.bodyYaw * 0.017453292F);
         float h = 0.1F;
         float i = 0.0F;
-        passenger.updatePosition(this.getX() + (double)(0.1F * f), this.getBodyY(0.5D) + passenger.getHeightOffset() + 0.0D, this.getZ() - (double)(0.1F * g));
+        passenger.setPosition(this.getX() + (double)(0.1F * f), this.getBodyY(0.5D) + passenger.getHeightOffset() + 0.0D, this.getZ() - (double)(0.1F * g));
         if (passenger instanceof LivingEntity) {
             ((LivingEntity)passenger).bodyYaw = this.bodyYaw;
         }
