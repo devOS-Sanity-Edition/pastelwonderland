@@ -4,8 +4,8 @@ plugins {
     id "org.jetbrains.kotlin.jvm"
 }
 
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_16
+targetCompatibility = JavaVersion.VERSION_16
 
 archivesBaseName = project.archives_base_name
 version = project.mod_version
@@ -13,30 +13,26 @@ group = project.maven_group
 
 repositories {
     maven { url 'https://jitpack.io' }
-    maven { url 'https://maven.shedaniel.me/' }
-    maven { url 'http://maven.fabricmc.net/'
+    maven { url 'https://maven.fabricmc.net/'
         name = "Fabric" }
 }
 
 dependencies {
-    // Custom Portal API
-    include('com.github.kyrptonaught:customportalapi:8db933af27') {
-        transitive = false
-    }
-    modImplementation('com.github.kyrptonaught:customportalapi:8db933af27') {
-        transitive = false
-    }
-
-    // REI
-    modCompile "me.shedaniel:RoughlyEnoughItems:${rei_version}"
+    // Custom Portal API - Temporarily off until fixed.
+//    include('com.github.kyrptonaught:customportalapi:1.17-SNAPSHOT') {
+//        transitive = false
+//    }
+//    modImplementation('com.github.kyrptonaught:customportalapi:1.17-SNAPSHOT') {
+//        transitive = false
+//    }
 
     //to change the versions see the gradle.properties file
-    minecraft "com.mojang:minecraft:1.16.5"
-    mappings "net.fabricmc:yarn:1.16.5+build.9:v2"
+    minecraft "com.mojang:minecraft:1.17"
+    mappings "net.fabricmc:yarn:1.17+build.6:v2"
     modImplementation "net.fabricmc:fabric-loader:0.11.3"
 
-    // Fabric API. This is technically optional, but you probably want it anyway.
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.34.2+1.16"
+    //Fabric api
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.34.10+1.17"
 
     modImplementation "net.fabricmc:fabric-language-kotlin:${project.fabric_kotlin_version}"
 
@@ -47,13 +43,8 @@ dependencies {
 processResources {
     inputs.property "version", project.version
 
-    from(sourceSets.main.resources.srcDirs) {
-        include "fabric.mod.json"
+    filesMatching("fabric.mod.json") {
         expand "version": project.version
-    }
-
-    from(sourceSets.main.resources.srcDirs) {
-        exclude "fabric.mod.json"
     }
 }
 
@@ -107,4 +98,4 @@ publishing {
     }
 }
 
-compileKotlin.kotlinOptions.jvmTarget = "1.8"
+compileKotlin.kotlinOptions.jvmTarget = "16"
