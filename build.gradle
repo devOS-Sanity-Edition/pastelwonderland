@@ -14,12 +14,16 @@ repositories {
     // for more information about repositories.
 
     maven { url = "https://maven.terraformersmc.com/" }
+    maven { url = "https://maven.parchmentmc.org/" }
 }
 
 dependencies {
     // To change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    mappings loom.officialMojangMappings()
+    mappings loom.layered() {
+        it.officialMojangMappings()
+        it.parchment("org.parchmentmc.data:parchment-1.18.1:BLEEDING-20211212.174449-1@zip")
+    }
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     // Fabric API. This is technically optional, but you probably want it anyway.
