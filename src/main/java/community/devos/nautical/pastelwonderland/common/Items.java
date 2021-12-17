@@ -10,8 +10,6 @@ import static community.devos.nautical.pastelwonderland.PastelWonderland.MOD_ID;
 import static net.minecraft.core.Registry.register;
 
 public class Items {
-    public static final Item RED = register("red", Blocks.RED);
-
     private static Item register(String name, Item item) {
         return Registry.register(Registry.ITEM, new ResourceLocation(MOD_ID, name), item);
     }

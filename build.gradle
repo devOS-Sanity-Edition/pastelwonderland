@@ -15,6 +15,7 @@ repositories {
 
     maven { url = "https://maven.terraformersmc.com/" }
     maven { url = "https://maven.parchmentmc.org/" }
+    maven { url = "https://maven.shedaniel.me/" }
 }
 
 dependencies {
@@ -31,6 +32,7 @@ dependencies {
 
     // ModMenu
     modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
+    modRuntimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}")
 
     // PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
     // You may need to force-disable transitiveness on them.
