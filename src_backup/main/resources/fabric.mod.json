@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "pastelwonderland",
+  "version": "${version}",
+  "name": "Pastel Wonderland",
+  "description": "A Minecraft mod that focuses on surviving in a beautiful, yet chaotic dimension.",
+  "authors": [
+    "Team Nautical"
+  ],
+  "contact": {
+    "website": "https://devos.community",
+    "repo": "https://github.com/devOS-Sanity-Edition/pastelwonderland"
+  },
+  "license": "MIT",
+  "icon": "assets/pastelwonderland/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "community.devos.nautical.pastelwonderland.client.PastelWonderlandClient"
+    ],
+    "main": [
+      "community.devos.nautical.pastelwonderland.PastelWonderland"
+    ]
+  },
+  "mixins": [
+    "pastelwonderland.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}

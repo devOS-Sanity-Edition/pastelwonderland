@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/inner_stairs",
+    "textures": {
+        "bottom": "pastelwonderland:block/orange",
+        "top": "pastelwonderland:block/orange",
+        "side": "pastelwonderland:block/orange"
+    }
+}

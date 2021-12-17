@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "pastelwonderland:block/light_red_plank_slab"
+        },
+        "type=double": {
+            "model": "pastelwonderland:block/light_red_plank"
+        },
+        "type=top": {
+            "model": "pastelwonderland:block/light_red_plank_slab_top"
+        }
+    }
+}
