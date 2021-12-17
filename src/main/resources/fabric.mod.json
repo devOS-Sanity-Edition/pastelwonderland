@@ -2,35 +2,32 @@
   "schemaVersion": 1,
   "id": "pastelwonderland",
   "version": "${version}",
-
   "name": "Pastel Wonderland",
-  "description": "A colorful dimensions mod... with more death..",
+  "description": "A Minecraft mod that focuses on surviving in a beautiful, yet chaotic dimension.",
   "authors": [
-    "devOS: Sanity Edition"
+    "Team Nautical"
   ],
   "contact": {
-    "homepage": "https://github.com/devOS-Sanity-Edition/PastelWonderland",
-    "sources": "https://github.com/devOS-Sanity-Edition/PastelWonderland"
+    "website": "https://devos.community",
+    "repo": "https://github.com/devOS-Sanity-Edition/pastelwonderland"
   },
-
   "license": "MIT",
   "icon": "assets/pastelwonderland/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "devos.pastelwonderland.Client.PastelWonderlandClient"
+      "community.devos.nautical.pastelwonderland.client.PastelWonderlandClient"
     ],
     "main": [
-      "devos.pastelwonderland.PastelWonderland"
+      "community.devos.nautical.pastelwonderland.PastelWonderland"
     ]
   },
   "mixins": [
     "pastelwonderland.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.11.3",
+    "fabricloader": ">=0.12.12",
     "fabric": "*",
-    "fabric-language-kotlin": "*",
-    "minecraft": "1.17.x"
+    "minecraft": "1.18.1"
   }
 }
