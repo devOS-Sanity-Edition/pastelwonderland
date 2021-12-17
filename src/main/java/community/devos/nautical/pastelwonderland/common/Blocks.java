@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
@@ -231,6 +232,7 @@ public class Blocks {
     }
 
     private static Block register(String name, Block block) {
+        Registry.register(Registry.ITEM, new ResourceLocation(MOD_ID, name), new BlockItem(block, ItemGroup.pwBlocks()));
         return Registry.register(Registry.BLOCK, new ResourceLocation(MOD_ID, name), block);
     }
 
