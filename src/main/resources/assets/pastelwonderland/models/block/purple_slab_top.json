@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/slab_top",
-    "textures": {
-        "top": "pastelwonderland:block/purple",
-        "bottom": "pastelwonderland:block/purple",
-        "side": "pastelwonderland:block/purple"
-    }
-}

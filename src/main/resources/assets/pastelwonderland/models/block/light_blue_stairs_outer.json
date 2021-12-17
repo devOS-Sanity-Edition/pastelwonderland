@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/outer_stairs",
-    "textures": {
-        "bottom": "pastelwonderland:block/light_blue",
-        "top": "pastelwonderland:block/light_blue",
-        "side": "pastelwonderland:block/light_blue"
-    }
-}
