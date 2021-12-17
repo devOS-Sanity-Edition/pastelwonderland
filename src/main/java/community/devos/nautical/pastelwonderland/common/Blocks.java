@@ -4,10 +4,12 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.dedicated.Settings;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
+import org.spongepowered.asm.util.Locals;
 
 import javax.swing.text.html.BlockView;
 
@@ -75,58 +77,58 @@ public class Blocks {
     public static final Block BROWN_FENCE_GATE = register("brown_fence_gate", PastelFenceGates());
 
     //Glass
-    public static final block LIGHT_RED_GLASS = register("light_red_glass", PastelGlassBlock());
-    public static final block RED_GLASS = register("red_glass", PastelGlassBlock());
-    public static final block ORANGE_GLASS = register("orange_glass", PastelGlassBlock());;
-    public static final block YELLOW_GLASS = register("yellow_glass", PastelGlassBlock());
-    public static final block LIGHT_GREEN_GLASS = register("light_green_glass", PastelGlassBlock());
-    public static final block GREEN_GLASS = register("green_glass", PastelGlassBlock());
-    public static final block LIGHT_BLUE_GLASS = register("light_blue_glass", PastelGlassBlock());
-    public static final block BLUE_GLASS = register("blue_glass", PastelGlassBlock());
-    public static final block PURPLE_GLASS = register("purple_glass", PastelGlassBlock());
-    public static final block MAGENTA_GLASS = register("magenta_glass", PastelGlassBlock());
-    public static final block BLACK_GLASS = register("black_glass", PastelGlassBlock());
-    public static final block LIGHT_GRAY_GLASS = register("light_gray_glass", PastelGlassBlock());
-    public static final block GRAY_GLASS = register("gray_glass", PastelGlassBlock());
-    public static final block PASTEL_BASE_GLASS = register("pastel_base_glass", PastelGlassBlock());
-    public static final block BROWN_GLASS = register("brown_glass", PastelGlassBlock());
+    public static final Block LIGHT_RED_GLASS = register("light_red_glass", GlassBlock());
+    public static final Block RED_GLASS = register("red_glass", GlassBlock());
+    public static final Block ORANGE_GLASS = register("orange_glass", GlassBlock());;
+    public static final Block YELLOW_GLASS = register("yellow_glass", GlassBlock());
+    public static final Block LIGHT_GREEN_GLASS = register("light_green_glass", GlassBlock());
+    public static final Block GREEN_GLASS = register("green_glass", GlassBlock());
+    public static final Block LIGHT_BLUE_GLASS = register("light_blue_glass", GlassBlock());
+    public static final Block BLUE_GLASS = register("blue_glass", GlassBlock());
+    public static final Block PURPLE_GLASS = register("purple_glass", GlassBlock());
+    public static final Block MAGENTA_GLASS = register("magenta_glass", GlassBlock());
+    public static final Block BLACK_GLASS = register("black_glass", GlassBlock());
+    public static final Block LIGHT_GRAY_GLASS = register("light_gray_glass", GlassBlock());
+    public static final Block GRAY_GLASS = register("gray_glass", GlassBlock());
+    public static final Block PASTEL_BASE_GLASS = register("pastel_base_glass", GlassBlock());
+    public static final Block BROWN_GLASS = register("brown_glass", GlassBlock());
 
-    public static final block LIGHT_RED_GLASS_ITEM = register("light_red_glass", LIGHT_RED_GLASS);
-    public static final block RED_GLASS_ITEM = register("red_glass", RED_GLASS);
-    public static final block ORANGE_GLASS_ITEM = register("orange_glass", ORANGE_GLASS);
-    public static final block YELLOW_GLASS_ITEM = register("yellow_glass", YELLOW_GLASS);
-    public static final block LIGHT_GREEN_GLASS_ITEM = register("light_green_glass", LIGHT_GREEN_GLASS);
-    public static final block GREEN_GLASS_ITEM = register("green_glass", GREEN_GLASS);
-    public static final block LIGHT_BLUE_GLASS_ITEM = register("light_blue_glass", LIGHT_BLUE_GLASS);
-    public static final block BLUE_GLASS_ITEM = register("blue_glass", BLUE_GLASS);
-    public static final block PURPLE_GLASS_ITEM = register("purple_glass", PURPLE_GLASS);
-    public static final block MAGENTA_GLASS_ITEM = register("magenta_glass", MAGENTA_GLASS);
-    public static final block BLACK_GLASS_ITEM = register("black_glass", BLACK_GLASS);
-    public static final block LIGHT_GRAY_GLASS_ITEM = register("light_gray_glass", LIGHT_GRAY_GLASS);
-    public static final block GRAY_GLASS_ITEM = register("gray_glass", GRAY_GLASS);
-    public static final block PASTEL_BASE_GLASS_ITEM = register("pastel_base_glass", PASTEL_BASE_GLASS);
-    public static final block BROWN_GLASS_ITEM = register("brown_glass", BROWN_GLASS);
+    public static final Block LIGHT_RED_GLASS_ITEM = register("light_red_glass", LIGHT_RED_GLASS);
+    public static final Block RED_GLASS_ITEM = register("red_glass", RED_GLASS);
+    public static final Block ORANGE_GLASS_ITEM = register("orange_glass", ORANGE_GLASS);
+    public static final Block YELLOW_GLASS_ITEM = register("yellow_glass", YELLOW_GLASS);
+    public static final Block LIGHT_GREEN_GLASS_ITEM = register("light_green_glass", LIGHT_GREEN_GLASS);
+    public static final Block GREEN_GLASS_ITEM = register("green_glass", GREEN_GLASS);
+    public static final Block LIGHT_BLUE_GLASS_ITEM = register("light_blue_glass", LIGHT_BLUE_GLASS);
+    public static final Block BLUE_GLASS_ITEM = register("blue_glass", BLUE_GLASS);
+    public static final Block PURPLE_GLASS_ITEM = register("purple_glass", PURPLE_GLASS);
+    public static final Block MAGENTA_GLASS_ITEM = register("magenta_glass", MAGENTA_GLASS);
+    public static final Block BLACK_GLASS_ITEM = register("black_glass", BLACK_GLASS);
+    public static final Block LIGHT_GRAY_GLASS_ITEM = register("light_gray_glass", LIGHT_GRAY_GLASS);
+    public static final Block GRAY_GLASS_ITEM = register("gray_glass", GRAY_GLASS);
+    public static final Block PASTEL_BASE_GLASS_ITEM = register("pastel_base_glass", PASTEL_BASE_GLASS);
+    public static final Block BROWN_GLASS_ITEM = register("brown_glass", BROWN_GLASS);
 
 
     //Glowstone
-    public static final Block LIGHT_RED_GLOWSTONE = register("light_red_glowstone", PastelGlowstone())
+    public static final Block LIGHT_RED_GLOWSTONE = register("light_red_glowstone", PastelGlowstone());
 
     //Slabs
-    public static final Block LIGHT_RED_SLAB = register("light_red_slab", PastelSlabs())
-    public static final Block RED_SLAB = register("red_slab", PastelSlabs())
-    public static final Block ORANGE_SLAB = register("orange_slab", PastelSlabs())
-    public static final Block YELLOW_SLAB = register("yellow_slab", PastelSlabs())
-    public static final Block LIGHT_GREEN_SLAB = register("light_green_slab", PastelSlabs())
-    public static final Block GREEN_SLAB = register("green_slab", PastelSlabs())
-    public static final Block LIGHT_BLUE_SLAB = register("light_blue_slab", PastelSlabs())
-    public static final Block BLUE_SLAB = register("blue_slab", PastelSlabs())
-    public static final Block PURPLE_SLAB = register("purple_slab", PastelSlabs())
-    public static final Block MAGENTA_SLAB = register("magenta_slab", PastelSlabs())
-    public static final Block BLACK_SLAB = register("black_slab", PastelSlabs())
-    public static final Block LIGHT_GRAY_SLAB = register("light_gray_slab", PastelSlabs())
-    public static final Block GRAY_SLAB = register("gray_slab", PastelSlabs())
-    public static final Block PASTEL_BASE_SLAB = register("pastel_base_slab", PastelSlabs())
-    public static final Block BROWN_SLAB = register("brown_slab", PastelSlabs())
+    public static final Block LIGHT_RED_SLAB = register("light_red_slab", PastelSlabs());
+    public static final Block RED_SLAB = register("red_slab", PastelSlabs());
+    public static final Block ORANGE_SLAB = register("orange_slab", PastelSlabs());
+    public static final Block YELLOW_SLAB = register("yellow_slab", PastelSlabs());
+    public static final Block LIGHT_GREEN_SLAB = register("light_green_slab", PastelSlabs());
+    public static final Block GREEN_SLAB = register("green_slab", PastelSlabs());
+    public static final Block LIGHT_BLUE_SLAB = register("light_blue_slab", PastelSlabs());
+    public static final Block BLUE_SLAB = register("blue_slab", PastelSlabs());
+    public static final Block PURPLE_SLAB = register("purple_slab", PastelSlabs());
+    public static final Block MAGENTA_SLAB = register("magenta_slab", PastelSlabs());
+    public static final Block BLACK_SLAB = register("black_slab", PastelSlabs());
+    public static final Block LIGHT_GRAY_SLAB = register("light_gray_slab", PastelSlabs());
+    public static final Block GRAY_SLAB = register("gray_slab", PastelSlabs());
+    public static final Block PASTEL_BASE_SLAB = register("pastel_base_slab", PastelSlabs());
+    public static final Block BROWN_SLAB = register("brown_slab", PastelSlabs());
 
     //Stairs
     public static final Block LIGHT_RED_STAIRS = register("light_red_stairs", PastelStairs())
@@ -229,6 +231,28 @@ public class Blocks {
 
     public static Block PastelGlowstone() {
         return new Block(FabricBlockSettings.copy(GLOWSTONE));
+    }
+
+    public static FenceBlock PastelFence() {
+        return new FenceBlock(FabricBlockSettings.copy(OAK_FENCE));
+    }
+
+    public static FenceGateBlock PastelFenceGates() {
+        return new FenceGateBlock(FabricBlockSettings.copy(OAK_FENCE_GATE));
+    }
+
+    public static SlabBlock PastelSlabs() {
+        return new SlabBlock(FabricBlockSettings.copy(OAK_SLAB));
+    }
+
+    class PastelStairsInfo extends StairBlock {
+        public PastelStairsInfo(BlockState baseBlockState, Properties settings) {
+            super(baseBlockState, settings);
+        }
+    }
+
+    public StairBlock PastelStairs() {
+        return new PastelStairsInfo(OAK_STAIRS.defaultBlockState(), FabricBlockSettings.copy(OAK_STAIRS));
     }
 
     private static Block register(String name, Block block) {
