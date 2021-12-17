@@ -245,14 +245,14 @@ public class Blocks {
         return new SlabBlock(FabricBlockSettings.copy(OAK_SLAB));
     }
 
-    class PastelStairsInfo extends StairBlock {
-        public PastelStairsInfo(BlockState baseBlockState, Properties settings) {
+    class PastelStairs extends StairBlock {
+        public PastelStairs(BlockState baseBlockState, Properties settings) {
             super(baseBlockState, settings);
         }
     }
 
     public StairBlock PastelStairs() {
-        return new PastelStairsInfo(OAK_STAIRS.defaultBlockState(), FabricBlockSettings.copy(OAK_STAIRS));
+        return new PastelStairs(OAK_STAIRS.defaultBlockState(), FabricBlockSettings.copy(OAK_STAIRS));
     }
 
     private static Block register(String name, Block block) {
