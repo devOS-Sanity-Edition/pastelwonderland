@@ -11,7 +11,7 @@ authors = "Team Nautical"
 description = '''
 A Minecraft mod that focuses on surviving in a beautiful, yet chaotic dimension.
 '''
-#logoFile = ""
+logoFile = "icon.png"
 
 [[dependencies.pastelwonderland]]
 modId = "forge"
