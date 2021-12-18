@@ -78,6 +78,7 @@ public class Blocks {
     public static final Block GRAY_FENCE = register("gray_fence", PastelFence());
     public static final Block PASTEL_BASE_FENCE = register("pastel_base_fence", PastelFence());
     public static final Block BROWN_FENCE = register("brown_fence", PastelFence());
+
     //Fence Gates
     public static final Block LIGHT_RED_FENCE_GATE = register("light_red_fence_gate", PastelFenceGates());
     public static final Block RED_FENCE_GATE = register("red_fence_gate", PastelFenceGates());
@@ -95,10 +96,27 @@ public class Blocks {
     public static final Block PASTEL_BASE_FENCE_GATE = register("pastel_base_fence_gate", PastelFenceGates());
     public static final Block BROWN_FENCE_GATE = register("brown_fence_gate", PastelFenceGates());
 
+    //Walls
+    public static final Block LIGHT_RED_WALL = register("light_red_wall", PastelWalls());
+    public static final Block RED_WALL = register("red_wall", PastelWalls());
+    public static final Block ORANGE_WALL = register("orange_wall", PastelWalls());
+    public static final Block YELLOW_WALL = register("yellow_wall", PastelWalls());
+    public static final Block LIGHT_GREEN_WALL = register("light_green_wall", PastelWalls());
+    public static final Block GREEN_WALL = register("green_wall", PastelWalls());
+    public static final Block LIGHT_BLUE_WALL = register("light_blue_wall", PastelWalls());
+    public static final Block BLUE_WALL = register("blue_wall", PastelWalls());
+    public static final Block PURPLE_WALL = register("purple_wall", PastelWalls());
+    public static final Block MAGENTA_WALL = register("magenta_wall", PastelWalls());
+    public static final Block BLACK_WALL = register("black_wall", PastelWalls());
+    public static final Block LIGHT_GRAY_WALL = register("light_gray_wall", PastelWalls());
+    public static final Block GRAY_WALL = register("gray_wall", PastelWalls());
+    public static final Block PASTEL_BASE_WALL = register("pastel_base_wall", PastelWalls());
+    public static final Block BROWN_WALL = register("brown_wall", PastelWalls());
+
     //Glass
     public static final Block LIGHT_RED_GLASS = register("light_red_glass", GlassBlock());
     public static final Block RED_GLASS = register("red_glass", GlassBlock());
-    public static final Block ORANGE_GLASS = register("orange_glass", GlassBlock());;
+    public static final Block ORANGE_GLASS = register("orange_glass", GlassBlock());
     public static final Block YELLOW_GLASS = register("yellow_glass", GlassBlock());
     public static final Block LIGHT_GREEN_GLASS = register("light_green_glass", GlassBlock());
     public static final Block GREEN_GLASS = register("green_glass", GlassBlock());
@@ -191,6 +209,10 @@ public class Blocks {
 
     public static FenceGateBlock PastelFenceGates() {
         return new FenceGateBlock(BlockBehaviour.Properties.copy(OAK_FENCE_GATE).isSuffocating(Blocks::never));
+    }
+
+    public static WallBlock PastelWalls() {
+        return new WallBlock(BlockBehaviour.Properties.copy(STONE_BRICK_WALL).isSuffocating(Blocks::never));
     }
 
     public static SlabBlock PastelSlabs() {
