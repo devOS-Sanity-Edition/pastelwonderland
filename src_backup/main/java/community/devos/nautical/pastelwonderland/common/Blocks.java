@@ -133,39 +133,39 @@ public class Blocks {
 //    1. broken [one end wants static, one end wants non-static. it's annoying.
 //    2. Architectury port.
 
-//    //Stairs
-//    public static final Block LIGHT_RED_STAIRS = register("light_red_stairs", PastelStairs());
-//    public static final Block RED_STAIRS = register("red_stairs", PastelStairs());
-//    public static final Block ORANGE_STAIRS = register("orange_stairs", PastelStairs());
-//    public static final Block YELLOW_STAIRS = register("yellow_stairs", PastelStairs());
-//    public static final Block LIGHT_GREEN_STAIRS = register("light_green_stairs", PastelStairs());
-//    public static final Block GREEN_STAIRS = register("green_stairs", PastelStairs());
-//    public static final Block LIGHT_BLUE_STAIRS = register("light_blue_stairs", PastelStairs());
-//    public static final Block BLUE_STAIRS = register("blue_stairs", PastelStairs());
-//    public static final Block PURPLE_STAIRS = register("purple_stairs", PastelStairs());
-//    public static final Block MAGENTA_STAIRS = register("magenta_stairs", PastelStairs());
-//    public static final Block BLACK_STAIRS = register("black_stairs", PastelStairs());
-//    public static final Block LIGHT_GRAY_STAIRS = register("light_gray_stairs", PastelStairs());
-//    public static final Block GRAY_STAIRS = register("gray_stairs", PastelStairs());
-//    public static final Block PASTEL_BASE_STAIRS = register("pastel_base_stairs", PastelStairs());
-//    public static final Block BROWN_STAIRS = register("brown_stairs", PastelStairs());
+    //Stairs
+    public static final Block LIGHT_RED_STAIRS = register("light_red_stairs", PastelStairs());
+    public static final Block RED_STAIRS = register("red_stairs", PastelStairs());
+    public static final Block ORANGE_STAIRS = register("orange_stairs", PastelStairs());
+    public static final Block YELLOW_STAIRS = register("yellow_stairs", PastelStairs());
+    public static final Block LIGHT_GREEN_STAIRS = register("light_green_stairs", PastelStairs());
+    public static final Block GREEN_STAIRS = register("green_stairs", PastelStairs());
+    public static final Block LIGHT_BLUE_STAIRS = register("light_blue_stairs", PastelStairs());
+    public static final Block BLUE_STAIRS = register("blue_stairs", PastelStairs());
+    public static final Block PURPLE_STAIRS = register("purple_stairs", PastelStairs());
+    public static final Block MAGENTA_STAIRS = register("magenta_stairs", PastelStairs());
+    public static final Block BLACK_STAIRS = register("black_stairs", PastelStairs());
+    public static final Block LIGHT_GRAY_STAIRS = register("light_gray_stairs", PastelStairs());
+    public static final Block GRAY_STAIRS = register("gray_stairs", PastelStairs());
+    public static final Block PASTEL_BASE_STAIRS = register("pastel_base_stairs", PastelStairs());
+    public static final Block BROWN_STAIRS = register("brown_stairs", PastelStairs());
 //
 //    //Walls
-//    public static final Block LIGHT_RED_WALL = register("light_red_wall", PastelWalls())
-//    public static final Block RED_WALL = register("red_wall", PastelWalls())
-//    public static final Block ORANGE_WALL = register("orange_wall", PastelWalls())
-//    public static final Block YELLOW_WALL = register("yellow_wall", PastelWalls())
-//    public static final Block LIGHT_GREEN__WALL = register("light_green_wall", PastelWalls())
-//    public static final Block GREEN_WALL = register("green_wall", PastelWalls())
-//    public static final Block LIGHT_BLUE_WALL = register("light_blue_wall", PastelWalls())
-//    public static final Block BLUE_WALL = register("blue_wall", PastelWalls())
-//    public static final Block PURPLE_WALL = register("purple_wall", PastelWalls())
-//    public static final Block MAGENTA_WALL = register("magenta_wall", PastelWalls())
-//    public static final Block BLACK_WALL = register("black_wall", PastelWalls())
-//    public static final Block LIGHT_GRAY_WALL = register("light_gray_wall", PastelWalls())
-//    public static final Block GRAY_WALL = register("gray_wall", PastelWalls())
-//    public static final Block PASTEL_BASE_WALL = register("pastel_base_wall", PastelWalls())
-//    public static final Block BROWN_WALL = register("brown_wall", PastelWalls())
+    public static final Block LIGHT_RED_WALL = register("light_red_wall", PastelWalls())
+    public static final Block RED_WALL = register("red_wall", PastelWalls())
+    public static final Block ORANGE_WALL = register("orange_wall", PastelWalls())
+    public static final Block YELLOW_WALL = register("yellow_wall", PastelWalls())
+    public static final Block LIGHT_GREEN__WALL = register("light_green_wall", PastelWalls())
+    public static final Block GREEN_WALL = register("green_wall", PastelWalls())
+    public static final Block LIGHT_BLUE_WALL = register("light_blue_wall", PastelWalls())
+    public static final Block BLUE_WALL = register("blue_wall", PastelWalls())
+    public static final Block PURPLE_WALL = register("purple_wall", PastelWalls())
+    public static final Block MAGENTA_WALL = register("magenta_wall", PastelWalls())
+    public static final Block BLACK_WALL = register("black_wall", PastelWalls())
+    public static final Block LIGHT_GRAY_WALL = register("light_gray_wall", PastelWalls())
+    public static final Block GRAY_WALL = register("gray_wall", PastelWalls())
+    public static final Block PASTEL_BASE_WALL = register("pastel_base_wall", PastelWalls())
+    public static final Block BROWN_WALL = register("brown_wall", PastelWalls())
 //
 //    //Wools
 //    public static final Block LIGHT_RED_WOOL = register("light_red_wool", PastelWool())
