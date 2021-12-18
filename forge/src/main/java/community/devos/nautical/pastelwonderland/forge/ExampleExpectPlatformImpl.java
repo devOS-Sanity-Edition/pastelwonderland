@@ -1,6 +1,6 @@
-package commmunity.devos.nautical.pastelwonderland.forge;
+package community.devos.nautical.pastelwonderland.forge;
 
-import commmunity.devos.nautical.pastelwonderland.ExampleExpectPlatform;
+import community.devos.nautical.pastelwonderland.ExampleExpectPlatform;
 import net.minecraftforge.fml.loading.FMLPaths;
 
 import java.nio.file.Path;

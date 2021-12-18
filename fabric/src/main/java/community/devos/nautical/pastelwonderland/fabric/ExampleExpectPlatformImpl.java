@@ -1,6 +1,6 @@
-package commmunity.devos.nautical.pastelwonderland.fabric;
+package community.devos.nautical.pastelwonderland.fabric;
 
-import commmunity.devos.nautical.pastelwonderland.ExampleExpectPlatform;
+import community.devos.nautical.pastelwonderland.ExampleExpectPlatform;
 import net.fabricmc.loader.api.FabricLoader;
 
 import java.nio.file.Path;

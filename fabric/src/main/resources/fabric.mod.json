@@ -16,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "commmunity.devos.nautical.pastelwonderland.fabric.PastelWonderlandFabric"
+      "community.devos.nautical.pastelwonderland.fabric.PastelWonderlandFabric"
     ]
   },
   "depends": {

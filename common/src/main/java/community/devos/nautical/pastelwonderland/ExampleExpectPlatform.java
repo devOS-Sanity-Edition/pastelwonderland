@@ -1,4 +1,4 @@
-package commmunity.devos.nautical.pastelwonderland;
+package community.devos.nautical.pastelwonderland;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
 import dev.architectury.platform.Platform;

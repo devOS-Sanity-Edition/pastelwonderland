@@ -1,7 +1,7 @@
-package commmunity.devos.nautical.pastelwonderland.forge;
+package community.devos.nautical.pastelwonderland.forge;
 
 import dev.architectury.platform.forge.EventBuses;
-import commmunity.devos.nautical.pastelwonderland.PastelWonderland;
+import community.devos.nautical.pastelwonderland.PastelWonderland;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
