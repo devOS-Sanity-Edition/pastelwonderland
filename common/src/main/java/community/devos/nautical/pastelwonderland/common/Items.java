@@ -3,6 +3,7 @@ package community.devos.nautical.pastelwonderland.common;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.Registry;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 
@@ -196,6 +197,19 @@ public class Items {
 
     public static final Item PASTEL_POWDER = register("pastel_powder", new Item(ItemGroups.pwMisc()));
     public static final Item PASTEL_INGOT = register("pastel_ingot", new Item(ItemGroups.pwMisc()));
+
+    public static final Item MALLARD_RAW = register("raw_mallard", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(1.5f).build())));
+    public static final Item MALLARD_COOKED = register("cooked_mallard", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(3).saturationMod(3f).build())));
+    public static final Item VANILLA_MOCHI = register("vanilla_mochi", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(3).saturationMod(1.5f).build())));
+    public static final Item CHOCOLATE_MOCHI = register("chocolate_mochi", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(3).saturationMod(1.5f).build())));
+    public static final Item COTTON_CANDY_MOCHI = register("cotton_candy_mochi", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(3).saturationMod(1.5f).build())));
+    public static final Item STRAWBERRY_MOCHI = register("strawberry_mochi", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(3).saturationMod(1.5f).build())));
+    public static final Item COTTON_CANDY = register("rainbow_cotton_candy", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).build())));
+    public static final Item COTTON_CANDY_ICE_CREAM = register("cotton_candy_ice_cream", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).build())));
+    public static final Item CHOCOLATE_ICE_CREAM = register("chocolate_ice_cream", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).build())));
+    public static final Item VANILLA_ICE_CREAM = register("vanilla_ice_cream", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).build())));
+    public static final Item STRAWBERRY_ICE_CREAM = register("strawberry_ice_cream", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).build())));
+
 
     private static final Item register(String name, Item item) {
         RegistrySupplier<Item> itemSupplied = ITEMS.register(name, () -> item);
