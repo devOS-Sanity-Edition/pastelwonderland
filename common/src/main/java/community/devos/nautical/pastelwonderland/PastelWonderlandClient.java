@@ -1,9 +1,13 @@
 package community.devos.nautical.pastelwonderland;
 
 import community.devos.nautical.pastelwonderland.common.Blocks;
+import community.devos.nautical.pastelwonderland.common.entities.mallard.MallardEntity;
+import community.devos.nautical.pastelwonderland.common.entities.mallard.MallardModel;
 import dev.architectury.registry.client.rendering.RenderTypeRegistry;
+import dev.architectury.registry.level.entity.EntityRendererRegistry;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.RenderType;
 
 @Environment(EnvType.CLIENT)
@@ -42,5 +46,7 @@ public class PastelWonderlandClient {
                 Blocks.PASTEL_BASE_GLASS,
                 Blocks.BROWN_GLASS
                 /*Blocks.LIGHT_RED_GLASS_PANE*/);
+
+        //EntityRendererRegistry.register(() -> MallardEntity.MALLARD, context -> new MallardModel<>(context));
     }
 }
