@@ -14,9 +14,9 @@ public class ItemGroups {
     public static final CreativeModeTab PW_ARMOURS_AND_TOOLS_GROUP = CreativeTabRegistry.create(new ResourceLocation(MOD_ID, "armourandtools"), () ->
             new ItemStack(Blocks.LIGHT_RED));
     public static final CreativeModeTab PW_MISC = CreativeTabRegistry.create(new ResourceLocation(MOD_ID, "misc"), () ->
-            new ItemStack(Blocks.LIGHT_RED));
+            new ItemStack(Items.PASTEL_INGOT));
     public static final CreativeModeTab PW_FOOD = CreativeTabRegistry.create(new ResourceLocation(MOD_ID, "food"), () ->
-            new ItemStack(Blocks.LIGHT_RED));
+            new ItemStack(Items.STRAWBERRY_ICE_CREAM));
 
     public static Item.Properties pwBlocks() {
         return new Item.Properties().tab(PW_BLOCK_GROUP);
