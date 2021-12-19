@@ -205,10 +205,10 @@ public class Items {
     public static final Item COTTON_CANDY_MOCHI = register("cotton_candy_mochi", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(3).saturationMod(1.5f).build())));
     public static final Item STRAWBERRY_MOCHI = register("strawberry_mochi", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(3).saturationMod(1.5f).build())));
     public static final Item COTTON_CANDY = register("rainbow_cotton_candy", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).build())));
-    public static final Item COTTON_CANDY_ICE_CREAM = register("cotton_candy_ice_cream", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).build())));
-    public static final Item CHOCOLATE_ICE_CREAM = register("chocolate_ice_cream", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).build())));
-    public static final Item VANILLA_ICE_CREAM = register("vanilla_ice_cream", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).build())));
-    public static final Item STRAWBERRY_ICE_CREAM = register("strawberry_ice_cream", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).build())));
+    public static final Item COTTON_CANDY_ICE_CREAM = register("cotton_candy_ice_cream", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).alwaysEat().build())));
+    public static final Item CHOCOLATE_ICE_CREAM = register("chocolate_ice_cream", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).alwaysEat().build())));
+    public static final Item VANILLA_ICE_CREAM = register("vanilla_ice_cream", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).alwaysEat().build())));
+    public static final Item STRAWBERRY_ICE_CREAM = register("strawberry_ice_cream", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).alwaysEat().build())));
 
 
     private static final Item register(String name, Item item) {
