@@ -137,6 +137,7 @@ public class Blocks {
 
     //Glowstone
     public static final Block LIGHT_RED_GLOWSTONE = register("light_red_glowstone", PastelGlowstone());
+    public static final Block LIGHT_BLUE_GLOWSTONE = register("light_blue_glowstone", PastelGlowstone());
 
     //Slabs
     public static final Block LIGHT_RED_SLAB = register("light_red_slab", PastelSlabs());
@@ -188,7 +189,7 @@ public class Blocks {
     }
 
     public static Block PastelGlowstone() {
-        return new Block(BlockBehaviour.Properties.copy(GLOWSTONE));
+        return new Block(BlockBehaviour.Properties.copy(GLOWSTONE).lightLevel((blockStatex) -> {return 15;}));
     }
 
     public static FenceBlock PastelFence() {
