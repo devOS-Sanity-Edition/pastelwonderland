@@ -32,6 +32,7 @@ public class PastelWonderland {
         Items.init();
         Blocks.init();
         ItemGroups.init();
+        PastelWonderlandClient.init();
         
         System.out.println(ExampleExpectPlatform.getConfigDirectory().toAbsolutePath().normalize().toString());
     }

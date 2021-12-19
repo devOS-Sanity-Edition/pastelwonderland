@@ -106,6 +106,25 @@ public class Items {
     public static final Item PASTEL_BASE_WALL = register("pastel_base_wall", new BlockItem(Blocks.PASTEL_BASE_WALL, ItemGroups.pwBlocks()));
     public static final Item BROWN_WALL = register("brown_wall", new BlockItem(Blocks.BROWN_WALL, ItemGroups.pwBlocks()));
 
+    // refer to the comment in Blocks class
+//    public static final Item LIGHT_RED_GLASS_PANE = register("light_red_glass_pane", new BlockItem(Blocks.LIGHT_RED_GLASS_PANE, ItemGroups.pwBlocks()));
+//    public static final Item PASTEL_BASE_GLASS_PANE = register("pastel_base_glass_pane", new BlockItem(Blocks.PASTEL_BASE_GLASS_PANE, ItemGroups.pwBlocks()));
+
+    public static final Item LIGHT_RED_GLASS = register("light_red_glass", new BlockItem(Blocks.LIGHT_RED_GLASS, ItemGroups.pwBlocks()));
+    public static final Item RED_GLASS = register("red_glass", new BlockItem(Blocks.RED_GLASS, ItemGroups.pwBlocks()));
+    public static final Item ORANGE_GLASS = register("orange_glass", new BlockItem(Blocks.ORANGE_GLASS, ItemGroups.pwBlocks()));
+    public static final Item YELLOW_GLASS = register("yellow_glass", new BlockItem(Blocks.YELLOW_GLASS, ItemGroups.pwBlocks()));
+    public static final Item LIGHT_GREEN_GLASS = register("light_green_glass", new BlockItem(Blocks.LIGHT_GREEN_GLASS, ItemGroups.pwBlocks()));
+    public static final Item GREEN_GLASS = register("green_glass", new BlockItem(Blocks.GREEN_GLASS, ItemGroups.pwBlocks()));
+    public static final Item LIGHT_BLUE_GLASS = register("light_blue_glass", new BlockItem(Blocks.LIGHT_BLUE_GLASS, ItemGroups.pwBlocks()));
+    public static final Item BLUE_GLASS = register("blue_glass", new BlockItem(Blocks.BLUE_GLASS, ItemGroups.pwBlocks()));
+    public static final Item PURPLE_GLASS = register("purple_glass", new BlockItem(Blocks.PURPLE_GLASS, ItemGroups.pwBlocks()));
+    public static final Item MAGENTA_GLASS = register("magenta_glass", new BlockItem(Blocks.MAGENTA_GLASS, ItemGroups.pwBlocks()));
+    public static final Item BLACK_GLASS = register("black_glass", new BlockItem(Blocks.BLACK_GLASS, ItemGroups.pwBlocks()));
+    public static final Item LIGHT_GRAY_GLASS = register("light_gray_glass", new BlockItem(Blocks.LIGHT_GRAY_GLASS, ItemGroups.pwBlocks()));
+    public static final Item GRAY_GLASS = register("gray_glass", new BlockItem(Blocks.GRAY_GLASS, ItemGroups.pwBlocks()));
+    public static final Item PASTEL_BASE_GLASS = register("pastel_base_glass", new BlockItem(Blocks.PASTEL_BASE_GLASS, ItemGroups.pwBlocks()));
+    public static final Item BROWN_GLASS = register("brown_glass", new BlockItem(Blocks.BROWN_GLASS, ItemGroups.pwBlocks()));
 
     private static final Item register(String name, Item item) {
         RegistrySupplier<Item> itemSupplied = ITEMS.register(name, () -> item);

@@ -130,21 +130,9 @@ public class Blocks {
     public static final Block PASTEL_BASE_GLASS = register("pastel_base_glass", GlassBlock());
     public static final Block BROWN_GLASS = register("brown_glass", GlassBlock());
 
-    public static final Block LIGHT_RED_GLASS_ITEM = register("light_red_glass", LIGHT_RED_GLASS);
-    public static final Block RED_GLASS_ITEM = register("red_glass", RED_GLASS);
-    public static final Block ORANGE_GLASS_ITEM = register("orange_glass", ORANGE_GLASS);
-    public static final Block YELLOW_GLASS_ITEM = register("yellow_glass", YELLOW_GLASS);
-    public static final Block LIGHT_GREEN_GLASS_ITEM = register("light_green_glass", LIGHT_GREEN_GLASS);
-    public static final Block GREEN_GLASS_ITEM = register("green_glass", GREEN_GLASS);
-    public static final Block LIGHT_BLUE_GLASS_ITEM = register("light_blue_glass", LIGHT_BLUE_GLASS);
-    public static final Block BLUE_GLASS_ITEM = register("blue_glass", BLUE_GLASS);
-    public static final Block PURPLE_GLASS_ITEM = register("purple_glass", PURPLE_GLASS);
-    public static final Block MAGENTA_GLASS_ITEM = register("magenta_glass", MAGENTA_GLASS);
-    public static final Block BLACK_GLASS_ITEM = register("black_glass", BLACK_GLASS);
-    public static final Block LIGHT_GRAY_GLASS_ITEM = register("light_gray_glass", LIGHT_GRAY_GLASS);
-    public static final Block GRAY_GLASS_ITEM = register("gray_glass", GRAY_GLASS);
-    public static final Block PASTEL_BASE_GLASS_ITEM = register("pastel_base_glass", PASTEL_BASE_GLASS);
-    public static final Block BROWN_GLASS_ITEM = register("brown_glass", BROWN_GLASS);
+    // waiting until i can find an easy way to do the models bc im not about to go through 100+ JSON files again.
+//    public static final Block LIGHT_RED_GLASS_PANE = register("light_red_glass_pane", GlassPaneBlock(DyeColor.RED));
+//    public static final Block PASTEL_BASE_GLASS_PANE = register("pastel_base_glass_pane", GlassPaneBlock(DyeColor.WHITE));
 
 
     //Glowstone
@@ -195,7 +183,7 @@ public class Blocks {
         return new GlassBlock(BlockBehaviour.Properties.copy(WHITE_STAINED_GLASS));
     }
 
-    public static StainedGlassPaneBlock StainedGlassBlock(DyeColor GlassColor) {
+    public static StainedGlassPaneBlock GlassPaneBlock(DyeColor GlassColor) {
         return new StainedGlassPaneBlock(GlassColor, BlockBehaviour.Properties.copy(WHITE_STAINED_GLASS).isSuffocating(Blocks::never));
     }
 
