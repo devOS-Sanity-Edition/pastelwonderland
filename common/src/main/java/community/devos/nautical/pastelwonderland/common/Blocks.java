@@ -172,6 +172,55 @@ public class Blocks {
     public static final Block PASTEL_BASE_STAIRS = register("pastel_base_stairs", new PastelStairs(PASTEL_BASE.defaultBlockState(), BlockBehaviour.Properties.copy(STONE_STAIRS)));
     public static final Block BROWN_STAIRS = register("brown_stairs", new PastelStairs(BROWN.defaultBlockState(), BlockBehaviour.Properties.copy(STONE_STAIRS)));
 
+    //Wools
+    public final static Block LIGHT_RED_WOOL = register("light_red_wool", PastelWool());
+    public final static Block RED_WOOL = register("red_wool", PastelWool());
+    public final static Block ORANGE_WOOL = register("orange_wool", PastelWool());
+    public final static Block YELLOW_WOOL = register("yellow_wool", PastelWool());
+    public final static Block LIGHT_GREEN_WOOL = register("light_green_wool", PastelWool());
+    public final static Block GREEN_WOOL = register("green_wool", PastelWool());
+    public final static Block LIGHT_BLUE_WOOL = register("light_blue_wool", PastelWool());
+    public final static Block BLUE_WOOL = register("blue_wool", PastelWool());
+    public final static Block PURPLE_WOOL = register("purple_wool", PastelWool());
+    public final static Block MAGENTA_WOOL = register("magenta_wool", PastelWool());
+    public final static Block BLACK_WOOL = register("black_wool", PastelWool());
+    public final static Block LIGHT_GRAY_WOOL = register("light_gray_wool", PastelWool());
+    public final static Block GRAY_WOOL = register("gray_wool", PastelWool());
+    public final static Block PASTEL_BASE_WOOL = register("pastel_base_wool", PastelWool());
+    public final static Block BROWN_WOOL = register("brown_wool", PastelWool());
+
+    // Start of Wood Varients
+
+    //Logs
+    public final static Block LIGHT_RED_LOG = register("light_red_log", PastelWoodLogs());
+    public final static Block LIGHT_GREEN_LOG = register("light_green_log", PastelWoodLogs());
+    public final static Block LIGHT_BLUE_LOG = register("light_blue_log", PastelWoodLogs());
+    public final static Block YELLOW_LOG = register("yellow_log", PastelWoodLogs());
+
+    //Planks
+    public final static Block LIGHT_RED_PLANK = register("light_red_plank", PastelWoodPlanks());
+    public final static Block LIGHT_GREEN_PLANK = register("light_green_plank", PastelWoodPlanks());
+    public final static Block LIGHT_BLUE_PLANK = register("light_blue_plank", PastelWoodPlanks());
+    public final static Block YELLOW_PLANK = register("yellow_plank", PastelWoodPlanks());
+
+    //Plank Stairs
+    public final static Block LIGHT_RED_PLANK_STAIRS = register("light_red_plank_stairs", new PastelStairs(LIGHT_RED_PLANK.defaultBlockState(), BlockBehaviour.Properties.copy(STONE_STAIRS)));
+    public final static Block LIGHT_GREEN_PLANK_STAIRS = register("light_green_plank_stairs", new PastelStairs(LIGHT_GREEN_PLANK.defaultBlockState(), BlockBehaviour.Properties.copy(STONE_STAIRS)));
+    public final static Block LIGHT_BLUE_PLANK_STAIRS = register("light_blue_plank_stairs", new PastelStairs(LIGHT_BLUE_PLANK.defaultBlockState(), BlockBehaviour.Properties.copy(STONE_STAIRS)));
+    public final static Block YELLOW_PLANK_STAIRS = register("yellow_plank_stairs", new PastelStairs(YELLOW_PLANK.defaultBlockState(), BlockBehaviour.Properties.copy(STONE_STAIRS)));
+
+    //Plank Slabs
+    public final static Block LIGHT_RED_PLANK_SLAB = register("light_red_plank_slab", PastelSlabs());
+    public final static Block LIGHT_GREEN_PLANK_SLAB = register("light_green_plank_slab", PastelSlabs());
+    public final static Block LIGHT_BLUE_PLANK_SLAB = register("light_blue_plank_slab", PastelSlabs());
+    public final static Block YELLOW_PLANK_SLAB = register("yellow_plank_slab", PastelSlabs());
+
+    //Plank Fence Gates
+    public final static Block LIGHT_RED_PLANK_FENCE_GATE = register("light_red_plank_fence_gate", PastelFenceGates());
+    public final static Block LIGHT_GREEN_PLANK_FENCE_GATE = register("light_green_plank_fence_gate", PastelFenceGates());
+    public final static Block LIGHT_BLUE_PLANK_FENCE_GATE = register("light_blue_plank_fence_gate", PastelFenceGates());
+    public final static Block YELLOW_PLANK_FENCE_GATE = register("yellow_plank_fence_gate", PastelFenceGates());
+
     public static LeavesBlock LeavesBlock() {
         return new LeavesBlock(BlockBehaviour.Properties.copy(OAK_LEAVES).noOcclusion().isSuffocating(Blocks::never).isViewBlocking(Blocks::never));
     }
@@ -210,6 +259,18 @@ public class Blocks {
 
     public StairBlock PastelStairs() {
         return new PastelStairs(STONE_STAIRS.defaultBlockState(), BlockBehaviour.Properties.copy(STONE_STAIRS));
+    }
+
+    public static Block PastelWool() {
+        return new Block(BlockBehaviour.Properties.copy(WHITE_WOOL));
+    }
+
+    public static Block PastelWoodLogs() {
+        return new RotatedPillarBlock(BlockBehaviour.Properties.copy(OAK_LOG));
+    }
+
+    public static Block PastelWoodPlanks() {
+        return new Block(BlockBehaviour.Properties.copy(OAK_PLANKS));
     }
 
     private static Block register(String name, Block block) {
