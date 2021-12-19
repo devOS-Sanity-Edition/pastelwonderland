@@ -3,19 +3,18 @@ package community.devos.nautical.pastelwonderland;
 import community.devos.nautical.pastelwonderland.common.Blocks;
 import community.devos.nautical.pastelwonderland.common.ItemGroups;
 import community.devos.nautical.pastelwonderland.common.Items;
+import dev.architectury.platform.Platform;
+import net.minecraft.client.Minecraft;
 
 public class PastelWonderland {
     public static final String MOD_ID = "pastelwonderland";
-//    // We can use this if we don't want to use DeferredRegister
-//    public static final Supplier<Registries> REGISTRIES = Suppliers.memoize(() -> Registries.get(MOD_ID));
-//    // Registering a new creative tab
-////    public static final CreativeModeTab EXAMPLE_TAB = CreativeTabRegistry.create(new ResourceLocation(MOD_ID, "example_tab"), () ->
-////            new ItemStack(PastelWonderland.EXAMPLE_ITEM.get()));
-//
-//    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(MOD_ID, Registry.ITEM_REGISTRY);
-//    public static final RegistrySupplier<Item> EXAMPLE_ITEM = ITEMS.register("example_item", () ->
-//            new Item(new Item.Properties().tab(PastelWonderland.EXAMPLE_TAB)));
-    
+    public static final String VERSION = "0.1.0";
+    public static final boolean devEnv = Platform.isDevelopmentEnvironment();
+
+    public static String PastelWonderlandVersion = "Pastel Wonderland - Dev Environment - Build: " + VERSION;
+    public static String PastelWonderlandViewDisclaimer = "What you see here may not be representative of the final build!";
+    public static String PastelWonderlandFPS = "Game FPS: " + Minecraft.getInstance().fpsString;
+
     public static void init() {
         Items.init();
         Blocks.init();
