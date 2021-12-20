@@ -218,6 +218,8 @@ public class Blocks {
     public final static Block LIGHT_BLUE_PLANK_FENCE_GATE = register("light_blue_plank_fence_gate", PastelFenceGates());
     public final static Block YELLOW_PLANK_FENCE_GATE = register("yellow_plank_fence_gate", PastelFenceGates());
 
+    public final static Block LIGHT_RED_TNT = register("light_red_tnt", PastelTntBlocks());
+
     public static LeavesBlock LeavesBlock() {
         return new LeavesBlock(BlockBehaviour.Properties.copy(OAK_LEAVES).noOcclusion().isSuffocating(Blocks::never).isViewBlocking(Blocks::never));
     }
@@ -269,6 +271,8 @@ public class Blocks {
     public static Block PastelWoodPlanks() {
         return new Block(BlockBehaviour.Properties.copy(OAK_PLANKS));
     }
+
+    public static TntBlock PastelTntBlocks() { return new PastelTnt(TNT.defaultBlockState(), BlockBehaviour.Properties.copy(TNT).instabreak()); }
 
     private static Block register(String name, Block block) {
         RegistrySupplier<Block> blockSupplied = BLOCKS.register(name, () -> block);

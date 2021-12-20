@@ -210,6 +210,8 @@ public class Items {
     public static final Item VANILLA_ICE_CREAM = register("vanilla_ice_cream", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).alwaysEat().build())));
     public static final Item STRAWBERRY_ICE_CREAM = register("strawberry_ice_cream", new Item(ItemGroups.pwMisc().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5f).alwaysEat().build())));
 
+    public static final Item LIGHT_RED_TNT = register("light_red_tnt", new BlockItem(Blocks.LIGHT_RED_TNT, ItemGroups.pwMisc()));
+
 
     private static final Item register(String name, Item item) {
         RegistrySupplier<Item> itemSupplied = ITEMS.register(name, () -> item);

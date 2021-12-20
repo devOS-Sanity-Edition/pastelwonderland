@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "pastelwonderland:block/light_red_tnt_top",
+    "bottom": "pastelwonderland:block/light_red_tnt_bottom",
+    "side": "pastelwonderland:block/light_red_tnt_side"
+  }
+}
