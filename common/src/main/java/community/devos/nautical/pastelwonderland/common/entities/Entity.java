@@ -6,8 +6,6 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.Registry;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.Nullable;
 
 public class Entity {
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(PastelWonderland.MOD_ID, Registry.ENTITY_TYPE_REGISTRY);
