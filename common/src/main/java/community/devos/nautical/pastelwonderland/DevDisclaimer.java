@@ -7,7 +7,7 @@ import net.minecraft.client.Minecraft;
 public class DevDisclaimer {
     public static void init() {
         if (PastelWonderland.devEnv) {
-            Minecraft.getInstance().gui.getFont().drawShadow(PoseStack poseStack, "Test", 1, 1, 0xFFFFFF);
+            //Minecraft.getInstance().gui.getFont().drawShadow(PoseStack poseStack, "Test", 1, 1, 0xFFFFFF);
         }
     }
 }
