@@ -4,6 +4,7 @@ import community.devos.nautical.pastelwonderland.common.Blocks;
 import community.devos.nautical.pastelwonderland.common.ItemGroups;
 import community.devos.nautical.pastelwonderland.common.Items;
 import community.devos.nautical.pastelwonderland.common.entities.Entity;
+import dev.architectury.platform.Mod;
 import dev.architectury.platform.Platform;
 import net.minecraft.client.Minecraft;
 
@@ -24,8 +25,6 @@ public class PastelWonderland {
         ItemGroups.init();
         PastelWonderlandClient.init();
 
-
-        
         System.out.println(ExampleExpectPlatform.getConfigDirectory().toAbsolutePath().normalize().toString());
     }
 }

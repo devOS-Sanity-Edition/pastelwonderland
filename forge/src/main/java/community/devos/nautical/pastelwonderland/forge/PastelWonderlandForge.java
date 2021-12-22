@@ -10,6 +10,7 @@ public class PastelWonderlandForge {
     public PastelWonderlandForge() {
         // Submit our event bus to let architectury register our content on the right time
         EventBuses.registerModEventBus(PastelWonderland.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
+
         PastelWonderland.init();
     }
 }
