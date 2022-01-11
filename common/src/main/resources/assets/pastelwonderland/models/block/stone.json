@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "pastelwonderland:block/stone_top",
-    "side": "pastelwonderland:block/stone"
-  }
-}

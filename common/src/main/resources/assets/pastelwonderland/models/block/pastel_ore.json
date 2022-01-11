@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/cube_column",
-    "textures": {
-        "particle": "pastelwonderland:block/pastel_ore",
-        "end": "pastelwonderland:block/pastel_ore_top",
-        "side": "pastelwonderland:block/pastel_ore"
-    }
-}
