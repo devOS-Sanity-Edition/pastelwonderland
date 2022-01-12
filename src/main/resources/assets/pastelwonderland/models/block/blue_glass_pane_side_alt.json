@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/template_glass_pane_side_alt",
+    "textures": {
+        "pane": "pastelwonderland:block/blue_glass",
+        "edge": "pastelwonderland:block/blue_glass_pane_top"
+    }
+}

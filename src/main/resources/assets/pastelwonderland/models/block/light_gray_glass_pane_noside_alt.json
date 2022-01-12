@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/template_glass_pane_noside_alt",
+    "textures": {
+        "pane": "pastelwonderland:block/light_gray_glass"
+    }
+}

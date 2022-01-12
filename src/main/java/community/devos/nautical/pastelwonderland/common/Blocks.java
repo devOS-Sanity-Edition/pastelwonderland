@@ -22,10 +22,10 @@ public class Blocks {
             Block PASTEL_POWDER_BLOCK = register(color + "_powder", new ConcretePowderBlock(PASTEL_BLOCK, FabricBlockSettings.copy(WHITE_CONCRETE_POWDER)));
             Block PASTEL_FENCE_BLOCK = register_decorations(color + "_fence", new FenceBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
             Block PASTEL_FENCE_GATE_BLOCK = register_decorations(color + "_fence_gate", new FenceGateBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
-            Block PASTEL_WALL_BLOCK = register_decorations(color + "_wall", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
-            Block PASTEL_SLAB_BLOCK = register(color + "_slab", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
+            Block PASTEL_WALL_BLOCK = register_decorations(color + "_wall", new WallBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
+            Block PASTEL_SLAB_BLOCK = register(color + "_slab", new SlabBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
             Block PASTEL_STAIR_BLOCK = register(color + "_stairs", new PastelStairs(STONE_STAIRS.defaultBlockState(), FabricBlockSettings.copy(WHITE_CONCRETE)));
-            Block PASTEL_WOOL_BLOCK = register(color + "_wool", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
+            Block PASTEL_WOOL_BLOCK = register(color + "_wool", new Block(FabricBlockSettings.copy(WHITE_WOOL)));
         }
     }
 

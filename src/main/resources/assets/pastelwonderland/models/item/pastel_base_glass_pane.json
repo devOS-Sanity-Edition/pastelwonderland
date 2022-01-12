@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "pastelwonderland:block/pastel_base_glass"
+    }
+}
