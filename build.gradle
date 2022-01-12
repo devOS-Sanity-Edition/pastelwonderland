@@ -5,7 +5,7 @@ plugins {
 }
 
 archivesBaseName = "${project.archives_base_name}-mc${project.minecraft_version}"
-version = "${project.mod_version}+rev.${grgit.head().abbreviatedId}"
+version = "${project.mod_version}-rev.${grgit.head().abbreviatedId}"
 group = project.maven_group
 
 repositories {
@@ -30,7 +30,7 @@ dependencies {
     modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
     modRuntimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}")
     modImplementation("maven.modrinth:lazydfu:0.1.2")
-    modImplementation "maven.modrinth:sodium:${project.sodium_version}"
+    //modImplementation "maven.modrinth:sodium:${project.sodium_version}"
 
 }
 
