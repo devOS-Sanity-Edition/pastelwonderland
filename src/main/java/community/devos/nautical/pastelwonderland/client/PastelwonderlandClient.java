@@ -6,12 +6,12 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.entity.layers.RenderLayer;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
 
 @Environment(EnvType.CLIENT)
 public class PastelwonderlandClient implements ClientModInitializer {
+
     @Override
     public void onInitializeClient() {
         Block[] block_colors = {GlassBlocks.PASTEL_BASE_GLASS, GlassBlocks.LIGHT_RED_GLASS, GlassBlocks.RED_GLASS, GlassBlocks.ORANGE_GLASS, GlassBlocks.YELLOW_GLASS, GlassBlocks.LIGHT_GREEN_GLASS, GlassBlocks.GREEN_GLASS, GlassBlocks.LIGHT_BLUE_GLASS, GlassBlocks.BLUE_GLASS, GlassBlocks.PURPLE_GLASS, GlassBlocks.MAGENTA_GLASS, GlassBlocks.BROWN_GLASS, GlassBlocks.BLACK_GLASS, GlassBlocks.LIGHT_GRAY_GLASS, GlassBlocks.GRAY_GLASS};

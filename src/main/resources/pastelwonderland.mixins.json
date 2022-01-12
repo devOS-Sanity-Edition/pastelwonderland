@@ -4,6 +4,7 @@
   "package": "community.devos.nautical.pastelwonderland.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "DevEnvDebugMenu"
   ],
   "client": [
   ],

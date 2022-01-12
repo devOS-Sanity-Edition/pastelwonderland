@@ -95,6 +95,22 @@
   "block.pastelwonderland.pastel_base_glass": "Pastel Base Glass",
   "block.pastelwonderland.brown_glass": "Brown Pastel Glass",
 
+  "block.pastelwonderland.light_red_glass_pane": "Light Red Pastel Glass Pane",
+  "block.pastelwonderland.red_glass_pane": "Red Pastel Glass Pane",
+  "block.pastelwonderland.orange_glass_pane": "Orange Pastel Glass Pane",
+  "block.pastelwonderland.yellow_glass_pane": "Yellow Pastel Glass Pane",
+  "block.pastelwonderland.light_green_glass_pane": "Light Green Pastel Glass Pane",
+  "block.pastelwonderland.green_glass_pane": "Green Pastel Glass Pane",
+  "block.pastelwonderland.light_blue_glass_pane": "Light Blue Pastel Glass Pane",
+  "block.pastelwonderland.blue_glass_pane": "Blue Pastel Glass Pane",
+  "block.pastelwonderland.purple_glass_pane": "Purple Pastel Glass Pane",
+  "block.pastelwonderland.magenta_glass_pane": "Magenta Pastel Glass Pane",
+  "block.pastelwonderland.black_glass_pane": "Black Pastel Glass Pane",
+  "block.pastelwonderland.light_gray_glass_pane": "Light Gray Pastel Glass Pane",
+  "block.pastelwonderland.gray_glass_pane": "Gray Pastel Glass Pane",
+  "block.pastelwonderland.pastel_base_glass_pane": "Pastel Base Glass Pane",
+  "block.pastelwonderland.brown_glass_pane": "Brown Pastel Glass Pane",
+
   "block.pastelwonderland.light_red_slab": "Light Red Pastel Slab",
   "block.pastelwonderland.red_slab": "Red Pastel Slab",
   "block.pastelwonderland.orange_slab": "Orange Pastel Slab",
@@ -210,10 +226,12 @@
   "item.pastelwonderland.rainbow_cotton_candy":  "Cotton Candy",
 
 
-  "itemGroup.pastelwonderland.blocks": "Pastel Wonderland Blocks",
-  "itemGroup.pastelwonderland.armourandtools": "Pastel Wonderland Armour & Tools",
-  "itemGroup.pastelwonderland.misc": "Pastel Wonderland Miscellaneous",
-  "itemGroup.pastelwonderland.food": "Pastel Wonderland Food",
+  "itemGroup.pastelwonderland.pastelwonderland": "Pastel Wonderland",
+  "itemGroup.pastelwonderland.pastelwonderland.tab.blocks": "Blocks",
+  "itemGroup.pastelwonderland.pastelwonderland.tab.decorations": "Decorations",
+  "itemGroup.pastelwonderland.pastelwonderland.tab.items": "Items",
+  "itemGroup.pastelwonderland.pastelwonderland.button.github": "GitHub",
+  "itemGroup.pastelwonderland.pastelwonderland.button.issues": "Issues",
 
   "entity.pastelwonderland.mallard": "Mallard"
 }
