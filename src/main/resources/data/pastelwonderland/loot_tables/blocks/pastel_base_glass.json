@@ -7,7 +7,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:pastel_base_glass"
+                    "name": "pastelwonderland:pastel_base_glass"
                 }
             ],
             "conditions": [

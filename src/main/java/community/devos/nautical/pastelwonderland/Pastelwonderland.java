@@ -1,9 +1,10 @@
 package community.devos.nautical.pastelwonderland;
 
-import community.devos.nautical.pastelwonderland.common.Blocks;
+import community.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks;
 import community.devos.nautical.pastelwonderland.common.GlassBlocks;
 import community.devos.nautical.pastelwonderland.common.HiddenItems;
 import community.devos.nautical.pastelwonderland.common.Items;
+import community.devos.nautical.pastelwonderland.world.dimension.PastelwonderlandDimension;
 import io.wispforest.owo.itemgroup.Icon;
 import io.wispforest.owo.itemgroup.OwoItemGroup;
 import io.wispforest.owo.itemgroup.gui.ItemGroupButton;
@@ -12,7 +13,9 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 
+import static community.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks.RED_PASTEL_BLOCK;
 import static community.devos.nautical.pastelwonderland.util.LoggerHelper.log;
 
 
@@ -23,11 +26,20 @@ public class Pastelwonderland implements ModInitializer {
     public static final String MOD_NAME = FabricLoader.getInstance().getModContainer(MOD_ID).get().getMetadata().getName();
 
 
+    public static ResourceLocation locate(String location) {
+        if (location.contains(":")) {
+            return new ResourceLocation(location); //probably useful if its from another mod
+        } else {
+            return new ResourceLocation(MOD_ID, location); //so we can be lazy, or if its not from another mod
+        }
+    }
+
+
     public static final OwoItemGroup PW_ITEM_GROUP = new OwoItemGroup(new ResourceLocation(MOD_ID, "pastelwonderland")) {
         @Override
         protected void setup() {
             keepStaticTitle();
-            addTab(Icon.of(HiddenItems.RED_BLOCK), "blocks", ItemGroupTab.EMPTY);
+            addTab(Icon.of(RED_PASTEL_BLOCK), "blocks", ItemGroupTab.EMPTY);
             addTab(Icon.of(GlassBlocks.RED_GLASS_ITEM), "decorations", ItemGroupTab.EMPTY);
             addTab(Icon.of(net.minecraft.world.level.block.Blocks.ACACIA_BUTTON), "items", ItemGroupTab.EMPTY);
 
@@ -46,9 +58,10 @@ public class Pastelwonderland implements ModInitializer {
 
         PW_ITEM_GROUP.initialize();
 
-        Blocks.init();
+        PastelwonderlandBlocks.init();
         GlassBlocks.init();
         Items.init();
+        PastelwonderlandDimension.init();
 
         log("info", "Pastel Wonderland initializing");
         log("dev_info", "Pastel Wonderland Dev Env on Version: " + VERSION);

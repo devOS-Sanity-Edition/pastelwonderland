@@ -7,7 +7,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:magenta_glass_pane"
+                    "name": "pastelwonderland:magenta_glass_pane"
                 }
             ],
             "conditions": [

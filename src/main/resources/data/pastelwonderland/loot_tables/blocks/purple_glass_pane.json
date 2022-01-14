@@ -7,7 +7,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:purple_glass_pane"
+                    "name": "pastelwonderland:purple_glass_pane"
                 }
             ],
             "conditions": [

@@ -7,7 +7,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:blue_glass"
+                    "name": "pastelwonderland:blue_glass"
                 }
             ],
             "conditions": [
