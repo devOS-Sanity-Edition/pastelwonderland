@@ -15,6 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 
+import static community.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks.PASTEL_GRASS;
 import static community.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks.RED_PASTEL_BLOCK;
 import static community.devos.nautical.pastelwonderland.util.LoggerHelper.log;
 
@@ -42,6 +43,7 @@ public class Pastelwonderland implements ModInitializer {
             addTab(Icon.of(RED_PASTEL_BLOCK), "blocks", ItemGroupTab.EMPTY);
             addTab(Icon.of(GlassBlocks.RED_GLASS_ITEM), "decorations", ItemGroupTab.EMPTY);
             addTab(Icon.of(net.minecraft.world.level.block.Blocks.ACACIA_BUTTON), "items", ItemGroupTab.EMPTY);
+            addTab(Icon.of(PASTEL_GRASS), "natural", ItemGroupTab.EMPTY);
 
             addButton(ItemGroupButton.github("https://github.com/devOS-Sanity-Edition/pastelwonderland"));
             addButton(ItemGroupButton.link(Icon.of(new ResourceLocation("owo", "textures/gui/icons.png"), 0, 0, 64, 64), "issues", "https://github.com/devOS-Sanity-Edition/pastelwonderland/issues"));

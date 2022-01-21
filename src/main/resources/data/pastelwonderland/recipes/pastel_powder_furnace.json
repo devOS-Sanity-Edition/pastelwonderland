@@ -3,7 +3,7 @@
     "ingredient": {
         "item": "pastelwonderland:pastel_ore"
     },
-    "result": "pastelwonderland:pastel_powder",
+    "result": "minecraft:acacia_button",
     "experience": 1,
     "cooking_time": 200
 }

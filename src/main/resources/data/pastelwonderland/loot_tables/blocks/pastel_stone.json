@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "pastelwonderland:stone"
+                    "name": "pastelwonderland:pastel_stone"
                 }
             ]
         }

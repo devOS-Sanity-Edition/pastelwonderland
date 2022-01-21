@@ -184,12 +184,12 @@
   "block.pastelwonderland.light_green_plank_fence_gate": "Light Green Pastel Plank Fence Gate",
   "block.pastelwonderland.light_blue_plank_fence_gate": "Light Blue Pastel Plank Fence Gate",
 
-  "block.pastelwonderland.dirt": "Pastel Dirt",
-  "block.pastelwonderland.grass": "Pastel Grass",
-  "block.pastelwonderland.stone": "Pastel Stone",
-  "block.pastelwonderland.sand": "Pastel Sand",
-  "block.pastelwonderland.log": "Pastel Log",
-  "block.pastelwonderland.pastel_ore": "Pastel Ore",
+  "block.pastelwonderland.pastel_dirt": "Pastel Dirt",
+  "block.pastelwonderland.pastel_grass": "Pastel Grass",
+  "block.pastelwonderland.pastel_stone": "Pastel Stone",
+  "block.pastelwonderland.pastel_sand": "Pastel Sand",
+  "block.pastelwonderland.pastel_log": "Pastel Log",
+  "block.pastelwonderland.pastel_powder_ore": "Pastel Ore",
 
   "block.pastelwonderland.light_blue_leaves": "Light Blue Pastel Leaves",
   "block.pastelwonderland.light_green_leaves": "Light Green Pastel Leaves",
