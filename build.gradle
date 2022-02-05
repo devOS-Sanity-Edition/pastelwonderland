@@ -30,7 +30,7 @@ dependencies {
     modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
     modCompileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:${project.rei_version}")
     modRuntimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}")
-    modImplementation("maven.modrinth:lazydfu:0.1.2")
+    // modImplementation("maven.modrinth:lazydfu:0.1.2")
     //modImplementation "maven.modrinth:sodium:${project.sodium_version}" //it crashes on world join
 
 }
