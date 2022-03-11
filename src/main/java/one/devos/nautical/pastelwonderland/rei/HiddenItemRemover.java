@@ -1,6 +1,6 @@
-//package community.devos.nautical.pastelwonderland.rei;
+//package one.devos.nautical.pastelwonderland.rei;
 //
-//import community.devos.nautical.pastelwonderland.common.HiddenItems;
+//import HiddenItems;
 //import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
 //import me.shedaniel.rei.api.client.registry.entry.EntryRegistry;
 //import me.shedaniel.rei.api.common.util.EntryStacks;

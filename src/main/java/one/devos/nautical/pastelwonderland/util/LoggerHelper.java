@@ -1,4 +1,4 @@
-package community.devos.nautical.pastelwonderland.util;
+package one.devos.nautical.pastelwonderland.util;
 
 import net.fabricmc.loader.api.FabricLoader;
 import org.apache.logging.log4j.LogManager;
@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Objects;
 
-import static community.devos.nautical.pastelwonderland.Pastelwonderland.MOD_NAME;
+import static one.devos.nautical.pastelwonderland.Pastelwonderland.MOD_NAME;
 
 public class LoggerHelper {
 

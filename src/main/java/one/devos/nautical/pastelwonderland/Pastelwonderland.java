@@ -1,23 +1,18 @@
-package community.devos.nautical.pastelwonderland;
+package one.devos.nautical.pastelwonderland;
 
-import community.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks;
-import community.devos.nautical.pastelwonderland.common.GlassBlocks;
-import community.devos.nautical.pastelwonderland.common.HiddenItems;
-import community.devos.nautical.pastelwonderland.common.Items;
-import community.devos.nautical.pastelwonderland.world.dimension.PastelwonderlandDimension;
+import one.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks;
+import one.devos.nautical.pastelwonderland.common.GlassBlocks;
+import one.devos.nautical.pastelwonderland.common.HiddenItems;
+import one.devos.nautical.pastelwonderland.common.Items;
+import one.devos.nautical.pastelwonderland.world.dimension.PastelwonderlandDimension;
 import io.wispforest.owo.itemgroup.Icon;
 import io.wispforest.owo.itemgroup.OwoItemGroup;
 import io.wispforest.owo.itemgroup.gui.ItemGroupButton;
-import io.wispforest.owo.itemgroup.gui.ItemGroupTab;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.ItemLike;
-
-import static community.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks.PASTEL_GRASS;
-import static community.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks.RED_PASTEL_BLOCK;
-import static community.devos.nautical.pastelwonderland.util.LoggerHelper.log;
+import one.devos.nautical.pastelwonderland.util.LoggerHelper;
 
 
 public class Pastelwonderland implements ModInitializer {
@@ -40,10 +35,10 @@ public class Pastelwonderland implements ModInitializer {
         @Override
         protected void setup() {
             keepStaticTitle();
-            addTab(Icon.of(RED_PASTEL_BLOCK), "blocks", null);
+            addTab(Icon.of(PastelwonderlandBlocks.RED_PASTEL_BLOCK), "blocks", null);
             addTab(Icon.of(GlassBlocks.RED_GLASS_ITEM), "decorations", null);
             addTab(Icon.of(net.minecraft.world.level.block.Blocks.ACACIA_BUTTON), "items", null);
-            addTab(Icon.of(PASTEL_GRASS), "natural", null);
+            addTab(Icon.of(PastelwonderlandBlocks.PASTEL_GRASS), "natural", null);
 
             addButton(ItemGroupButton.github("https://github.com/devOS-Sanity-Edition/pastelwonderland"));
             addButton(ItemGroupButton.link(Icon.of(new ResourceLocation("owo", "textures/gui/icons.png"), 0, 0, 64, 64), "issues", "https://github.com/devOS-Sanity-Edition/pastelwonderland/issues"));
@@ -65,7 +60,7 @@ public class Pastelwonderland implements ModInitializer {
         Items.init();
         PastelwonderlandDimension.init();
 
-        log("info", "Pastel Wonderland initializing");
-        log("dev_info", "Pastel Wonderland Dev Env on Version: " + VERSION);
+        LoggerHelper.log("info", "Pastel Wonderland initializing");
+        LoggerHelper.log("dev_info", "Pastel Wonderland Dev Env on Version: " + VERSION);
     }
 }

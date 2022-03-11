@@ -1,12 +1,12 @@
-package community.devos.nautical.pastelwonderland.common;
+package one.devos.nautical.pastelwonderland.common;
 
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 
-import static community.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
-import static community.devos.nautical.pastelwonderland.Pastelwonderland.PW_ITEM_GROUP;
+import static one.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
+import static one.devos.nautical.pastelwonderland.Pastelwonderland.PW_ITEM_GROUP;
 
 public class Items {
 

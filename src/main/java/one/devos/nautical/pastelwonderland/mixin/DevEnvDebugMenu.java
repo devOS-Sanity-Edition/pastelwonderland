@@ -1,6 +1,6 @@
-package community.devos.nautical.pastelwonderland.mixin;
+package one.devos.nautical.pastelwonderland.mixin;
 
-import community.devos.nautical.pastelwonderland.Pastelwonderland;
+import one.devos.nautical.pastelwonderland.Pastelwonderland;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.gui.components.DebugScreenOverlay;
 import org.spongepowered.asm.mixin.Mixin;

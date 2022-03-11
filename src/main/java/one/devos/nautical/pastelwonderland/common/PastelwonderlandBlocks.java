@@ -1,22 +1,15 @@
-package community.devos.nautical.pastelwonderland.common;
+package one.devos.nautical.pastelwonderland.common;
 
-import community.devos.nautical.pastelwonderland.Pastelwonderland;
-import io.wispforest.owo.itemgroup.OwoItemGroup;
+import one.devos.nautical.pastelwonderland.Pastelwonderland;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
 
 
-import static community.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
-import static community.devos.nautical.pastelwonderland.Pastelwonderland.locate;
+import static one.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
 import static net.minecraft.world.level.block.Blocks.*;
 import static net.minecraft.world.level.block.state.BlockBehaviour.*;
 import static net.minecraft.world.level.block.state.BlockBehaviour.Properties.*;

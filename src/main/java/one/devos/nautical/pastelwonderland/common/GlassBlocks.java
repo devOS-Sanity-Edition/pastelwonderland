@@ -1,6 +1,6 @@
-package community.devos.nautical.pastelwonderland.common;
+package one.devos.nautical.pastelwonderland.common;
 
-import community.devos.nautical.pastelwonderland.Pastelwonderland;
+import one.devos.nautical.pastelwonderland.Pastelwonderland;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.core.Registry;
@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.block.StainedGlassPaneBlock;
 
-import static community.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
+import static one.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
 import static net.minecraft.world.level.block.Blocks.WHITE_STAINED_GLASS;
 
 public class GlassBlocks {

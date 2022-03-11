@@ -1,4 +1,4 @@
-package community.devos.nautical.pastelwonderland.common;
+package one.devos.nautical.pastelwonderland.common;
 
 
 import net.minecraft.world.level.block.StairBlock;

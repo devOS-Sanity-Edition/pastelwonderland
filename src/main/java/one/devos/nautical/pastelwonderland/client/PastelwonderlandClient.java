@@ -1,6 +1,6 @@
-package community.devos.nautical.pastelwonderland.client;
+package one.devos.nautical.pastelwonderland.client;
 
-import community.devos.nautical.pastelwonderland.common.GlassBlocks;
+import one.devos.nautical.pastelwonderland.common.GlassBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

@@ -11,7 +11,7 @@
     "HiItsDevin_", "Stereo528", "CARTER_1234", "ZenithRogue", "The Rest of devOS: Sanity Edition"
   ],
   "contact": {
-    "homepage": "https://devos.community",
+    "homepage": "https://devos.one",
     "sources": "https://github.com/devOS-Sanity-Edition/pastelwonderland",
     "issues": "https://github.com/devOS-Sanity-Edition/pastelwonderland/issues"
   },
@@ -20,10 +20,10 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "community.devos.nautical.pastelwonderland.client.PastelwonderlandClient"
+      "one.devos.nautical.pastelwonderland.client.PastelwonderlandClient"
     ],
     "main": [
-      "community.devos.nautical.pastelwonderland.Pastelwonderland"
+      "one.devos.nautical.pastelwonderland.Pastelwonderland"
     ]
   },
   "mixins": [
