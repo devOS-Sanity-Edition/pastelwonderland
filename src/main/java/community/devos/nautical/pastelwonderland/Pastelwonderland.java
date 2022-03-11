@@ -40,10 +40,10 @@ public class Pastelwonderland implements ModInitializer {
         @Override
         protected void setup() {
             keepStaticTitle();
-            addTab(Icon.of(RED_PASTEL_BLOCK), "blocks", ItemGroupTab.EMPTY);
-            addTab(Icon.of(GlassBlocks.RED_GLASS_ITEM), "decorations", ItemGroupTab.EMPTY);
-            addTab(Icon.of(net.minecraft.world.level.block.Blocks.ACACIA_BUTTON), "items", ItemGroupTab.EMPTY);
-            addTab(Icon.of(PASTEL_GRASS), "natural", ItemGroupTab.EMPTY);
+            addTab(Icon.of(RED_PASTEL_BLOCK), "blocks", null);
+            addTab(Icon.of(GlassBlocks.RED_GLASS_ITEM), "decorations", null);
+            addTab(Icon.of(net.minecraft.world.level.block.Blocks.ACACIA_BUTTON), "items", null);
+            addTab(Icon.of(PASTEL_GRASS), "natural", null);
 
             addButton(ItemGroupButton.github("https://github.com/devOS-Sanity-Edition/pastelwonderland"));
             addButton(ItemGroupButton.link(Icon.of(new ResourceLocation("owo", "textures/gui/icons.png"), 0, 0, 64, 64), "issues", "https://github.com/devOS-Sanity-Edition/pastelwonderland/issues"));
