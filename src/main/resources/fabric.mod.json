@@ -24,9 +24,6 @@
     ],
     "main": [
       "community.devos.nautical.pastelwonderland.Pastelwonderland"
-    ],
-    "rei": [
-      "community.devos.nautical.pastelwonderland.rei.HiddenItemRemover"
     ]
   },
   "mixins": [
