@@ -71,7 +71,7 @@ public class PastelwonderlandBlocks {
     private static Properties pastel_leaves() {return copy(OAK_LEAVES).noOcclusion().isViewBlocking(never).isSuffocating(never); }
 
     public static final Block PASTEL_GRASS = register("pastel_grass", new GrassBlock(dirt_like()), 3);
-    public static final Block PASTEL_DIRT = register("pastel_dirt", new GrassBlock(dirt_like()), 3);
+    public static final Block PASTEL_DIRT = register("pastel_dirt", new Block(dirt_like()), 3);
     public static final Block PASTEL_STONE = register("pastel_stone", new Block(copy(STONE)), 3);
     public static final Block PASTEL_SAND = register("pastel_sand", new SandBlock(14269048, copy(SAND)), 3);
     public static final Block PASTEL_LOG = register("pastel_log", new RotatedPillarBlock(copy(OAK_LOG)), 3);
