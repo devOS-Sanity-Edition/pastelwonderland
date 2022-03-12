@@ -1,18 +1,17 @@
 package one.devos.nautical.pastelwonderland.common;
 
-import one.devos.nautical.pastelwonderland.Pastelwonderland;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import one.devos.nautical.pastelwonderland.Pastelwonderland;
 
-
-import static one.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
 import static net.minecraft.world.level.block.Blocks.*;
-import static net.minecraft.world.level.block.state.BlockBehaviour.*;
-import static net.minecraft.world.level.block.state.BlockBehaviour.Properties.*;
+import static net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import static net.minecraft.world.level.block.state.BlockBehaviour.Properties.copy;
+import static one.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
 
 public class PastelwonderlandBlocks {
 

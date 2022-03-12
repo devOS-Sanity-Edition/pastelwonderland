@@ -1,12 +1,12 @@
 package one.devos.nautical.pastelwonderland.world.dimension;
 
-import one.devos.nautical.pastelwonderland.Pastelwonderland;
-import one.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import one.devos.nautical.pastelwonderland.Pastelwonderland;
+import one.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks;
 
 import static one.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
 import static one.devos.nautical.pastelwonderland.Pastelwonderland.locate;

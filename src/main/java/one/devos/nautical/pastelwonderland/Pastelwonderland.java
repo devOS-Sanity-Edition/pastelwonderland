@@ -1,10 +1,5 @@
 package one.devos.nautical.pastelwonderland;
 
-import one.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks;
-import one.devos.nautical.pastelwonderland.common.GlassBlocks;
-import one.devos.nautical.pastelwonderland.common.HiddenItems;
-import one.devos.nautical.pastelwonderland.common.Items;
-import one.devos.nautical.pastelwonderland.world.dimension.PastelwonderlandDimension;
 import io.wispforest.owo.itemgroup.Icon;
 import io.wispforest.owo.itemgroup.OwoItemGroup;
 import io.wispforest.owo.itemgroup.gui.ItemGroupButton;
@@ -12,7 +7,11 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
+import one.devos.nautical.pastelwonderland.common.GlassBlocks;
+import one.devos.nautical.pastelwonderland.common.Items;
+import one.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks;
 import one.devos.nautical.pastelwonderland.util.LoggerHelper;
+import one.devos.nautical.pastelwonderland.world.dimension.PastelwonderlandDimension;
 
 
 public class Pastelwonderland implements ModInitializer {
