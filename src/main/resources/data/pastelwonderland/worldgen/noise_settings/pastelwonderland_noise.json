@@ -2,7 +2,7 @@
   "sea_level": -64,
   "disable_mob_generation": false,
   "aquifers_enabled": false,
-  "ore_veins_enabled": false,
+  "ore_veins_enabled": true,
   "legacy_random_source": true,
   "default_block": {
     "Name": "pastelwonderland:pastel_stone"
@@ -462,7 +462,7 @@
                             "then_run": {
                               "type": "minecraft:block",
                               "result_state": {
-                                "Name": "minecraft:stone"
+                                "Name": "pastelwonderland:pastel_stone"
                               }
                             }
                           },
@@ -725,7 +725,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "minecraft:stone"
+                                  "Name": "pastelwonderland:pastel_stone"
                                 }
                               }
                             },
@@ -790,7 +790,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "minecraft:stone"
+                                  "Name": "pastelwonderland:pastel_stone"
                                 }
                               }
                             },
@@ -897,7 +897,7 @@
                                 {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "minecraft:stone"
+                                    "Name": "pastelwonderland:pastel_stone"
                                   }
                                 }
                               ]
@@ -937,7 +937,7 @@
                                         "then_run": {
                                           "type": "minecraft:block",
                                           "result_state": {
-                                            "Name": "minecraft:stone"
+                                            "Name": "pastelwonderland:pastel_stone"
                                           }
                                         }
                                       },
@@ -953,7 +953,7 @@
                                 {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "minecraft:stone"
+                                    "Name": "pastelwonderland:pastel_stone"
                                   }
                                 }
                               ]
@@ -978,7 +978,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "minecraft:stone"
+                                  "Name": "pastelwonderland:pastel_stone"
                                 }
                               }
                             }
@@ -1068,7 +1068,7 @@
                             "then_run": {
                               "type": "minecraft:block",
                               "result_state": {
-                                "Name": "minecraft:stone"
+                                "Name": "pastelwonderland:pastel_stone"
                               }
                             }
                           }
@@ -1096,7 +1096,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "minecraft:stone"
+                                  "Name": "pastelwonderland:pastel_stone"
                                 }
                               }
                             },
@@ -1152,7 +1152,7 @@
                                     "then_run": {
                                       "type": "minecraft:block",
                                       "result_state": {
-                                        "Name": "minecraft:stone"
+                                        "Name": "pastelwonderland:pastel_stone"
                                       }
                                     }
                                   },
@@ -1176,7 +1176,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "minecraft:stone"
+                                  "Name": "pastelwonderland:pastel_stone"
                                 }
                               }
                             },
@@ -1233,7 +1233,7 @@
                                   "then_run": {
                                     "type": "minecraft:block",
                                     "result_state": {
-                                      "Name": "minecraft:stone"
+                                      "Name": "pastelwonderland:pastel_stone"
                                     }
                                   }
                                 },
@@ -1521,7 +1521,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "minecraft:stone"
+                                  "Name": "pastelwonderland:pastel_stone"
                                 }
                               }
                             },
@@ -1578,7 +1578,7 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:stone"
+                            "Name": "pastelwonderland:pastel_stone"
                           }
                         }
                       },
@@ -1658,7 +1658,7 @@
                                 {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "minecraft:stone"
+                                    "Name": "pastelwonderland:pastel_stone"
                                   }
                                 }
                               ]
@@ -1698,7 +1698,7 @@
                                         "then_run": {
                                           "type": "minecraft:block",
                                           "result_state": {
-                                            "Name": "minecraft:stone"
+                                            "Name": "pastelwonderland:pastel_stone"
                                           }
                                         }
                                       },
@@ -1714,7 +1714,7 @@
                                 {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "minecraft:stone"
+                                    "Name": "pastelwonderland:pastel_stone"
                                   }
                                 }
                               ]
@@ -1739,7 +1739,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "minecraft:stone"
+                                  "Name": "pastelwonderland:pastel_stone"
                                 }
                               }
                             }
@@ -1829,7 +1829,7 @@
                             "then_run": {
                               "type": "minecraft:block",
                               "result_state": {
-                                "Name": "minecraft:stone"
+                                "Name": "pastelwonderland:pastel_stone"
                               }
                             }
                           }
@@ -1854,7 +1854,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:stone"
+                              "Name": "pastelwonderland:pastel_stone"
                             }
                           }
                         }
@@ -1893,7 +1893,7 @@
                                     "then_run": {
                                       "type": "minecraft:block",
                                       "result_state": {
-                                        "Name": "minecraft:stone"
+                                        "Name": "pastelwonderland:pastel_stone"
                                       }
                                     }
                                   },
@@ -1917,7 +1917,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "minecraft:stone"
+                                  "Name": "pastelwonderland:pastel_stone"
                                 }
                               }
                             },
@@ -1951,7 +1951,7 @@
                                   "then_run": {
                                     "type": "minecraft:block",
                                     "result_state": {
-                                      "Name": "minecraft:stone"
+                                      "Name": "pastelwonderland:pastel_stone"
                                     }
                                   }
                                 },
@@ -2054,7 +2054,7 @@
                   "then_run": {
                     "type": "minecraft:block",
                     "result_state": {
-                      "Name": "minecraft:stone"
+                      "Name": "pastelwonderland:pastel_stone"
                     }
                   }
                 },
@@ -2111,7 +2111,7 @@
                       "then_run": {
                         "type": "minecraft:block",
                         "result_state": {
-                          "Name": "minecraft:stone"
+                          "Name": "pastelwonderland:pastel_stone"
                         }
                       }
                     },
