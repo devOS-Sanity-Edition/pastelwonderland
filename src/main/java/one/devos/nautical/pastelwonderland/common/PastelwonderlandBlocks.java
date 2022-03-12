@@ -73,14 +73,14 @@ public class PastelwonderlandBlocks {
 
     public static final Block PASTEL_GRASS = register("pastel_grass", new GrassBlock(dirt_like()), 3);
     public static final Block PASTEL_DIRT = register("pastel_dirt", new GrassBlock(dirt_like()), 3);
-    public static final Block PASTEL_STONE = register("pastel_stone", new GrassBlock(copy(STONE)), 3);
+    public static final Block PASTEL_STONE = register("pastel_stone", new Block(copy(STONE)), 3);
     public static final Block PASTEL_SAND = register("pastel_sand", new SandBlock(14269048, copy(SAND)), 3);
     public static final Block PASTEL_LOG = register("pastel_log", new RotatedPillarBlock(copy(OAK_LOG)), 3);
     public static final Block PASTEL_ORE = register("pastel_ore", new Block(copy(IRON_ORE)), 3);
-    public static final Block LIGHT_BLUE_LEAVES = register("light_blue_leaves", new Block(pastel_leaves()), 3);
-    public static final Block LIGHT_RED_LEAVES = register("light_red_leaves", new Block(pastel_leaves()), 3);
-    public static final Block LIGHT_GREEN_LEAVES = register("light_green_leaves", new Block(pastel_leaves()), 3);
-    public static final Block YELLOW_LEAVES = register("yellow_leaves", new Block(pastel_leaves()), 3);
+    public static final Block LIGHT_BLUE_LEAVES = register("light_blue_leaves", new LeavesBlock(pastel_leaves()), 3);
+    public static final Block LIGHT_RED_LEAVES = register("light_red_leaves", new LeavesBlock(pastel_leaves()), 3);
+    public static final Block LIGHT_GREEN_LEAVES = register("light_green_leaves", new LeavesBlock(pastel_leaves()), 3);
+    public static final Block YELLOW_LEAVES = register("yellow_leaves", new LeavesBlock(pastel_leaves()), 3);
 
 
 
