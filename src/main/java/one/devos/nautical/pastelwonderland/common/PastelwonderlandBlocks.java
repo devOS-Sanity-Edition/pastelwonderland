@@ -1,11 +1,14 @@
 package one.devos.nautical.pastelwonderland.common;
 
 import io.wispforest.owo.itemgroup.OwoItemSettings;
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import one.devos.nautical.pastelwonderland.Pastelwonderland;
 
 import static net.minecraft.world.level.block.Blocks.*;
@@ -17,6 +20,7 @@ public class PastelwonderlandBlocks {
 
     protected static final BlockBehaviour.StatePredicate never = (state, view, pos) -> false;
 
+    private static final int pastel_sand_color = 16246726;
     private static Properties pastel_block() { return copy(WHITE_CONCRETE); }
     private static Properties pastel_powder() { return copy(WHITE_CONCRETE_POWDER); }
 
@@ -69,11 +73,12 @@ public class PastelwonderlandBlocks {
 
     private static Properties dirt_like() { return copy(DIRT); }
     private static Properties pastel_leaves() {return copy(OAK_LEAVES).noOcclusion().isViewBlocking(never).isSuffocating(never); }
+    private static Properties sand_like() { return Properties.of(Material.SAND).strength(0.5F).sound(SoundType.SAND) ; }
 
     public static final Block PASTEL_GRASS = register("pastel_grass", new GrassBlock(dirt_like()), 3);
     public static final Block PASTEL_DIRT = register("pastel_dirt", new Block(dirt_like()), 3);
     public static final Block PASTEL_STONE = register("pastel_stone", new Block(copy(STONE)), 3);
-    public static final Block PASTEL_SAND = register("pastel_sand", new SandBlock(14269048, copy(SAND)), 3);
+    public static final Block PASTEL_SAND = register("pastel_sand", new SandBlock(pastel_sand_color, sand_like()), 3);
     public static final Block PASTEL_LOG = register("pastel_log", new RotatedPillarBlock(copy(OAK_LOG)), 3);
     public static final Block PASTEL_ORE = register("pastel_ore", new Block(copy(IRON_ORE)), 3);
     public static final Block LIGHT_BLUE_LEAVES = register("light_blue_leaves", new LeavesBlock(pastel_leaves()), 3);
@@ -102,6 +107,8 @@ public class PastelwonderlandBlocks {
             Block PASTEL_WOOL_BLOCK = register(color + "_wool", new Block(copy(WHITE_WOOL)), 0);
         }
 
+        ColorProviderRegistry.BLOCK.register((blockState, blockAndTintGetter, blockPos, i) -> pastel_sand_color, PASTEL_SAND);
+        ColorProviderRegistry.ITEM.register((itemStack, i) -> pastel_sand_color, PASTEL_SAND);
 
     }
 
