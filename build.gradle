@@ -23,7 +23,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modImplementation "maven.modrinth:owo-lib:${project.owo_version}"
+    modImplementation "io.wispforest:owo-lib:${project.owo_version}"
     modImplementation "net.kyrptonaught:customportalapi:${project.custom_portal_api_version}"
     include "net.kyrptonaught:customportalapi:${project.custom_portal_api_version}"
 
