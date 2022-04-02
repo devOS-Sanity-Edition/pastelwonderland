@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "pastelwonderland:block/log_top",
-    "side": "pastelwonderland:block/log"
+    "end": "pastelwonderland:block/pastel_log_top",
+    "side": "pastelwonderland:block/pastel_log"
   }
 }
