@@ -1,5 +1,6 @@
 package one.devos.nautical.pastelwonderland.client;
 
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import one.devos.nautical.pastelwonderland.common.GlassBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
@@ -8,6 +9,9 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
+
+import static one.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks.PASTEL_SAND;
+import static one.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks.pastel_sand_color;
 
 @Environment(EnvType.CLIENT)
 public class PastelwonderlandClient implements ClientModInitializer {
@@ -33,5 +37,8 @@ public class PastelwonderlandClient implements ClientModInitializer {
         for (BlockItem blockItem: pane_item_colors) {
             BlockRenderLayerMap.INSTANCE.putItem(blockItem, RenderType.translucent());
         }
+
+        ColorProviderRegistry.BLOCK.register((blockState, blockAndTintGetter, blockPos, i) -> pastel_sand_color, PASTEL_SAND);
+        ColorProviderRegistry.ITEM.register((itemStack, i) -> pastel_sand_color, PASTEL_SAND);
     }
 }

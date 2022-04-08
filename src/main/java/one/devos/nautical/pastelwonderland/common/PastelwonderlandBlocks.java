@@ -20,7 +20,7 @@ public class PastelwonderlandBlocks {
 
     protected static final BlockBehaviour.StatePredicate never = (state, view, pos) -> false;
 
-    private static final int pastel_sand_color = 16246726;
+    public static final int pastel_sand_color = 16246726;
     private static Properties pastel_block() { return copy(WHITE_CONCRETE); }
     private static Properties pastel_powder() { return copy(WHITE_CONCRETE_POWDER); }
 
@@ -107,8 +107,7 @@ public class PastelwonderlandBlocks {
             Block PASTEL_WOOL_BLOCK = register(color + "_wool", new Block(copy(WHITE_WOOL)), 0);
         }
 
-        ColorProviderRegistry.BLOCK.register((blockState, blockAndTintGetter, blockPos, i) -> pastel_sand_color, PASTEL_SAND);
-        ColorProviderRegistry.ITEM.register((itemStack, i) -> pastel_sand_color, PASTEL_SAND);
+
 
     }
 
