@@ -25,51 +25,51 @@ public class PastelwonderlandBlocks {
     private static Properties pastel_powder() { return copy(WHITE_CONCRETE_POWDER); }
 
     public static final Block PASTEL_BASE_BLOCK = register("pastel_base_block", new Block(pastel_block()), 0);
-    public static final Block PASTEL_BASE_POWDER = register("pastel_base_powder", new ConcretePowderBlock(PASTEL_BASE_BLOCK, pastel_powder()), 0);
+    public static final Block PASTEL_BASE_POWDER_BLOCK = register("pastel_base_powder_block", new ConcretePowderBlock(PASTEL_BASE_BLOCK, pastel_powder()), 0);
     //    public static final _SLAB = register("_pastel_slab", new SlabBlock(pastel_block()));                   //saving for later, after dimensions get working...
 
     public static final Block LIGHT_RED_PASTEL_BLOCK = register("light_red_pastel_block", new Block(pastel_block()), 0);
-    public static final Block LIGHT_RED_PASTEL_POWDER = register("light_red_pastel_powder", new ConcretePowderBlock(LIGHT_RED_PASTEL_BLOCK, pastel_powder()), 0);
+    public static final Block LIGHT_RED_PASTEL_POWDER_BLOCK = register("light_red_pastel_powder_block", new ConcretePowderBlock(LIGHT_RED_PASTEL_BLOCK, pastel_powder()), 0);
 
     public static final Block RED_PASTEL_BLOCK = register("red_pastel_block", new Block(pastel_block()), 0);
-    public static final Block RED_PASTEL_POWDER = register("red_pastel_powder", new ConcretePowderBlock(RED_PASTEL_BLOCK, pastel_powder()), 0);
+    public static final Block RED_PASTEL_POWDER_BLOCK = register("red_pastel_powder_block", new ConcretePowderBlock(RED_PASTEL_BLOCK, pastel_powder()), 0);
 
 
     public static final Block ORANGE_PASTEL_BLOCK = register("orange_pastel_block", new Block(pastel_block()), 0);
-    public static final Block ORANGE_PASTEL_POWDER = register("orange_pastel_powder", new ConcretePowderBlock(ORANGE_PASTEL_BLOCK, pastel_powder()), 0);
+    public static final Block ORANGE_PASTEL_POWDER_BLOCK = register("orange_pastel_powder_block", new ConcretePowderBlock(ORANGE_PASTEL_BLOCK, pastel_powder()), 0);
 
     public static final Block YELLOW_PASTEL_BLOCK = register("yellow_pastel_block", new Block(pastel_block()), 0);
-    public static final Block YELLOW_PASTEL_POWDER = register("yellow_pastel_powder", new ConcretePowderBlock(YELLOW_PASTEL_BLOCK, pastel_powder()), 0);
+    public static final Block YELLOW_PASTEL_POWDER_BLOCK = register("yellow_pastel_powder_block", new ConcretePowderBlock(YELLOW_PASTEL_BLOCK, pastel_powder()), 0);
 
     public static final Block LIGHT_GREEN_PASTEL_BLOCK = register("light_green_pastel_block", new Block(pastel_block()), 0);
-    public static final Block LIGHT_GREEN_PASTEL_POWDER = register("light_green_pastel_powder", new ConcretePowderBlock(LIGHT_GREEN_PASTEL_BLOCK, pastel_powder()), 0);
+    public static final Block LIGHT_GREEN_PASTEL_POWDER_BLOCK = register("light_green_pastel_powder_block", new ConcretePowderBlock(LIGHT_GREEN_PASTEL_BLOCK, pastel_powder()), 0);
 
     public static final Block GREEN_PASTEL_BLOCK = register("green_pastel_block", new Block(pastel_block()), 0);
-    public static final Block GREEN_PASTEL_POWDER = register("green_pastel_powder", new ConcretePowderBlock(GREEN_PASTEL_BLOCK, pastel_powder()), 0);
+    public static final Block GREEN_PASTEL_POWDER_BLOCK = register("green_pastel_powder_block", new ConcretePowderBlock(GREEN_PASTEL_BLOCK, pastel_powder()), 0);
 
     public static final Block LIGHT_BLUE_PASTEL_BLOCK = register("light_blue_pastel_block", new Block(pastel_block()), 0);
-    public static final Block LIGHT_BLUE_PASTEL_POWDER = register("light_blue_pastel_powder", new ConcretePowderBlock(LIGHT_BLUE_PASTEL_BLOCK, pastel_powder()), 0);
+    public static final Block LIGHT_BLUE_PASTEL_POWDER_BLOCK = register("light_blue_pastel_powder_block", new ConcretePowderBlock(LIGHT_BLUE_PASTEL_BLOCK, pastel_powder()), 0);
 
     public static final Block BLUE_PASTEL_BLOCK = register("blue_pastel_block", new Block(pastel_block()), 0);
-    public static final Block BLUE_PASTEL_POWDER = register("blue_pastel_powder", new ConcretePowderBlock(BLUE_PASTEL_BLOCK, pastel_powder()), 0);
+    public static final Block BLUE_PASTEL_POWDER_BLOCK = register("blue_pastel_powder_block", new ConcretePowderBlock(BLUE_PASTEL_BLOCK, pastel_powder()), 0);
 
     public static final Block PURPLE_PASTEL_BLOCK = register("purple_pastel_block", new Block(pastel_block()), 0);
-    public static final Block PURPLE_PASTEL_POWDER = register("purple_pastel_powder", new ConcretePowderBlock(PURPLE_PASTEL_BLOCK, pastel_powder()), 0);
+    public static final Block PURPLE_PASTEL_POWDER_BLOCK = register("purple_pastel_powder_block", new ConcretePowderBlock(PURPLE_PASTEL_BLOCK, pastel_powder()), 0);
 
     public static final Block MAGENTA_PASTEL_BLOCK = register("magenta_pastel_block", new Block(pastel_block()), 0);
-    public static final Block MAGENTA_PASTEL_POWDER = register("magenta_pastel_powder", new ConcretePowderBlock(MAGENTA_PASTEL_BLOCK, pastel_powder()), 0);
+    public static final Block MAGENTA_PASTEL_POWDER_BLOCK = register("magenta_pastel_powder_block", new ConcretePowderBlock(MAGENTA_PASTEL_BLOCK, pastel_powder()), 0);
 
     public static final Block BROWN_PASTEL_BLOCK = register("brown_pastel_block", new Block(pastel_block()), 0);
-    public static final Block BROWN_PASTEL_POWDER = register("brown_pastel_powder", new ConcretePowderBlock(BROWN_PASTEL_BLOCK, pastel_powder()), 0);
+    public static final Block BROWN_PASTEL_POWDER_BLOCK = register("brown_pastel_powder_block", new ConcretePowderBlock(BROWN_PASTEL_BLOCK, pastel_powder()), 0);
 
     public static final Block BLACK_PASTEL_BLOCK = register("black_pastel_block", new Block(pastel_block()), 0);
-    public static final Block BLACK_PASTEL_POWDER = register("black_pastel_powder", new ConcretePowderBlock(BLACK_PASTEL_BLOCK, pastel_powder()), 0);
+    public static final Block BLACK_PASTEL_POWDER_BLOCK = register("black_pastel_powder_block", new ConcretePowderBlock(BLACK_PASTEL_BLOCK, pastel_powder()), 0);
 
     public static final Block LIGHT_GRAY_PASTEL_BLOCK = register("light_gray_pastel_block", new Block(pastel_block()), 0);
-    public static final Block LIGHT_GRAY_PASTEL_POWDER = register("light_gray_pastel_powder", new ConcretePowderBlock(LIGHT_GRAY_PASTEL_BLOCK, pastel_powder()), 0);
+    public static final Block LIGHT_GRAY_PASTEL_POWDER_BLOCK = register("light_gray_pastel_powder_block", new ConcretePowderBlock(LIGHT_GRAY_PASTEL_BLOCK, pastel_powder()), 0);
 
     public static final Block GRAY_PASTEL_BLOCK = register("gray_pastel_block", new Block(pastel_block()), 0);
-    public static final Block GRAY_PASTEL_POWDER = register("gray_pastel_powder", new ConcretePowderBlock(GRAY_PASTEL_BLOCK, pastel_powder()), 0);
+    public static final Block GRAY_PASTEL_POWDER_BLOCK = register("gray_pastel_powder_block", new ConcretePowderBlock(GRAY_PASTEL_BLOCK, pastel_powder()), 0);
 
     private static Properties dirt_like() { return copy(DIRT); }
     private static Properties pastel_leaves() {return copy(OAK_LEAVES).noOcclusion().isViewBlocking(never).isSuffocating(never); }
@@ -86,13 +86,12 @@ public class PastelwonderlandBlocks {
     public static final Block LIGHT_GREEN_LEAVES = register("light_green_leaves", new LeavesBlock(pastel_leaves()), 3);
     public static final Block YELLOW_LEAVES = register("yellow_leaves", new LeavesBlock(pastel_leaves()), 3);
 
-
-
     public static final PastelwonderlandPortalBlock PASTEL_PORTAL_BLOCK = Registry.register(Registry.BLOCK, new ResourceLocation(MOD_ID, "red_pastel_portal_block"), new PastelwonderlandPortalBlock(copy(NETHER_PORTAL).noOcclusion().isViewBlocking(never)));
 
-
-
-
+    private static Block register(String name, Block block, int tab) {
+        Registry.register(Registry.ITEM, new ResourceLocation(MOD_ID, name), new BlockItem(block, new OwoItemSettings().group(Pastelwonderland.PW_ITEM_GROUP).tab(tab)));
+        return Registry.register(Registry.BLOCK, new ResourceLocation(MOD_ID, name), block);
+    }
 
     public static void init() {
         String[] colors = {"pastel_base", "light_red", "red", "orange", "yellow", "light_green", "green", "light_blue", "blue", "purple", "magenta", "brown", "black", "light_gray", "gray"};
@@ -106,13 +105,5 @@ public class PastelwonderlandBlocks {
             Block PASTEL_STAIR_BLOCK = register(color + "_stairs", new PastelStairs(STONE_STAIRS.defaultBlockState(), copy(WHITE_CONCRETE)), 0);
             Block PASTEL_WOOL_BLOCK = register(color + "_wool", new Block(copy(WHITE_WOOL)), 0);
         }
-
-
-
-    }
-
-    private static Block register(String name, Block block, int tab) {
-        Registry.register(Registry.ITEM, new ResourceLocation(MOD_ID, name), new BlockItem(block, new OwoItemSettings().group(Pastelwonderland.PW_ITEM_GROUP).tab(tab)));
-        return Registry.register(Registry.BLOCK, new ResourceLocation(MOD_ID, name), block);
     }
 }
