@@ -40,7 +40,7 @@ public class Items {
 
     public static final Item BASE_TAFFY = register("base_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.INVISIBILITY, 600, 0), 1.0F).build())));
     public static final Item LIGHT_RED_TAFFY = register("light_red_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1.0F).build())));
-    public static final Item RED_TAFFY = register("red_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 0, 0), 1.0F).build())));
+    public static final Item RED_TAFFY = register("red_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1, 0), 1.0F).build())));
     public static final Item ORANGE_TAFFY = register("orange_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 300, 0), 1.0F).build())));
     public static final Item YELLOW_TAFFY = register("yellow_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.DIG_SPEED, 900, 0), 1.0F).build())));
     public static final Item LIGHT_GREEN_TAFFY = register("light_green_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.JUMP, 1200, 0), 1.0F).build())));
@@ -89,7 +89,8 @@ public class Items {
     public static final Item LIGHT_GRAY_HARD_CANDY = register("light_gray_hard_candy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(3).saturationMod(2).build())));
     public static final Item GRAY_HARD_CANDY = register("gray_hard_candy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(3).saturationMod(2).build())));
 
-
+    public static final Item BURNED_CANDY = register("burned_candy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.HARM, 1, 1), 1.0F).build())));
+    public static final Item BAD_ICE_CREAM = register("bad_ice_cream", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.POISON, 6000, 1), 1.0F).effect(new MobEffectInstance(MobEffects.HUNGER, 6000, 0), 1.0F).effect(new MobEffectInstance(MobEffects.CONFUSION, 6000, 0), 1.0F).effect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 6000, 1), 1.0F).build())));
 
     private static Item register(String name, Item item) {
         return Registry.register(Registry.ITEM, new ResourceLocation(MOD_ID, name), item);
