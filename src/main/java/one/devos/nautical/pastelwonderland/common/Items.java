@@ -17,6 +17,11 @@ public class Items {
     public static final Item PEANUT_CHOKER = register("peanut_choker", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(3).saturationMod(2).build())));
     public static final Item PEANUT_BUTTER = register("peanut_butter", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(9).saturationMod(5).build())));
 
+    public static final Item COTTON_CANDY_ICE_CREAM = register("cotton_candy_ice_cream", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(3).saturationMod(5).build())));
+    public static final Item STRAWYBERRY_ICE_CREAM = register("strawberry_ice_cream", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(3).saturationMod(5).build())));
+    public static final Item VANILLA_ICE_CREAM = register("vanilla_ice_cream", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(3).saturationMod(5).build())));
+
+
     public static final Item PASTEL_BASE_POWDER = register("pastel_base_powder", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).maxCount(64)));
     public static final Item LIGHT_RED_PASTEL_POWDER = register("light_red_pastel_powder", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).maxCount(64)));
     public static final Item RED_PASTEL_POWDER = register("red_pastel_powder", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).maxCount(64)));
