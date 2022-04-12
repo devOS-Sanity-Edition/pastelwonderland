@@ -3,12 +3,11 @@ package one.devos.nautical.pastelwonderland.common;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.*;
 
-import static net.minecraft.world.level.block.Blocks.*;
-import static net.minecraft.world.level.block.state.BlockBehaviour.Properties.copy;
 import static one.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
 import static one.devos.nautical.pastelwonderland.Pastelwonderland.PW_ITEM_GROUP;
 
@@ -34,22 +33,22 @@ public class Items {
     public static final Item LIGHT_GRAY_PASTEL_POWDER = register("light_gray_pastel_powder", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).maxCount(64)));
     public static final Item GRAY_PASTEL_POWDER = register("gray_pastel_powder", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).maxCount(64)));
 
-    public static final Item BASE_TAFFY = register("base_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
-    public static final Item LIGHT_RED_TAFFY = register("light_red_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
-    public static final Item RED_TAFFY = register("red_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
-    public static final Item ORANGE_TAFFY = register("orange_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
-    public static final Item YELLOW_TAFFY = register("yellow_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
-    public static final Item LIGHT_GREEN_TAFFY = register("light_green_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
-    public static final Item GREEN_TAFFY = register("green_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
-    public static final Item CYAN_TAFFY = register("cyan_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
-    public static final Item LIGHT_BLUE_TAFFY = register("light_blue_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
-    public static final Item BLUE_TAFFY = register("blue_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
-    public static final Item PURPLE_TAFFY = register("purple_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
-    public static final Item MAGENTA_TAFFY = register("magenta_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
-    public static final Item BROWN_TAFFY = register("brown_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
-    public static final Item BLACK_TAFFY = register("black_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
-    public static final Item LIGHT_GRAY_TAFFY = register("light_gray_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
-    public static final Item GRAY_TAFFY = register("gray_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().build())));
+    public static final Item BASE_TAFFY = register("base_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
+    public static final Item LIGHT_RED_TAFFY = register("light_red_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
+    public static final Item RED_TAFFY = register("red_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
+    public static final Item ORANGE_TAFFY = register("orange_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
+    public static final Item YELLOW_TAFFY = register("yellow_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
+    public static final Item LIGHT_GREEN_TAFFY = register("light_green_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
+    public static final Item GREEN_TAFFY = register("green_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
+    public static final Item CYAN_TAFFY = register("cyan_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
+    public static final Item LIGHT_BLUE_TAFFY = register("light_blue_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
+    public static final Item BLUE_TAFFY = register("blue_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
+    public static final Item PURPLE_TAFFY = register("purple_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
+    public static final Item MAGENTA_TAFFY = register("magenta_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
+    public static final Item BROWN_TAFFY = register("brown_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
+    public static final Item BLACK_TAFFY = register("black_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
+    public static final Item LIGHT_GRAY_TAFFY = register("light_gray_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
+    public static final Item GRAY_TAFFY = register("gray_taffy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F).build())));
 
     public static final Item BASE_COTTON_CANDY = register("base_cotton_candy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(3).saturationMod(2).fast().build())));
     public static final Item LIGHT_RED_COTTON_CANDY = register("light_red_cotton_candy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(3).saturationMod(2).fast().build())));
