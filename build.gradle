@@ -32,10 +32,10 @@ dependencies {
     include "net.kyrptonaught:customportalapi:${project.custom_portal_api_version}"
 
     modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
-//    modCompileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:${project.rei_version}")
-//    modRuntimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}")
-    // modImplementation("maven.modrinth:lazydfu:0.1.2")
-    //modImplementation "maven.modrinth:sodium:${project.sodium_version}" //it crashes on world join
+    modCompileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:${project.rei_version}")
+    modRuntimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}")
+    modImplementation("maven.modrinth:lazydfu:0.1.2")
+//    modImplementation "maven.modrinth:sodium:${project.sodium_version}" //it crashes on world join
 
 }
 
