@@ -11,9 +11,14 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    env:
+      PUBLISH_SUFFIX: snapshots
+      MAVEN_USER: ${{ secrets.MAVEN_USER }}
+      MAVEN_PASS: ${{ secrets.MAVEN_PASS }}
+
     steps:
     - uses: actions/checkout@v2
-    
+
     - name: Set up JDK 17
       uses: actions/setup-java@v1
       with:
