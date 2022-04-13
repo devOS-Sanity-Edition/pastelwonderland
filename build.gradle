@@ -22,20 +22,21 @@ repositories {
 
 dependencies {
 
-    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    minecraft("com.mojang:minecraft:${project.minecraft_version}")
     mappings loom.officialMojangMappings()
-    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation("net.fabricmc:fabric-loader:${project.loader_version}")
 
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modImplementation "io.wispforest:owo-lib:${project.owo_version}"
-    modImplementation "net.kyrptonaught:customportalapi:${project.custom_portal_api_version}"
-    include "net.kyrptonaught:customportalapi:${project.custom_portal_api_version}"
+    modImplementation("net.fabricmc.fabric-api:fabric-api:${project.fabric_version}")
+    modImplementation(include("io.wispforest:owo-lib:${project.owo_version}"))
+    modImplementation("net.kyrptonaught:customportalapi:${project.custom_portal_api_version}")
+    include("net.kyrptonaught:customportalapi:${project.custom_portal_api_version}")
 
     modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
     modCompileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:${project.rei_version}")
     modRuntimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}")
     modImplementation("maven.modrinth:lazydfu:0.1.2")
-//    modImplementation "maven.modrinth:sodium:${project.sodium_version}" //it crashes on world join
+    modImplementation(include("maven.modrinth:here-be-no-dragons:1.0.0"))
+    //modImplementation("maven.modrinth:sodium:${project.sodium_version}") //still crashes :(
 
 }
 

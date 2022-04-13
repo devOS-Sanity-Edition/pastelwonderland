@@ -1,4 +1,4 @@
-package one.devos.nautical.pastelwonderland.common;
+package one.devos.nautical.pastelwonderland.common.blocks;
 
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;

@@ -11,7 +11,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
 import one.devos.nautical.pastelwonderland.Pastelwonderland;
-import one.devos.nautical.pastelwonderland.common.GlassBlocks;
+import one.devos.nautical.pastelwonderland.common.blocks.GlassBlocks;
 import one.devos.nautical.pastelwonderland.common.entities.mallard.MallardModel;
 import one.devos.nautical.pastelwonderland.common.entities.mallard.MallardRenderer;
 

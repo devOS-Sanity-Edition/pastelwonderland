@@ -8,6 +8,9 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import one.devos.nautical.pastelwonderland.Pastelwonderland;
+import one.devos.nautical.pastelwonderland.common.blocks.PastelStairs;
+import one.devos.nautical.pastelwonderland.common.blocks.PastelwonderlandPortalBlock;
+import one.devos.nautical.pastelwonderland.common.blocks.PeanutCropBlock;
 
 import static net.minecraft.world.level.block.Blocks.*;
 import static net.minecraft.world.level.block.state.BlockBehaviour.Properties;
@@ -69,6 +72,8 @@ public class PastelwonderlandBlocks {
     public static final Block GRAY_PASTEL_BLOCK = register("gray_pastel_block", new Block(pastel_block()), 0);
     public static final Block GRAY_PASTEL_POWDER_BLOCK = register("gray_pastel_powder_block", new ConcretePowderBlock(GRAY_PASTEL_BLOCK, pastel_powder()), 0);
 
+    //Natural
+
     private static Properties dirt_like() { return copy(DIRT); }
     private static Properties pastel_leaves() {return copy(OAK_LEAVES).noOcclusion().isViewBlocking(never).isSuffocating(never); }
     private static Properties sand_like() { return Properties.of(Material.SAND).strength(0.5F).sound(SoundType.SAND) ; }
@@ -84,10 +89,22 @@ public class PastelwonderlandBlocks {
     public static final Block LIGHT_GREEN_LEAVES = register("light_green_leaves", new LeavesBlock(pastel_leaves()), 3);
     public static final Block YELLOW_LEAVES = register("yellow_leaves", new LeavesBlock(pastel_leaves()), 3);
 
+    //Crops
+
+    private static Properties crops() { return(copy(WHEAT)); }
+
+    public static final Block PEANUT_CROP = register("peanut_crop", new PeanutCropBlock(crops()));
+
+    //Portal
+
     public static final PastelwonderlandPortalBlock PASTEL_PORTAL_BLOCK = Registry.register(Registry.BLOCK, new ResourceLocation(MOD_ID, "red_pastel_portal_block"), new PastelwonderlandPortalBlock(copy(NETHER_PORTAL).noOcclusion().isViewBlocking(never)));
 
     private static Block register(String name, Block block, int tab) {
         Registry.register(Registry.ITEM, new ResourceLocation(MOD_ID, name), new BlockItem(block, new OwoItemSettings().group(Pastelwonderland.PW_ITEM_GROUP).tab(tab)));
+        return Registry.register(Registry.BLOCK, new ResourceLocation(MOD_ID, name), block);
+    }
+
+    private static Block register(String name, Block block) {
         return Registry.register(Registry.BLOCK, new ResourceLocation(MOD_ID, name), block);
     }
 

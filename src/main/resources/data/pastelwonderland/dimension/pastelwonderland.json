@@ -2,7 +2,7 @@
   "type": "pastelwonderland:pastelwonderland_type",
   "generator": {
     "type": "minecraft:noise",
-    "seed": 1,
+    "seed": 1237856415341,
     "settings": "pastelwonderland:pastelwonderland_noise",
     "biome_source": {
       "type": "minecraft:multi_noise",

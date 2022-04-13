@@ -13,8 +13,8 @@ import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.item.ItemStack;
-import one.devos.nautical.pastelwonderland.common.GlassBlocks;
-import one.devos.nautical.pastelwonderland.common.Items;
+import one.devos.nautical.pastelwonderland.common.blocks.GlassBlocks;
+import one.devos.nautical.pastelwonderland.common.PastelwonderlandItems;
 import one.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks;
 import one.devos.nautical.pastelwonderland.common.entities.mallard.MallardEntity;
 import one.devos.nautical.pastelwonderland.util.LoggerHelper;
@@ -47,7 +47,7 @@ public class Pastelwonderland implements ModInitializer {
             keepStaticTitle();
             addTab(Icon.of(PastelwonderlandBlocks.RED_PASTEL_BLOCK), "blocks", null);
             addTab(Icon.of(GlassBlocks.RED_GLASS_ITEM), "decorations", null);
-            addTab(Icon.of(net.minecraft.world.level.block.Blocks.ACACIA_BUTTON), "items", null);
+            addTab(Icon.of(PastelwonderlandItems.BASE_TAFFY), "items", null);
             addTab(Icon.of(PastelwonderlandBlocks.PASTEL_GRASS), "natural", null);
 
             addButton(ItemGroupButton.github("https://github.com/devOS-Sanity-Edition/pastelwonderland"));
@@ -68,7 +68,7 @@ public class Pastelwonderland implements ModInitializer {
 
         PastelwonderlandBlocks.init();
         GlassBlocks.init();
-        Items.init();
+        PastelwonderlandItems.init();
         PastelwonderlandDimension.init();
 
         FabricDefaultAttributeRegistry.register(MALLARD_ENTITY, MallardEntity.createMobAttributes());
