@@ -1,14 +1,12 @@
 package one.devos.nautical.pastelwonderland.common;
 
 import io.wispforest.owo.itemgroup.OwoItemSettings;
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
 import one.devos.nautical.pastelwonderland.Pastelwonderland;
 
 import static net.minecraft.world.level.block.Blocks.*;
