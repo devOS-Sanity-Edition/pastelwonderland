@@ -1,14 +1,12 @@
 package one.devos.nautical.pastelwonderland.common;
 
 import io.wispforest.owo.itemgroup.OwoItemSettings;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.LeadItem;
 
 import static one.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
 import static one.devos.nautical.pastelwonderland.Pastelwonderland.PW_ITEM_GROUP;
@@ -20,8 +18,10 @@ public class Items {
     public static final Item PEANUT_BUTTER = register("peanut_butter", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(9).saturationMod(5).build())));
 
     public static final Item COTTON_CANDY_ICE_CREAM = register("cotton_candy_ice_cream", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(3).saturationMod(5).build())));
+    public static final Item CHOCOLATE_ICE_CREAM = register("chocolate_ice_cream", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(3).saturationMod(5).build())));
     public static final Item STRAWYBERRY_ICE_CREAM = register("strawberry_ice_cream", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(3).saturationMod(5).build())));
     public static final Item VANILLA_ICE_CREAM = register("vanilla_ice_cream", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(3).saturationMod(5).build())));
+    public static final Item PEANUT_BUTTER_ICE_CREAM = register("peanut_butter_ice_cream", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(3).saturationMod(5).build())));
 
     public static final Item PASTEL_BASE_POWDER = register("pastel_base_powder", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).maxCount(64)));
     public static final Item LIGHT_RED_PASTEL_POWDER = register("light_red_pastel_powder", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).maxCount(64)));
@@ -91,7 +91,7 @@ public class Items {
     public static final Item GRAY_HARD_CANDY = register("gray_hard_candy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(3).saturationMod(2).build())));
 
     public static final Item BURNED_CANDY = register("burned_candy", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.HARM, 1, 1), 1.0F).build())));
-    public static final Item BAD_ICE_CREAM = register("bad_ice_cream", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.POISON, 6000, 1), 1.0F).effect(new MobEffectInstance(MobEffects.HUNGER, 6000, 0), 1.0F).effect(new MobEffectInstance(MobEffects.CONFUSION, 6000, 0), 1.0F).effect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 6000, 1), 1.0F).build())));
+    public static final Item BAD_ICE_CREAM = register("bad_ice_cream", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).fast().alwaysEat().effect(new MobEffectInstance(MobEffects.POISON, 6000, 1), 1.0F).effect(new MobEffectInstance(MobEffects.HUNGER, 6000, 0), 1.0F).effect(new MobEffectInstance(MobEffects.CONFUSION, 6000, 0), 1.0F).effect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 6000, 1), 1.0F).effect(new MobEffectInstance(MobEffects.BLINDNESS, 6000, 1), 1.0F).build())));
 
     public static final Item TAFFY_LEAD = register("taffy_lead", new PastelLeads(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2)));
 
