@@ -1,14 +1,19 @@
 package one.devos.nautical.pastelwonderland.client;
 
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
-import one.devos.nautical.pastelwonderland.common.GlassBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
+import one.devos.nautical.pastelwonderland.Pastelwonderland;
+import one.devos.nautical.pastelwonderland.common.GlassBlocks;
+import one.devos.nautical.pastelwonderland.common.entities.mallard.MallardModel;
+import one.devos.nautical.pastelwonderland.common.entities.mallard.MallardRenderer;
 
 import static one.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks.PASTEL_SAND;
 import static one.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks.pastel_sand_color;
@@ -40,5 +45,11 @@ public class PastelwonderlandClient implements ClientModInitializer {
 
         ColorProviderRegistry.BLOCK.register((blockState, blockAndTintGetter, blockPos, i) -> pastel_sand_color, PASTEL_SAND);
         ColorProviderRegistry.ITEM.register((itemStack, i) -> pastel_sand_color, PASTEL_SAND);
+
+        EntityRendererRegistry.register(Pastelwonderland.MALLARD_ENTITY, (context -> {
+            return new MallardRenderer(context);
+        }));
+
+        EntityModelLayerRegistry.registerModelLayer(MallardModel.LAYER_LOCATION, MallardModel::createBodyLayer);
     }
 }
