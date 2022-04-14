@@ -16,7 +16,6 @@ import static one.devos.nautical.pastelwonderland.common.PastelwonderlandBlocks.
 
 public class PastelwonderlandItems {
     //public static final Item PEANUT = register("peanut", new Item();
-    // literally just peanut brittle iced spikes
     public static final Item PEANUT_CHOKER = register("peanut_choker", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(3).saturationMod(2).build())));
     public static final Item PEANUT_BUTTER = register("peanut_butter", new Item(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2).food(new FoodProperties.Builder().nutrition(9).saturationMod(5).build())));
 
