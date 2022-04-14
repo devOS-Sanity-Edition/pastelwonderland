@@ -7,5 +7,6 @@ import net.minecraft.world.level.Level;
 public class MallardEntity extends PathfinderMob {
     public MallardEntity(EntityType<? extends PathfinderMob> entityType, Level level) {
         super(entityType, level);
+        this.setHealth(6F);
     }
 }

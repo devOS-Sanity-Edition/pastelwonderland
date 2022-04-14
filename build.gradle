@@ -36,8 +36,8 @@ dependencies {
     modRuntimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}")
     modImplementation("maven.modrinth:lazydfu:0.1.2")
     modImplementation(include("maven.modrinth:here-be-no-dragons:1.0.0"))
-    //modImplementation("maven.modrinth:sodium:${project.sodium_version}") //still crashes :(
-
+    modImplementation("maven.modrinth:sodium:${project.sodium_version}") //still crashes :(
+    runtimeOnly("org.joml:joml:1.10.2")
 }
 
 processResources {
