@@ -8,7 +8,9 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.level.block.Block;
+import one.devos.nautical.pastelwonderland.Pastelwonderland;
 
 import static one.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
 import static one.devos.nautical.pastelwonderland.Pastelwonderland.PW_ITEM_GROUP;
@@ -103,6 +105,8 @@ public class PastelwonderlandItems {
     //other
 
     public static final Item TAFFY_LEAD = register("taffy_lead", new PastelwonderlandLeads(new OwoItemSettings().group(PW_ITEM_GROUP).tab(2)));
+
+    public static final Item MALLARD_SPAWN_EGG = register("mallard_spawn_egg", new SpawnEggItem(Pastelwonderland.MALLARD_ENTITY, 0x22af6a, 0xdad1ca, new OwoItemSettings().group(PW_ITEM_GROUP).tab(2)));
 
     private static Item register(String name, Item item) {
         return Registry.register(Registry.ITEM, new ResourceLocation(MOD_ID, name), item);
