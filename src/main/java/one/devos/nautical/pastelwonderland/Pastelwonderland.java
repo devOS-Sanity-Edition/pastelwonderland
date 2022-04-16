@@ -71,7 +71,7 @@ public class Pastelwonderland implements ModInitializer {
         PastelwonderlandItems.init();
         PastelwonderlandDimension.init();
 
-        FabricDefaultAttributeRegistry.register(MALLARD_ENTITY, MallardEntity.createMobAttributes());
+        FabricDefaultAttributeRegistry.register(MALLARD_ENTITY, MallardEntity.createAttributes());
 
         LoggerHelper.log("info", "Pastel Wonderland initializing");
         LoggerHelper.log("dev_info", "Pastel Wonderland Dev Env on Version: " + VERSION);
