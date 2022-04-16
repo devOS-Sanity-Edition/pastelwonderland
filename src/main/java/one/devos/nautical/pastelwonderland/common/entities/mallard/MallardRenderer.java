@@ -14,6 +14,27 @@ public class MallardRenderer extends MobRenderer<MallardEntity, net.minecraft.cl
 
     @Override
     public ResourceLocation getTextureLocation(MallardEntity entity) {
-        return new ResourceLocation(MOD_ID, "textures/entity/mallard/mallard.png");
+//        return new ResourceLocation(MOD_ID, "textures/entity/mallard/pallard.png");
+        if (false) {
+            if (!entity.isBaby()) {
+                if (entity.getVariant() == 1) {
+                    return new ResourceLocation(MOD_ID, "textures/entity/mallard/mallard.png");
+                } else {
+                    return new ResourceLocation(MOD_ID, "textures/entity/mallard/mallady.png");
+                }
+            } else {
+                return new ResourceLocation(MOD_ID, "textures/entity/mallard/mababy.png");
+            }
+        } else {
+            if (!entity.isBaby()) {
+                if (entity.getVariant() == 1) {
+                    return new ResourceLocation(MOD_ID, "textures/entity/mallard/pallard.png");
+                } else {
+                    return new ResourceLocation(MOD_ID, "textures/entity/mallard/pallady.png");
+                }
+            } else {
+                return new ResourceLocation(MOD_ID, "textures/entity/mallard/pababy.png");
+            }
+        }
     }
 }

@@ -8,11 +8,13 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 
 import static one.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
 
-public class MallardModel<T extends Entity> extends EntityModel<T> {
+public class MallardModel<T extends LivingEntity> extends EntityModel<T> {
     // This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
     public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(MOD_ID, "mallard"), "mallard");
     private final ModelPart head;
@@ -68,7 +70,36 @@ public class MallardModel<T extends Entity> extends EntityModel<T> {
 
     @Override
     public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-
+        this.head.xRot = headPitch * 0.017453292F;
+        this.head.yRot = netHeadYaw * 0.017453292F;
+        this.right_leg.xRot = Mth.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
+        this.left_leg.xRot = Mth.cos(limbSwing * 0.6662F + 3.1415927F) * 1.4F * limbSwingAmount;
+        if (entity.isInWater()) {
+            this.right_leg.xRot = 1.309F;
+            this.left_leg.xRot = 1.309F;
+            if (entity.hurtTime > 0) {
+                this.right_wing.zRot = (float) ((Mth.abs(Mth.cos(ageInTicks))*1.5) * entity.hurtTime / 7.5);
+                this.left_wing.zRot = (float) (-(Mth.abs(Mth.cos(ageInTicks))*1.5) * entity.hurtTime / 7.5);
+            } else {
+                this.right_wing.zRot = 0F;
+                this.left_wing.zRot = 0F;
+            }
+        } else {
+            this.right_leg.xRot = Mth.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
+            this.left_leg.xRot = Mth.cos(limbSwing * 0.6662F + 3.1415927F) * 1.4F * limbSwingAmount;
+            if (!entity.isOnGround()) {
+                this.right_wing.zRot =  (float) (Mth.abs(Mth.cos(ageInTicks))*1.5);
+                this.left_wing.zRot = (float) (-Mth.abs(Mth.cos(ageInTicks))*1.5);
+            } else {
+                this.right_wing.zRot = 0.0F;
+                this.left_wing.zRot = 0.0F;
+            }
+        }
+//        if (entity.isAggressive) {
+//            this.right_wing.yRot = 1.309F + Mth.cos(limbSwing * 5F) * 1.4F * limbSwingAmount;
+//            this.left_wing.yRot = -1.309F - Mth.cos(limbSwing * 5F) * 1.4F * limbSwingAmount;
+//            this.head.xRot = headPitch * 0.017453292F + 1.309F;
+//        }
     }
 
     @Override
