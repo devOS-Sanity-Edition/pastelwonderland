@@ -3,8 +3,6 @@ package one.devos.nautical.pastelwonderland.common.entities.mallard;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.animal.Parrot;
-import one.devos.nautical.pastelwonderland.world.dimension.PastelwonderlandDimension;
 
 import static one.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
 
