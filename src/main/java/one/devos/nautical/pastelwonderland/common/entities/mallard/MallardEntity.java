@@ -7,13 +7,8 @@ import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Mth;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.AgeableMob;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier.Builder;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
@@ -24,22 +19,16 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
-import org.jetbrains.annotations.Nullable;
+import one.devos.nautical.pastelwonderland.Pastelwonderland;
 
 import java.util.function.Predicate;
 
 public class MallardEntity extends Animal {
     private static EntityDataAccessor<Integer> VARIANT;
-    public float flap;
-    public float flapSpeed;
-    public float oFlapSpeed;
-    public float oFlap;
-    public static float flapping = 1.0F;
-    private float nextFlap = 1.0F;
     private static final Ingredient FOOD_ITEMS;
     private static Predicate<Entity> AVOID_PLAYERS;
 
-    public MallardEntity(EntityType<? extends Animal> entityType, Level level) {
+    public MallardEntity(EntityType<? extends MallardEntity> entityType, Level level) {
         super(entityType, level);
         this.setHealth(6F);
     }
@@ -56,6 +45,12 @@ public class MallardEntity extends Animal {
         this.goalSelector.addGoal(4, new FollowParentGoal(this, 1.1D));
         this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 6.0F));
         this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
+        this.goalSelector.addGoal(8, new RandomStrollGoal(this, 1.1D));
+    }
+
+    protected float getStandingEyeHeight(Pose pose, EntityDimensions entityDimensions) {
+//        return this.isBaby() ? entityDimensions.height * 0.92F : entityDimensions.height * 0.92F;
+        return entityDimensions.height;
     }
 
     public static Builder createAttributes() {
@@ -66,29 +61,10 @@ public class MallardEntity extends Animal {
 
     public void aiStep() {
         super.aiStep();
-        this.oFlap = this.flap;
-        this.oFlapSpeed = this.flapSpeed;
-        this.flapSpeed += (this.onGround ? -1.0F : 4.0F) * 0.3F;
-        this.flapSpeed = Mth.clamp(this.flapSpeed, 0.0F, 1.0F);
-        if (!this.onGround && this.flapping < 1.0F) {
-            this.flapping = 1.0F;
-        }
-
-        this.flapping *= 0.9F;
         Vec3 vec3 = this.getDeltaMovement();
         if (!this.onGround && vec3.y < 0.0D) {
             this.setDeltaMovement(vec3.multiply(1.0D, 0.6D, 1.0D));
         }
-
-        this.flap += this.flapping * 2.0F;
-    }
-
-    protected boolean isFlapping() {
-        return this.flyDist > this.nextFlap;
-    }
-
-    protected void onFlap() {
-        this.nextFlap = this.flyDist + this.flapSpeed / 2.0F;
     }
 
     public int getVariant() {
@@ -118,11 +94,10 @@ public class MallardEntity extends Animal {
         this.setVariant(tag.getInt("Variant"));
     }
 
-    @Nullable
-    @Override
-    public AgeableMob getBreedOffspring(ServerLevel serverLevel, AgeableMob ageableMob) {
-        return null;
+    public MallardEntity getBreedOffspring(ServerLevel serverLevel, AgeableMob ageableMob) {
+        return (MallardEntity) Pastelwonderland.MALLARD_ENTITY.create(serverLevel);
     }
+
     static {
         VARIANT = SynchedEntityData.defineId(MallardEntity.class, EntityDataSerializers.INT);
         FOOD_ITEMS = Ingredient.of(new ItemLike[]{Items.WHEAT_SEEDS, Items.MELON_SEEDS, Items.PUMPKIN_SEEDS, Items.BEETROOT_SEEDS, Items.EMERALD});

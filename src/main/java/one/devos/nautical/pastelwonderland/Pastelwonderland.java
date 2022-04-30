@@ -29,7 +29,7 @@ public class Pastelwonderland implements ModInitializer {
 
     public static final EntityType<MallardEntity> MALLARD_ENTITY = Registry.register(
             Registry.ENTITY_TYPE,
-            new ResourceLocation(MOD_ID, "mallard"), FabricEntityTypeBuilder.create(MobCategory.CREATURE, MallardEntity::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build()
+            new ResourceLocation(MOD_ID, "mallard"), FabricEntityTypeBuilder.create(MobCategory.CREATURE, MallardEntity::new).dimensions(EntityDimensions.scalable(0.65f, 0.65f)).build()
     );
 
     public static ResourceLocation locate(String location) {

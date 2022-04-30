@@ -1,20 +1,18 @@
 package one.devos.nautical.pastelwonderland.common.entities.mallard;
 
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.minecraft.client.model.EntityModel;
+import com.google.common.collect.ImmutableList;
+import net.minecraft.client.model.AgeableListModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 
 import static one.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
 
-public class MallardModel<T extends LivingEntity> extends EntityModel<T> {
+public class MallardModel<T extends LivingEntity> extends AgeableListModel<T> {
     // This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
     public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(MOD_ID, "mallard"), "mallard");
     private final ModelPart head;
@@ -40,32 +38,33 @@ public class MallardModel<T extends LivingEntity> extends EntityModel<T> {
         PartDefinition partdefinition = meshdefinition.getRoot();
 
         PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 16.0F, -2.5F, 0.2618F, 0.0F, 0.0F));
-
-        PartDefinition bone8 = head.addOrReplaceChild("bone8", CubeListBuilder.create().texOffs(12, 0).addBox(-0.5F, -0.2358F, -1.9484F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, -1.2358F, -3.1076F, -0.0873F, 0.0F, 0.0F));
-
-        PartDefinition bone9 = head.addOrReplaceChild("bone9", CubeListBuilder.create().texOffs(11, 14).addBox(-1.5F, -5.6099F, -3.8527F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 3.1752F, -3.3695F, -1.0472F, 0.0F, 0.0F));
-
-        PartDefinition bone2 = head.addOrReplaceChild("bone2", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+        head.addOrReplaceChild("bone8", CubeListBuilder.create().texOffs(12, 0).addBox(-0.5F, -0.2358F, -1.9484F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, -1.2358F, -3.1076F, -0.0873F, 0.0F, 0.0F));
+        head.addOrReplaceChild("bone9", CubeListBuilder.create().texOffs(11, 14).addBox(-1.5F, -5.6099F, -3.8527F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 3.1752F, -3.3695F, -1.0472F, 0.0F, 0.0F));
+        head.addOrReplaceChild("bone2", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 
         PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(-1.0F, 16.0F, -2.0F));
+        body.addOrReplaceChild("bone", CubeListBuilder.create().texOffs(12, 20).addBox(0.0F, -0.4292F, -2.26F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.2618F, 0.0F, 0.0F));
+        body.addOrReplaceChild("bone4", CubeListBuilder.create().texOffs(0, 0).addBox(-2.0F, -1.7917F, -0.7066F, 4.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.0F, 3.0F, 2.5F, 0.0873F, 0.0F, 0.0F));
+        body.addOrReplaceChild("bone5", CubeListBuilder.create().texOffs(13, 5).addBox(-2.0F, -1.7026F, -3.3124F, 4.0F, 4.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.0F, 3.0F, 2.5F, -0.0873F, 0.0F, 0.0F));
 
-        PartDefinition bone = body.addOrReplaceChild("bone", CubeListBuilder.create().texOffs(12, 20).addBox(0.0F, -0.4292F, -2.26F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.2618F, 0.0F, 0.0F));
-
-        PartDefinition bone4 = body.addOrReplaceChild("bone4", CubeListBuilder.create().texOffs(0, 0).addBox(-2.0F, -1.7917F, -0.7066F, 4.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.0F, 3.0F, 2.5F, 0.0873F, 0.0F, 0.0F));
-
-        PartDefinition bone5 = body.addOrReplaceChild("bone5", CubeListBuilder.create().texOffs(13, 5).addBox(-2.0F, -1.7026F, -3.3124F, 4.0F, 4.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.0F, 3.0F, 2.5F, -0.0873F, 0.0F, 0.0F));
-
-        PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create().texOffs(0, 17).addBox(-2.0F, -1.5434F, 2.9161F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, 19.25F, 0.5F, 0.2618F, 0.0F, 0.0F));
-
-        PartDefinition left_wing = partdefinition.addOrReplaceChild("left_wing", CubeListBuilder.create().texOffs(0, 8).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 3.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(2.5F, 17.5F, -1.0F));
-
-        PartDefinition right_wing = partdefinition.addOrReplaceChild("right_wing", CubeListBuilder.create().texOffs(0, 8).mirror().addBox(-0.5F, -0.5F, -1.0F, 1.0F, 3.0F, 6.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-2.5F, 17.5F, -1.0F));
-
-        PartDefinition left_leg = partdefinition.addOrReplaceChild("left_leg", CubeListBuilder.create().texOffs(0, 0).addBox(0.5F, 0.0F, -1.0F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 21.0F, 1.0F));
-
-        PartDefinition right_leg = partdefinition.addOrReplaceChild("right_leg", CubeListBuilder.create().texOffs(0, 0).mirror().addBox(-1.5F, 0.0F, -1.0F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 21.0F, 1.0F));
+        // No children are added, so won't require casting
+        partdefinition.addOrReplaceChild("tail", CubeListBuilder.create().texOffs(0, 17).addBox(-2.0F, -1.5434F, 2.9161F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, 19.25F, 0.5F, 0.2618F, 0.0F, 0.0F));
+        partdefinition.addOrReplaceChild("left_wing", CubeListBuilder.create().texOffs(0, 8).addBox(-0.5F, -0.5F, -1.0F, 1.0F, 3.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(2.5F, 17.5F, -1.0F));
+        partdefinition.addOrReplaceChild("right_wing", CubeListBuilder.create().texOffs(0, 8).mirror().addBox(-0.5F, -0.5F, -1.0F, 1.0F, 3.0F, 6.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-2.5F, 17.5F, -1.0F));
+        partdefinition.addOrReplaceChild("left_leg", CubeListBuilder.create().texOffs(0, 0).addBox(0.5F, 0.0F, -1.0F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 21.0F, 1.0F));
+        partdefinition.addOrReplaceChild("right_leg", CubeListBuilder.create().texOffs(0, 0).mirror().addBox(-1.5F, 0.0F, -1.0F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 21.0F, 1.0F));
 
         return LayerDefinition.create(meshdefinition, 32, 32);
+    }
+
+    @Override
+    protected Iterable<ModelPart> headParts() {
+        return ImmutableList.of();
+    }
+
+    @Override
+    protected Iterable<ModelPart> bodyParts() {
+        return ImmutableList.of(this.head, this.body, this.right_leg, this.left_leg, this.right_wing, this.left_wing, this.tail);
     }
 
     @Override
@@ -100,16 +99,5 @@ public class MallardModel<T extends LivingEntity> extends EntityModel<T> {
 //            this.left_wing.yRot = -1.309F - Mth.cos(limbSwing * 5F) * 1.4F * limbSwingAmount;
 //            this.head.xRot = headPitch * 0.017453292F + 1.309F;
 //        }
-    }
-
-    @Override
-    public void renderToBuffer(PoseStack poseStack, VertexConsumer buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
-        head.render(poseStack, buffer, packedLight, packedOverlay);
-        body.render(poseStack, buffer, packedLight, packedOverlay);
-        tail.render(poseStack, buffer, packedLight, packedOverlay);
-        left_wing.render(poseStack, buffer, packedLight, packedOverlay);
-        right_wing.render(poseStack, buffer, packedLight, packedOverlay);
-        left_leg.render(poseStack, buffer, packedLight, packedOverlay);
-        right_leg.render(poseStack, buffer, packedLight, packedOverlay);
     }
 }

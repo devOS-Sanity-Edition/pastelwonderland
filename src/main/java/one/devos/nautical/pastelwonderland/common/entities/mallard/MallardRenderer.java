@@ -24,7 +24,7 @@ public class MallardRenderer extends MobRenderer<MallardEntity, net.minecraft.cl
     @Override
     public ResourceLocation getTextureLocation(MallardEntity entity) {
         if (entity.isBaby()) {
-            return MALLARD_LOCATIONS[entity.getVariant() <= 3 ? 2 : 5];
+            return MALLARD_LOCATIONS[entity.getVariant() <= 2 ? 2 : 5];
         } else {
             return MALLARD_LOCATIONS[entity.getVariant()];
         }
