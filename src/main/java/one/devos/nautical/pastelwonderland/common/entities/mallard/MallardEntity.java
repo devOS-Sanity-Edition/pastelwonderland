@@ -93,7 +93,7 @@ public class MallardEntity extends Animal {
     }
 
     public int getVariant() {
-        return Mth.clamp((Integer)this.entityData.get(VARIANT), 0, 2);
+        return Mth.clamp((Integer)this.entityData.get(VARIANT), 0, 5);
     }
 
     public void setVariant(int variant) {
@@ -102,7 +102,11 @@ public class MallardEntity extends Animal {
 
     protected void defineSynchedData() {
         super.defineSynchedData();
-        this.entityData.define(VARIANT, Math.random() <= 0.5 ? 1 : 2);
+        if (!this.getCommandSenderWorld().dimension().location().getPath().equals("pastelwonderland")) {
+            this.entityData.define(VARIANT, Math.random() <= 0.5 ? 0 : 1);
+        } else {
+            this.entityData.define(VARIANT, Math.random() <= 0.5 ? 3 : 4);
+        }
     }
 
     public void addAdditionalSaveData(CompoundTag tag) {

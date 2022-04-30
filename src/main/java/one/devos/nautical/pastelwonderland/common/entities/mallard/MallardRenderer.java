@@ -3,6 +3,8 @@ package one.devos.nautical.pastelwonderland.common.entities.mallard;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.animal.Parrot;
+import one.devos.nautical.pastelwonderland.world.dimension.PastelwonderlandDimension;
 
 import static one.devos.nautical.pastelwonderland.Pastelwonderland.MOD_ID;
 
@@ -10,31 +12,23 @@ public class MallardRenderer extends MobRenderer<MallardEntity, net.minecraft.cl
     public MallardRenderer(EntityRendererProvider.Context context) {
         super(context, new MallardModel(context.bakeLayer(MallardModel.LAYER_LOCATION)), 0.25f);
     }
-
+    public static final ResourceLocation[] MALLARD_LOCATIONS = new ResourceLocation[]{
+            // Normal Mallards
+            new ResourceLocation(MOD_ID, "textures/entity/mallard/mallard.png"),
+            new ResourceLocation(MOD_ID, "textures/entity/mallard/mallady.png"),
+            new ResourceLocation(MOD_ID, "textures/entity/mallard/mababy.png"),
+            // Pastel Mallards
+            new ResourceLocation(MOD_ID, "textures/entity/mallard/pallard.png"),
+            new ResourceLocation(MOD_ID, "textures/entity/mallard/pallady.png"),
+            new ResourceLocation(MOD_ID, "textures/entity/mallard/pababy.png")
+    };
 
     @Override
     public ResourceLocation getTextureLocation(MallardEntity entity) {
-//        return new ResourceLocation(MOD_ID, "textures/entity/mallard/pallard.png");
-        if (false) {
-            if (!entity.isBaby()) {
-                if (entity.getVariant() == 1) {
-                    return new ResourceLocation(MOD_ID, "textures/entity/mallard/mallard.png");
-                } else {
-                    return new ResourceLocation(MOD_ID, "textures/entity/mallard/mallady.png");
-                }
-            } else {
-                return new ResourceLocation(MOD_ID, "textures/entity/mallard/mababy.png");
-            }
+        if (entity.isBaby()) {
+            return MALLARD_LOCATIONS[entity.getVariant() <= 3 ? 2 : 5];
         } else {
-            if (!entity.isBaby()) {
-                if (entity.getVariant() == 1) {
-                    return new ResourceLocation(MOD_ID, "textures/entity/mallard/pallard.png");
-                } else {
-                    return new ResourceLocation(MOD_ID, "textures/entity/mallard/pallady.png");
-                }
-            } else {
-                return new ResourceLocation(MOD_ID, "textures/entity/mallard/pababy.png");
-            }
+            return MALLARD_LOCATIONS[entity.getVariant()];
         }
     }
 }
