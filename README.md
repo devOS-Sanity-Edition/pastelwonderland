@@ -1,5 +1,7 @@
 # Pastel Wonderland
 
+# This mod is now "abandoned" and no longer worked on. This mod has been the definition of Developer Hell :wheeze_crisis:
+
 <p align="center">
 	Image Soon:tm: </br>
 	<img title="Requires Fabric API" height="50" src="https://i.imgur.com/Ol1Tcf8.png">
